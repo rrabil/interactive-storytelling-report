@@ -5,12 +5,14 @@ project:
     - index.qmd
   resources:
     - og-image.png
+    # Custom domain for GitHub Pages; quarto publish replaces gh-pages, so it must ship with every build.
+    - CNAME
 
 website:
   title: "Richard Rabil, Jr."
   # Link previews (LinkedIn, Slack, iMessage). og-image.png is a 1200x630 shot of
   # _source/og-card.html, a local-only mirror of the splash.
-  site-url: https://rrabil.github.io/interactive-storytelling-report/
+  site-url: https://storytelling.richardrabil.com/
   description: "Four tools for game writing selected, tested hands-on for 40+ hours, and scored against priorities from a 33-person industry survey."
   image: og-image.png
   open-graph:

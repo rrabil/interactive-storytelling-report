@@ -2,7 +2,7 @@
 
 A 2026 web edition of my 2012 technical report comparing four tools for writing branching game stories: articy:draft, Chat Mapper, the Dragon Age Toolset, and Excel.
 
-**Live site:** https://rrabil.github.io/interactive-storytelling-report/
+**Live site:** https://storytelling.richardrabil.com/
 
 Built with [Quarto](https://quarto.org/). The page is `index.qmd`, which includes one file per report section from `sections/`. The Editorial theme is in `editorial.scss`.
 
