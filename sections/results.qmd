@@ -20,7 +20,7 @@ Survey participants were also asked about software tool usage, the intent of whi
 
 ![Participants’ responses regarding tool usage.](media/image4.png){#fig-tool-usage fig-alt="Chart of survey results showing participants' tool usage."}
 
-In the "Other" category, I received the following responses from the participants regarding tool usage: (1) "Post it notes," (2) "Scenejo," (3) "Final Draft, HTML," and (4) "UMLet (<http://www.umlet.com/)>." Yet the results reveal that the most commonly-used software tool for writing branching dialogue is Microsoft Word, with Excel following a close second. So, despite the variety of tools available, the survey suggests that the majority of tools in use are conventional content authoring or word processing tools.
+In the "Other" category, I received the following responses from the participants regarding tool usage: (1) "Post it notes," (2) "Scenejo," (3) "Final Draft, HTML," and (4) "UMLet (<http://www.umlet.com/>)." Yet the results reveal that the most commonly-used software tool for writing branching dialogue is Microsoft Word, with Excel following a close second. So, despite the variety of tools available, the survey suggests that the majority of tools in use are conventional content authoring or word processing tools.
 
 ### 4.1.3 Participant Rankings {#participant-rankings}
 

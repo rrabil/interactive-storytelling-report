@@ -18,6 +18,14 @@ One thing became clear to me. AI can hand you rapid prototypes, and that is trul
 
 In some ways I'm thrilled at the possibilities that AI will afford. In other ways I'm more convinced than ever that old-fashioned principles of writing and design are as relevant as before, and that putting in the hard work to achieve quality is as important as it has always been.
 
+## Under the hood {#under-the-hood}
+
+- **Quarto:** The site is built with [Quarto](https://quarto.org/), a publishing system made for technical and scientific reports. Numbered sections, figure cross-references, footnotes, and the table of contents come standard rather than bolted on.
+- **Markdown in GitHub:** Each section of the report is its own Markdown file in a public [GitHub repository](https://github.com/rrabil/interactive-storytelling-report), assembled into this single page.
+- **A custom conversion script:** The standard Word-to-Markdown converter dropped the figure numbers, cross-references, and some table formatting. A Python script read the Word file's internal XML to recover them, then compared the result against the original, word by word, to confirm nothing was lost.
+- **Lychee for link checking:** [Lychee](https://lychee.cli.rs/) checks every link on the page. All the in-page links work. Of the outside links, 18 from 2012 no longer resolve and stay as historical citations. The check also caught one link the conversion had broken.
+- **GitHub Pages:** The site is hosted on GitHub Pages, under my own domain.
+
 ## Changes in the 2026 edition {#changes-2026}
 
 The report text is as published in 2012, with these exceptions:
@@ -31,4 +39,4 @@ The report text is as published in 2012, with these exceptions:
 
 I am a principal technical writer and content engineer with 20+ years of experience documenting SaaS and enterprise software in startup and corporate environments.
 
-[Find me on LinkedIn](https://www.linkedin.com/in/rrabil/) · [Portfolio](https://rrabil.github.io/portfolio/)
+[Find me on LinkedIn](https://www.linkedin.com/in/rrabil/) · [Portfolio](https://portfolio.richardrabil.com/)

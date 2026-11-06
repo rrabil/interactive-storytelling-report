@@ -7,7 +7,7 @@
 ::: {.glance-row .top}
 [1]{.rank} [articy:draft]{.tool} [464]{.score}
 
-The strongest tool for managing a branching story end to end, but the most expensive. In 2012, conversation simulation and script export were still on its roadmap.
+The strongest tool for managing a branching story end to end, but the most expensive. In 2012, conversation simulation and script export were still on its roadmap. Both are available now.
 :::
 
 ::: {.glance-row}

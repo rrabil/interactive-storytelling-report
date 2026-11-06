@@ -27,7 +27,7 @@ In the "Other" field, I received the following responses: (1) "IS-Videodesigner,
 
 ![](media/image4.png){fig-alt="Chart of results for survey question 4 regarding dialogue tool usage."}
 
-In the "Other" category, I received the following responses: (1) "Post it notes," (2) "Scenejo," (3) "Final Draft, HTML," and (4) "UMLet (<http://www.umlet.com/)>."
+In the "Other" category, I received the following responses: (1) "Post it notes," (2) "Scenejo," (3) "Final Draft, HTML," and (4) "UMLet (<http://www.umlet.com/>)."
 :::
 
 ::: {.callout-note collapse="true" appearance="simple" icon="false"}

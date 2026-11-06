@@ -10,7 +10,7 @@
       <a class="pill primary" href="#results-at-a-glance">See the results<svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3v10M3.5 8.5 8 13l4.5-4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       <a class="pill ghost" href="#making-of">How it was made</a>
     </div>
-    <p class="splash-pdf"><a href="https://rrabil.github.io/portfolio/files/Rabil-Technical-Report-Software-Interactive-Storytelling.pdf">Original PDF (2012)</a></p>
+    <p class="splash-pdf"><a href="https://portfolio.richardrabil.com/files/Rabil-Technical-Report-Software-Interactive-Storytelling.pdf">Original PDF (2012)</a></p>
   </div>
 
   <div class="splash-graphic">

@@ -1,0 +1,24 @@
+# Link check for the built site (run after quarto render):
+#   lychee --config lychee.toml --root-dir "$PWD/_site" _site/index.html
+# Same base setup as the portfolio's lychee.toml.
+
+# Check in-page anchors (#section links) as well as pages.
+include_fragments = "anchor-only"
+
+exclude = [
+    # Blocks automated checkers (non-standard 999 status), not broken.
+    "^https://www\\.linkedin\\.com/in/",
+
+    # Dead since the report was written in 2012 (first Lychee run, 2026-11-06).
+    # Kept as historical citations, not updated or archived. Excluded so a run
+    # flags only new breakage.
+    "^http://social\\.bioware\\.com/",
+    "^http://www\\.nevigo\\.com/",
+    "^http://www\\.chat-mapper\\.com/purchase/",
+    "^http://www\\.digra\\.org/dl/db/",
+    "^http://www\\.linkedin\\.com/groupItem",
+    "^http://games\\.soe\\.ucsc\\.edu/",
+    "^http://support\\.urbanbrainstudios\\.com/",
+    "^http://www\\.angelmccoy\\.com/",
+    "^http://www\\.dialoguejunkie\\.com/",
+]

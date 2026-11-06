@@ -434,6 +434,9 @@ sub_once(" + ".join(f"{name} ({n})" for name, n in SCORES) + " = **463.86**",
          "::: {.score-sum}" + numbered([f"{name}: [{n}]{{.pts}}" for name, n in SCORES])
          + "[Total:]{.total-label} [463.86]{.pts}\n:::")
 
+# Pandoc swallowed the closing parenthesis into the UMLet link (found by Lychee).
+sub_all("<http://www.umlet.com/)>", "<http://www.umlet.com/>)", 2)
+
 # Round 3: cross-references say "see", not "please see".
 sub_all("please see ", "see ", 5)
 sub_all("Please see ", "See ", 9)
