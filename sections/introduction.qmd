@@ -1,0 +1,23 @@
+# 1 Introduction {#introduction}
+
+Video game writers and designers have a wide range of available software tools to choose from when developing non-linear, interactive stories. However, there are few sources of information that offer an in-depth evaluation of how well such tools address the unique challenges of writing stories for an interactive medium. One article titled "Game Scriptwriting Software" (2010), for example, summarizes several tools designed with game writers in mind, but does not analyze each tool's strengths and weaknesses. Moreover, in an article on the exceptional difficulties of non-linear storytelling, McIntosh et al. (2010) contend that tools tailored to the authoring needs of video games require improvement. However, the article falls short of recommending methods or procedures on how such tools should be evaluated. And as a recent conversation on a LinkedIn forum for game writers suggests (Jack 2011), game writers and designers have many ideas about which tools best support game writing, yet none of the participants shared links to resources that assess the capabilities, strengths, or weaknesses of the tools that were referenced. In short, what is needed is an up-to-date, systematic evaluation of available game writing tools to help writers and designers make an informed decision on which tool is the most appropriate for their situation.
+
+In this report, the findings of an in-depth evaluation of four software tools for interactive storytelling are presented. The four tools evaluated were articy:draft (beta), Chat Mapper, Microsoft Excel 2007, and the Dragon Age Toolset. The method of evaluation involved four components:
+
+-   A selection of tools to evaluate.
+-   A review of the literature on software tools and non-linear storytelling.
+-   A web-based survey to determine the priorities of game writers and designers when evaluating software.
+-   Hours of firsthand testing and scoring of each tool's capabilities.
+
+The results of the evaluation suggest that articy:draft is the most promising and useful tool for game writers. Chat Mapper ranked second and the Dragon Age Toolset ranked third, with Excel coming in a close fourth. articy:draft ranked highest for a number of reasons, the most important being its innovative, user-friendly integration of the high-level process of managing non-linear story components, such as different narrative paths and alternate endings, with the low-level activity of writing essential narrative elements, such as interactive conversations and character sheets.
+
+Although articy:draft received the highest score, this report also reveals a wide variation in each tool's strengths and weaknesses, and accentuates the need for practitioners to base their selection on contextual factors. Indeed, articy:draft could be the wrong tool depending on a project's individual priorities, constraints, and requirements. In fact, articy:draft scored low in several important areas where other tools have an obvious advantage, such as the ability to simulate conversations and export content to other document formats. The results show, in other words, that when a few or even a single variable in the selection process (such as cost) changes, the relative value of a tool can shift dramatically. Recommendations are therefore given to show how the other tools in this evaluation will deliver greater value than the others, depending on the situation.
+
+The content in this report is divided into nine major sections.
+
+-   *[Section 2](#background)* includes a conceptual overview of key terms and concepts in game writing, interactive storytelling, and narrative design.
+-   *[Section 3](#methodology)* describes the methods used to conduct the evaluation.
+-   *[Section 4](#results)* details the results of the evaluation, including a visual summary of the features each tool possesses, and a matrix showing the scores each tool received.
+-   *[Section 5](#discussion)* analyzes the results, compares the strengths and weaknesses of each tool, and presents high-level recommendations on how game writers and designers can select a software tool that best suits their circumstances.
+-   *[Section 6](#conclusion)* offers concluding remarks and suggests how future research in this area might be conducted.
+-   *Sections 7- 10* contain the bibliography and appendices.

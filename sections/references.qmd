@@ -1,0 +1,33 @@
+# Bibliography {#bibliography}
+
+Bateman, C. (2007). Dialogue Engine. In C. Bateman (Ed.), *Game Writing: Narrative Skills for Videogames*. Boston: Charles River Media.
+
+Border, P. (2005). Dialog as a Game. *Proceedings of DiGRA 2005 Conference: Changing Views -- Worlds in Play*. Presented at the Changing Views: Worlds in Play, Vancouver: Digital Games Research Association. Retrieved from <http://www.digra.org/dl/db/06278.58299.pdf>
+
+Brusk, J., & Bjork, S. (2009). Gameplay Design Patterns for Game Dialogues. Breaking New Ground: Innovation in Games, Play, Practice and Theory. Proceedings of DiGRA 2009. Retrieved from <http://www.digra.org/dl/db/09287.59480.pdf>
+
+Dille, F., & Platten, J. (2007). The Ultimate Guide to Video Game Writing and Design. New York: Random House, Inc.
+
+Dinehart, S. (2011, November 11). Game Writers in the Trenches™ 8: Mary DeMarle. Narrative Designer. Retrieved November 19, 2011, from <http://narrativedesign.org/>.
+
+Ellison, B. (2008, July 8). Defining Dialogue Systems. *Gamasutra*. Retrieved October 29, 2011, from <http://www.gamasutra.com/view/feature/3719/defining_dialogue_systems.php>.
+
+Erickson, D. (2009). Writing for Role-Playing Games. In W. Despain (Ed.), *Writing for Video Game Genres: From FPS to RPG*. Wellesley, MA: A K Peters, Ltd.
+
+Game Scriptwriting Software. (2010, November 1).*GameFiction: Games and Story*. Retrieved November 19, 2011, from <http://www.gamefiction.com/2010/11/01/game-scriptwriting-software/>.
+
+Jack, Alan. (2011, May). Tools For Dialogue Writers. Message posted to <http://www.linkedin.com/groupItem?view=&gid=89330&type=member&item=50128027&qid=4b42f6b3-e2eb-4666-8dd0-6d231f4a3a77&trk=group_most_popular-0-b-ttl&goback=%2Egmp_89330>.
+
+Keeling, Chris. (2011, March). Fellow game writers! Wow, what a great GDC! For those of you who didn\'t get to go, here are some highlights\... Message posted to <http://www.linkedin.com/groupItem?view=&gid=89330&type=member&item=46026390&goback=%2Egmp_89330%2Egde_89330_member_50128027>.
+
+McDevitt, D. (2010, October 13). A Practical Guide to Game Writing. Gamasutra. Retrieved November 14, 2011, from <http://www.gamasutra.com/view/feature/6171/a_practical_guide_to_game_writing.php>
+
+McCoy, A. (2011, June 15). "What's Game Writing Like?" Angel Leigh McCoy. Retrieved November 20, 2011, from <http://www.angelmccoy.com/blog/?p=1789>.
+
+McIntosh, B., Cohn, R., & Grace, L. (2010, August 17). Nonlinear Narrative in Games: Theory and Practice - GameCareerGuide.com. Game Career Guide. Retrieved November 19, 2011, from <http://www.gamecareerguide.com/features/882/nonlinear_narrative_in_games_.php>.
+
+Owen, C., Biocca, F., Bohil, C., & Conley, J. (2008, April 30). SimDialog: A Visual Game Dialog Editor. Cornell University Library. Retrieved from <http://arxiv.org/abs/0804.4885>.
+
+Stuart, K. (2010, March 16). Voicing concerns: the problem with video game acting. Guardian.co.uk. Retrieved October 22, 2011, from <http://www.guardian.co.uk/technology/gamesblog/2010/mar/16/games-controversy>
+
+Skorupski, J., & Mateas, M. (2009). Interactive Story Generation for Writers: Lessons Learned from the Wide Ruled Authoring Tool. Presented at the Proceedings of the 8th Digital Art and Culture Conference (DAC), Irvine, CA. Retrieved from <http://games.soe.ucsc.edu/interactive-story-generation-writers-lessons-learned-wide-ruled-authoring-tool>.

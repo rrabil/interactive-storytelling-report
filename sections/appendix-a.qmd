@@ -1,0 +1,41 @@
+# 8 Appendix A: Rationale for Tool Selection {#appendix-a-rationale-for-tool-selection}
+
+As discussed above in [Section 3.1](#tool-selection), "Tool Selection," I developed a list of prominent tools that can be, have been, or currently are used for interactive storytelling in video games. After reviewing secondary sources of information about game writing, including discussion forums for game writers (such as Keeling, 2011), I identified 12 different tools and grouped them under three major categories, as shown in the list below.
+
+-   Tools designed specifically for the needs of an interactive medium
+
+    -   articy:draft (www.nevigo.de)
+
+    -   Chat Mapper (www.chat-mapper.com)
+
+    -   ChoiceScript (www.choiceofgames.com)
+
+    -   Wide Ruled (http://eis.ucsc.edu/Wide_Ruled)
+
+-   Proprietary game engines or toolsets that include "dialogue editors" or "conversation editors"
+
+    -   Aurora Toolset (Included with the PC version of Neverwinter Nights™)
+
+    -   Dragon Age Toolset (http://social.bioware.com/page/da-toolset)
+
+    -   The Garden of Eden Creation Kit (GECK) (http://geck.bethsoft.com/index.php/Main_Page)
+
+-   Tools designed for traditional, linear storytelling or for more generic content authoring purposes
+
+    -   Celtx (www.celtx.com)
+
+    -   Microsoft Excel (www.microsoft.com)
+
+    -   MediaWiki (www.mediawiki.org)
+
+    -   Microsoft Word (www.microsoft.com)
+
+    -   Scrivener ([www.literatureandlatte.com](http://www.literatureandlatte.com))
+
+Also as described above in [Section 3.1](#tool-selection), I applied several criteria to narrow the list down, and I ultimately selected articy:draft (beta), Chat Mapper, the DA Toolset, and Microsoft Excel (2007) from the list. My rationale for selecting these tools was threefold:
+
+-   The tools are representative of three of the most common categories of tools that narrative writers and designers are likely to encounter (proprietary toolsets, third-party software specifically designed for non-linear storytelling, and third-party software dedicated broadly to content authoring).
+
+-   Three of the four tools (i.e., articy:draft, Chat Mapper, and the DA Toolset) were designed with game writers and designers in mind. There are, of course, other tools that have been specifically designed for game writing, such as Wide Ruled (Skorupski, 2009). However, Wide Ruled is still a work in progress, and Chat Mapper and articy:draft are more mature by comparison. I considered including screenwriting or novel writing tools like Scrivener and Celtx in my evaluation, but I eventually decided to exclude them in favor of tools developed with video games in mind, and also because of time constraints.
+
+-   The inclusion of Excel offers a well-known tool against which the other tools could be compared conceptually. As revealed in the results of my survey, Excel is the most commonly-used tool among those who took the survey (next to Microsoft Word).

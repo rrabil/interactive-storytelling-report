@@ -1,0 +1,34 @@
+# Making Of {#making-of}
+
+*New in the 2026 web edition.*
+
+I turned this report into a website as an experiment in AI. How hard would it be, I wondered, to have Claude Code transform a complex technical document I had produced more than 10 years ago to a dynamic interactive online experience?
+
+The data in the report would be outdated, of course. The tools it discusses have long been superseded or have evolved substantially. (Or so I assume. I have not dabbled in gaming industry discourse in years.) But the subject in question—branching narratives for video game stories—has always appealed to my writerly interests, and the structure of the document was well suited for the web medium.
+
+I soon started picturing the process and had a vision of a hero splash page, a modern typography and color scheme, and a vertically scrolling experience. All this I described to Claude Cowork in detail, providing examples and guidelines, and directing the creation of a spec which I then passed to Claude Code as a sort of spec-driven development approach.
+
+The design, it turns out, was fairly easy to realize since I already had a solid foundation to expand upon. The first major decision was to select Quarto as the static site generator, since it was developed with data-driven reports in mind. I already had a GitHub repo, the source content and graphics, and so Claude Code built me a basic web preview so I could approve the shell. I then reviewed a few mock designs for the hero.
+
+And yet my work was not done so quickly as all that. As I read through the report, I realized it needed some other editorial and design adjustments to flow better as an online experience. It needed a tighter summary above the fold, a more useful breakdown of results, more links and lists rather than dense blocks of text.
+
+Even so it was a satisfying process. It has always been frustrating for me as a writer to have a vision and a particular taste but not the technical or design resources to implement it. But for this effort I got all of that, and after multiple iterations I'm pleased with how it came out.
+
+One thing became clear to me. AI can hand you rapid prototypes, and that is truly miraculous. But as with the pre-AI world of tech, it takes discipline, and patience, to slow down and really look at the prototypes and put yourself in the shoes of the user. With AI, you can build something in no time. But is that something truly impressive or does it disappoint the more you squint at it?
+
+In some ways I'm thrilled at the possibilities that AI will afford. In other ways I'm more convinced than ever that old-fashioned principles of writing and design are as relevant as before, and that putting in the hard work to achieve quality is as important as it has always been.
+
+## Changes in the 2026 edition {#changes-2026}
+
+The report text is as published in 2012, with these exceptions:
+
+- Corrected a few errors in the original, such as citation details and stray characters.
+- Broke dense passages into lists and added links between sections.
+- Made labels and cross-references consistent, and replaced bare web addresses with titled links.
+- Removed the closing request for reader feedback.
+
+## About the Author {#about}
+
+I am a principal technical writer and content engineer with 20+ years of experience documenting SaaS and enterprise software in startup and corporate environments.
+
+[Find me on LinkedIn](https://www.linkedin.com/in/rrabil/) · [Portfolio](https://rrabil.github.io/portfolio/)

@@ -1,0 +1,35 @@
+---
+title: "An Evaluation of Software Tools for Interactive Storytelling"
+author: "Richard Rabil, Jr."
+date: "January 5, 2012"
+image: og-image.png
+image-alt: "Title card: An Evaluation of Software Tools for Interactive Storytelling, with a branching dialogue tree and the 2012 final scores."
+---
+
+{{< include sections/splash.qmd >}}
+
+{{< include sections/at-a-glance.qmd >}}
+
+{{< include sections/abstract.qmd >}}
+
+{{< include sections/introduction.qmd >}}
+
+{{< include sections/background.qmd >}}
+
+{{< include sections/methodology.qmd >}}
+
+{{< include sections/results.qmd >}}
+
+{{< include sections/discussion.qmd >}}
+
+{{< include sections/conclusion.qmd >}}
+
+{{< include sections/appendix-a.qmd >}}
+
+{{< include sections/appendix-b.qmd >}}
+
+{{< include sections/appendix-c.qmd >}}
+
+{{< include sections/references.qmd >}}
+
+{{< include sections/making-of.qmd >}}

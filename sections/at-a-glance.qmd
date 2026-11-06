@@ -1,0 +1,35 @@
+# Results at a glance {#results-at-a-glance}
+
+[New in the 2026 web edition: a scoring summary of the report's 2012 totals. This is a condensed version of the recommendations in [Section 5.3](#which-tool-should-i-get-summary-of-recommendations).]{.edition-label}
+
+::: {.glance}
+
+::: {.glance-row .top}
+[1]{.rank} [articy:draft]{.tool} [464]{.score}
+
+The strongest tool for managing a branching story end to end, but the most expensive. In 2012, conversation simulation and script export were still on its roadmap.
+:::
+
+::: {.glance-row}
+[2]{.rank} [Chat Mapper]{.tool} [401]{.score}
+
+Easy to learn, free for personal use, and has a conversation simulator, but it needs some Lua scripting and can't manage multiple narrative paths.
+:::
+
+::: {.glance-row}
+[3]{.rank} [DA Toolset]{.tool} [333]{.score}
+
+Lets you build and play a working game, at the cost of a very high learning curve and subpar documentation.
+:::
+
+::: {.glance-row}
+[4]{.rank} [Excel]{.tool} [330]{.score}
+
+Cheap, familiar, and flexible, but every cross-reference, condition, and name change has to be updated by hand.
+:::
+
+:::
+
+::: {.glance-links}
+[How the tools were scored: Methodology](#methodology) [Full score table](#results-from-weightings-and-subjective-scoring-process)
+:::

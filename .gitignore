@@ -1,0 +1,7 @@
+/.quarto/
+/_site/
+
+**/*.quarto_ipynb
+/_notes/
+/_source/*
+!/_source/*.py

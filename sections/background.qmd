@@ -1,0 +1,46 @@
+# 2 Background {#background}
+
+## 2.1 Intended Audience {#intended-audience}
+
+This report was planned, designed, and written with three groups of people in mind:
+
+-   Primary audience: Game writers, narrative designers, and game designers at various levels of experience, including working professionals and students.
+
+-   Secondary audience: Developers, project managers, or other game development staff involved in the process of integrating content from third-party tools into a game engine or game production pipeline.
+
+-   Tertiary audience: Owners, builders, or designers of the tools I evaluated.
+
+Given such a wide audience, this report was written to accommodate readers with varying levels of experience with game writing and design. Readers are encouraged to bypass explanations of key terms and concepts they already understand.
+
+## 2.2 Terms and Definitions {#terms-and-definitions}
+
+To ensure consistency in terminology, and to aid any readers who may be unfamiliar with some of the key concepts behind game writing, interactive storytelling, or narrative design, this section presents a list of terms and definitions that will be used throughout this report.
+
+-   **Interactive dialogue (or branching dialogue)**. In this report, the term "interactive dialogue" is used to mean a form of in-game conversation that allows the player-character (PC) to choose options from a "conversation menu" or "dialogue tree" and obtain appropriate responses from an non-player character (NPC) (Howard, 69). The terms "interactive dialogue," "branching dialogue," "branching conversations," and "interactive conversations" are used synonymously. @fig-skyrim shows an example of branching dialogue from *The Elder Scrolls V: Skyrim*.
+
+    ![An example of basic branching dialogue from The Elder Scrolls V: Skyrim, published by Bethesda Softworks in November, 2011.](media/image2.jpeg){#fig-skyrim fig-alt="Screenshot of scene from The Elder Scrolls V: Skyrim to demonstrate basic branching dialogue."}
+
+
+-   **Interactive storytelling**: "Interactive storytelling" is a broad and generic term used in this report to cover a field of theory and practice that spans multiple mediums, including video games. The terms "interactive storytelling" and "non-linear storytelling" are used synonymously. As McIntosh et al. explain, "Linear stories are written in such a way that the player progresses by reaching predetermined sequential plot points," whereas non-linear storytelling "includes games that dynamically generate plot elements and alter potential endings based not only on the choices a player makes, but also on other factors such as their performance, timing, or other circumstances tied to the narrative." Games such as *Mass Effect*, *Heavy Rain, Fallout 3,* and *Deus Ex: Human Revolution* are considered games with non-linear stories. As will be discussed at length in [Section 3.2](#literature-review), games with non-linear stories pose unique challenges to game writers, and have important implications for the way software tools are evaluated.
+
+-   **Dialogue tree.** "Dialogue tree" is a metaphor used in this report to describe the underlying structure or mechanism of branching dialogue. Although the term has been questioned[^1] and outright rejected[^2], it is commonly used in game design parlance, and several relevant terms and concepts are associated with the metaphor, which I have summarized below.
+
+    -   *Conversation editor*: A software interface specifically designed to support the structuring, authoring, and editing of text for interactive conversations. A conversation editor is usually a part of a toolset or game engine and has special features for video game writing, such as the ability to add conditions and update variables in the game.
+
+    -   *Node*: A basic unit of dialogue that either the PC or non-player (NPC) speaks in a game.
+
+    -   *Branch*: As game writer Mat Jobe explains, in the context of a dialogue tree a branch is a "A node and all its subordinate (lower) nodes."
+
+    -   *Link*: A link in the context of a dialogue tree is a hyperlink between units of dialogue. "Rather than have their own subordinates, some nodes may link to existing nodes" (Jobe).
+
+-   **Game writing.** In this report, "game writing" is used to mean the process and practice of composing the script of the game, as well as developing a game's plotline, quests, characters, back story, and lore. Not all game writers perform these activities for every video game project, but books such as Dille and Platten's *The Ultimate Guide to Video Game Writing* (2007) suggest that game writing as a discipline does encompass these activities.
+
+-   **Game writer.** The term "game writer" is used in this report to mean a professional whose primary responsibility is to compose the text for a variety of narrative components of a video game. Experienced game writer Angel Leigh McCoy (2011) has classified these types of writing in several ways: scenes between NPCs, talk lines, conversations, cinematics, UI text for menus, reward text, tool tips, and instructional text. I try to use the term "game writer" consistently in this report, but do not intend it to be too restrictive. For example, "game writer" may apply to a student who is studying game writing but is not yet employed; a hobbyist who does a lot of game writing for her user-generated game content; or a game designer who spends half of her time writing dialogue and designing quests. The term has significant overlap with a "narrative designer."
+
+-   **Narrative design**. "Narrative design" is used in this report to mean the entire process and practice of communicating story in a video game. Narrative design not only encompasses game writing, but the technical methods through which story is convey through the medium of video games. For example, a narrative designer may be involved in the design of the levels, gameplay, sound, lighting, and interaction to ensure all elements are appropriate within a game's narrative context and consistent with the overarching narrative themes. Although I often use the terms "game writer" and "narrative designer" in the same sentence, I do not mean to say they are the same, although they may often perform similar activities.
+
+-   **Game engine.** A game engine is a software system for creating video game. Game engines typically have integrated tools for the fundamental components of game design, such as graphics rendering, animation, sound, scripting, and a host of other functions. In this report, I have used the terms "game engine" and "toolset" more or less synonymously. Examples of toolsets include the DA Toolset developed by BioWare, and the Garden of Eden Creation Kit™ developed by Bethesda Softworks.
+
+[^1]: For instance, game writer Chris Bateman (2007) had said, "Despite the name, dialogue trees are seldom trees but rather converging and diverging chains of conversation" (277). Game writer Mat Jobe prefers the metaphor of a stream rather over a tree.
+
+[^2]: See, for instance, game writer and designer Steve Ince's "The Conversation" (2010) at <http://www.develop-online.net/features/905/The-Conversation>. Also, it is worth noting that two of the survey participants in this study wanted the ability to ignore a dialogue tree structure and use a flatter structure for dialogue, and to toggle back to a branching structure if required.

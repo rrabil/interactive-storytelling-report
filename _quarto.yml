@@ -1,0 +1,51 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+  resources:
+    - og-image.png
+
+website:
+  title: "Richard Rabil, Jr."
+  # Link previews (LinkedIn, Slack, iMessage). og-image.png is a 1200x630 shot of
+  # _source/og-card.html, a local-only mirror of the splash.
+  site-url: https://rrabil.github.io/interactive-storytelling-report/
+  description: "Four tools for game writing selected, tested hands-on for 40+ hours, and scored against priorities from a 33-person industry survey."
+  image: og-image.png
+  open-graph:
+    title: "An Evaluation of Software Tools for Interactive Storytelling"
+    image-width: 1200
+    image-height: 630
+  twitter-card:
+    title: "An Evaluation of Software Tools for Interactive Storytelling"
+    card-style: summary_large_image
+  navbar:
+    left:
+      - text: Results
+        href: index.qmd#results-at-a-glance
+      - text: Report
+        href: index.qmd#abstract
+      - text: Appendices
+        href: index.qmd#appendix-a-rationale-for-tool-selection
+      - text: Making Of
+        href: index.qmd#making-of
+      - text: About
+        href: index.qmd#about
+
+format:
+  html:
+    theme: editorial.scss
+    pagetitle: "An Evaluation of Software Tools for Interactive Storytelling"
+    toc: true
+    toc-depth: 2
+    toc-location: right
+    toc-title: Contents
+    # Footnotes print at the end of the section that cites them (Section 2),
+    # not after About the Author at the bottom of the page.
+    reference-location: section
+    lang: en
+
+crossref:
+  fig-title: Figure
+  title-delim: "."

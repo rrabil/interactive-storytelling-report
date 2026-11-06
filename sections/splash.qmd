@@ -1,0 +1,82 @@
+::: {.column-screen .splash}
+
+```{=html}
+<section class="splash-main" aria-label="Introduction">
+  <div class="splash-text">
+    <span class="splash-tag"><span>2026 web edition</span><span class="sep" aria-hidden="true">/</span><span class="provenance">First published January 2012</span></span>
+    <h1 class="splash-title">An Evaluation of Software Tools for <em>Interactive Storytelling</em></h1>
+    <p class="splash-abstract">Four tools for game writing selected (articy:draft, Chat Mapper, the Dragon Age Toolset, and Excel), tested hands-on for 40+ hours, and scored against priorities from a 33-person industry survey.</p>
+    <div class="splash-actions">
+      <a class="pill primary" href="#results-at-a-glance">See the results<svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3v10M3.5 8.5 8 13l4.5-4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a class="pill ghost" href="#making-of">How it was made</a>
+    </div>
+    <p class="splash-pdf"><a href="https://rrabil.github.io/portfolio/files/Rabil-Technical-Report-Software-Interactive-Storytelling.pdf">Original PDF (2012)</a></p>
+  </div>
+
+  <div class="splash-graphic">
+    <svg viewBox="0 0 580 640" role="img" aria-label="A branching dialogue tree: one starting node splits into branches that diverge, converge, and link back, with one highlighted path showing a player's route through the conversation.">
+      <g stroke="#5c5c5c" stroke-width="1.5" fill="none">
+        <line class="draw d1" pathLength="1" x1="290" y1="40" x2="120" y2="170"/>
+        <line class="draw d1" pathLength="1" x1="290" y1="40" x2="460" y2="170"/>
+        <line class="draw d2" pathLength="1" x1="120" y1="170" x2="60" y2="300"/>
+        <line class="draw d2" pathLength="1" x1="120" y1="170" x2="170" y2="300"/>
+        <line class="draw d2" pathLength="1" x1="290" y1="170" x2="340" y2="300"/>
+        <line class="draw d2" pathLength="1" x1="460" y1="170" x2="460" y2="300"/>
+        <line class="draw d3" pathLength="1" x1="60" y1="300" x2="60" y2="430"/>
+        <line class="draw d3" pathLength="1" x1="170" y1="300" x2="170" y2="430"/>
+        <line class="draw d3" pathLength="1" x1="340" y1="300" x2="340" y2="430"/>
+        <line class="draw d3" pathLength="1" x1="460" y1="300" x2="410" y2="430"/>
+        <line class="draw d3" pathLength="1" x1="460" y1="300" x2="520" y2="430"/>
+        <line class="draw d4" pathLength="1" x1="170" y1="430" x2="220" y2="570"/>
+        <line class="draw d4" pathLength="1" x1="340" y1="430" x2="420" y2="570"/>
+        <line class="draw d4" pathLength="1" x1="410" y1="430" x2="420" y2="570"/>
+      </g>
+      <path class="fade d5" d="M520 430 C 575 330, 540 210, 302 172" stroke="#8a8a8a" stroke-width="1.5" stroke-dasharray="5 6" fill="none"/>
+      <g stroke="#C00000" stroke-width="3" fill="none" stroke-linecap="round">
+        <line class="draw d1" pathLength="1" x1="290" y1="40" x2="290" y2="170"/>
+        <line class="draw d2" pathLength="1" x1="290" y1="170" x2="240" y2="300"/>
+        <line class="draw d3" pathLength="1" x1="240" y1="300" x2="250" y2="430"/>
+        <line class="draw d4" pathLength="1" x1="250" y1="430" x2="220" y2="570"/>
+      </g>
+      <g class="fade d1" fill="#0b0b0b" stroke="#bdbab3" stroke-width="1.5">
+        <circle cx="120" cy="170" r="7"/><circle cx="460" cy="170" r="7"/>
+        <circle cx="60" cy="300" r="7"/><circle cx="170" cy="300" r="7"/><circle cx="340" cy="300" r="7"/><circle cx="460" cy="300" r="7"/>
+        <circle cx="60" cy="430" r="7"/><circle cx="170" cy="430" r="7"/><circle cx="340" cy="430" r="7"/><circle cx="410" cy="430" r="7"/><circle cx="520" cy="430" r="7"/>
+        <circle cx="420" cy="570" r="7"/>
+      </g>
+      <g class="fade d1" fill="#C00000">
+        <circle cx="290" cy="40" r="11"/><circle cx="290" cy="170" r="8"/><circle cx="240" cy="300" r="8"/><circle cx="250" cy="430" r="8"/><circle cx="220" cy="570" r="8"/>
+      </g>
+      <g class="fade d5" font-family="IBM Plex Mono, monospace" font-size="12" letter-spacing="2" fill="#9a9a9a">
+        <text x="312" y="44">NODE</text>
+        <path d="M30 160 L18 160 L18 440 L30 440" stroke="#5c5c5c" stroke-width="1" fill="none"/>
+        <text x="0" y="146">BRANCH</text>
+        <text x="548" y="270" text-anchor="end">LINK</text>
+        <text x="236" y="612">PLAYER'S PATH</text>
+      </g>
+    </svg>
+  </div>
+</section>
+
+<div class="splash-scores">
+  <span class="label">Final scores, 2012</span>
+  <span class="tool"><span class="dot" aria-hidden="true"></span>articy:draft <strong>464</strong></span>
+  <span class="tool">Chat Mapper <strong>401</strong></span>
+  <span class="tool">DA Toolset <strong>333</strong></span>
+  <span class="tool">Excel <strong>330</strong></span>
+  <a class="scroll" href="#results-at-a-glance">Scroll<svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3v10M3.5 8.5 8 13l4.5-4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+</div>
+
+<script>
+  // Hide the floating TOC while the splash is on screen.
+  (function () {
+    var splash = document.querySelector(".splash");
+    if (!splash || !("IntersectionObserver" in window)) return;
+    new IntersectionObserver(function (entries) {
+      document.body.classList.toggle("splash-in-view", entries[0].intersectionRatio > 0.25);
+    }, { threshold: [0, 0.25, 1] }).observe(splash);
+  })();
+</script>
+```
+
+:::

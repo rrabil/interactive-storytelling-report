@@ -1,0 +1,440 @@
+/*-- scss:defaults --*/
+
+// Editorial direction (spec decision, 2026-10-30): black background, off-white text,
+// Instrument Serif headlines, IBM Plex Sans body, IBM Plex Mono labels, accent #C00000.
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap");
+
+$ink: #0b0b0b;
+$paper: #f5f3ee;
+$muted: #cfcac0;
+$dim: #9a9a9a;
+$faint: #5c5c5c;
+$rule: #262626;
+$surface: #151515;
+$accent: #c00000;
+
+$body-bg: $ink;
+$body-color: $muted;
+$headings-color: $paper;
+$link-color: $paper;
+$border-color: $rule;
+
+$font-family-sans-serif: "IBM Plex Sans", system-ui, sans-serif;
+$font-family-monospace: "IBM Plex Mono", ui-monospace, monospace;
+$headings-font-family: "Instrument Serif", Georgia, serif;
+$headings-font-weight: 400;
+$font-size-root: 17px;
+$line-height-base: 1.65;
+
+$navbar-bg: $ink;
+$navbar-fg: $muted;
+$navbar-hl: #ffffff;
+
+$table-color: $muted;
+$table-bg: transparent;
+$table-border-color: $rule;
+
+$code-color: $paper;
+$code-bg: $surface;
+
+$toc-color: $dim;
+$toc-active-border: $accent;
+
+$callout-color-note: $dim;
+$callout-color-warning: $accent;
+
+$footer-bg: $ink;
+
+/*-- scss:rules --*/
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+// The splash carries the title; Quarto's title block would repeat it.
+#title-block-header {
+  display: none;
+}
+
+// Long 2012 URLs (e.g. the Amazon link in the cost table) must wrap on phones.
+// Only links break anywhere; other cell text breaks between words, so narrow
+// columns ("◐ Partial", "Hobbyist") keep whole words.
+a.uri {
+  overflow-wrap: anywhere;
+}
+td {
+  overflow-wrap: break-word;
+}
+
+// The 5.1 and 5.2 grids compare the four tools side by side: equal columns.
+#summary-of-each-tools-strengths-and-weaknesses table,
+#cost-comparison table {
+  table-layout: fixed;
+}
+
+a {
+  text-decoration-color: rgba($accent, 0.9);
+  text-underline-offset: 0.18em;
+  &:hover {
+    color: #ffffff;
+    text-decoration-color: #ffffff;
+  }
+}
+
+// Mono label style shared by the navbar, tags, and small captions.
+@mixin label {
+  font-family: $font-family-monospace;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.navbar {
+  border-bottom: 1px solid $rule;
+  .navbar-brand,
+  .navbar-title {
+    @include label;
+    letter-spacing: 0.14em;
+    color: $paper;
+  }
+  .nav-link {
+    @include label;
+  }
+}
+
+// Report headings
+main h1, main .h1 {
+  font-size: clamp(2.4rem, 4vw, 3.2rem);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  margin-top: 3.5rem;
+  border-bottom: none;
+}
+main h2, main .h2 {
+  font-size: clamp(1.8rem, 3vw, 2.2rem);
+  line-height: 1.1;
+  margin-top: 2.5rem;
+  border-bottom: none;
+}
+main h3, main .h3 {
+  font-family: $font-family-sans-serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  margin-top: 2rem;
+}
+
+strong {
+  color: $paper;
+  font-weight: 600;
+}
+
+// Tables
+.table {
+  font-size: 0.9rem;
+  > thead {
+    border-bottom: 1px solid $faint;
+    th {
+      @include label;
+      font-size: 12px;
+      font-weight: 500;
+      color: $paper;
+      vertical-align: bottom;
+    }
+  }
+}
+
+// Header rows stay pinned while a long table scrolls past (desktop only; on phones
+// tables scroll inside their own box, which rules out sticky). Quarto's navbar hides
+// on scroll down and returns on scroll up, so the header sits under it only when shown.
+@media (min-width: 768px) {
+  main .table > thead th {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: $ink;
+    box-shadow: inset 0 -1px 0 $faint;
+    transition: top 0.2s ease;
+  }
+  body:has(#quarto-header.headroom--pinned) main .table > thead th,
+  body:has(#quarto-header:not(.headroom)) main .table > thead th {
+    top: var(--sticky-top, 57px);
+  }
+}
+
+// Wide tables (score table, survey tables) scroll inside themselves on phones
+// instead of widening the page.
+@media (max-width: 767.98px) {
+  main table {
+    display: block;
+    overflow-x: auto;
+    max-width: 100%;
+  }
+}
+
+// Figures
+figcaption,
+.figure-caption {
+  color: $dim;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.quarto-figure img {
+  border: 1px solid $rule;
+}
+
+// Callouts
+.callout {
+  background: $surface;
+  border-color: $rule;
+}
+.callout .callout-title-container,
+.callout-header {
+  color: $paper;
+}
+
+// The report's "Note:" paragraphs: a red rule and a mono label, lighter than a callout.
+.report-note {
+  margin: 1.75rem 0;
+  padding: 0.15rem 0 0.15rem 1.25rem;
+  border-left: 2px solid $accent;
+  color: $dim;
+  p:last-child { margin-bottom: 0; }
+  > p:first-child > strong:first-child {
+    @include label;
+    display: block;
+    margin-bottom: 0.35rem;
+    color: $paper;
+    font-weight: 500;
+  }
+}
+
+// The 3.4.3 worked example: categories on the left, scores in a right-aligned
+// mono column, and a ruled total underneath.
+.score-sum {
+  max-width: 34rem;
+  margin: 1rem 0 1.75rem;
+  ol { margin: 0; padding-left: 1.5rem; }
+  li { padding: 0.2rem 0; }
+  li::marker { font-family: $font-family-monospace; color: $dim; }
+  li .pts { float: right; padding-left: 1rem; }
+  .pts {
+    margin-left: auto;
+    font-family: $font-family-monospace;
+    color: $paper;
+    font-variant-numeric: tabular-nums;
+  }
+  ol + p {
+    display: flex;
+    margin: 0.5rem 0 0;
+    padding: 0.6rem 0 0 1.5rem;
+    border-top: 1px solid $faint;
+    color: $paper;
+    font-weight: 600;
+  }
+}
+
+// Floating TOC
+#TOC .toc-title,
+#toc-title {
+  @include label;
+  color: $dim;
+}
+
+// ---------------------------------------------------------------- splash (2026)
+
+.splash {
+  min-height: calc(100svh - 64px);
+  display: flex;
+  flex-direction: column;
+  color: $paper;
+  margin-top: 0 !important;
+}
+
+.splash-main {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 48px;
+  padding: 40px clamp(16px, 5vw, 80px) 56px;
+}
+
+.splash-text {
+  flex: 999 1 560px;
+  min-width: 0;
+  max-width: 780px;
+}
+
+.splash-tag {
+  @include label;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 10px;
+  border: 1px solid $paper;
+  border-radius: 999px;
+  padding: 8px 18px;
+  .sep { color: $faint; }
+  .provenance { color: $dim; }
+}
+
+.splash-title {
+  margin: 32px 0 28px !important;
+  font-family: $headings-font-family;
+  font-weight: 400;
+  font-size: clamp(48px, 7.2vw, 116px) !important;
+  line-height: 0.95 !important;
+  letter-spacing: -0.02em;
+  color: $paper;
+  em { font-style: italic; }
+}
+
+.splash-abstract {
+  margin: 0;
+  max-width: 580px;
+  font-size: 19px;
+  line-height: 1.55;
+  color: $muted;
+}
+
+.splash-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 56px;
+  padding: 0 30px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  &.primary {
+    background: $accent;
+    color: #ffffff;
+    &:hover { background: lighten($accent, 6%); color: #ffffff; }
+  }
+  &.ghost {
+    border: 1px solid $paper;
+    color: $paper;
+    &:hover { background: $paper; color: $ink; }
+  }
+}
+
+.splash-pdf {
+  margin: 28px 0 0;
+  font-family: $font-family-monospace;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  a { color: $muted; }
+}
+
+.splash-graphic {
+  flex: 1 1 420px;
+  min-width: 0;
+  max-width: 560px;
+  margin: 0 auto;
+  svg { display: block; width: 100%; height: auto; }
+}
+
+.splash-scores {
+  @include label;
+  border-top: 1px solid $rule;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px 40px;
+  padding: 22px clamp(16px, 5vw, 80px);
+  letter-spacing: 0.08em;
+  .label { color: $dim; }
+  .tool { color: $muted; display: inline-flex; align-items: center; gap: 10px; }
+  .tool strong { color: $paper; font-weight: 500; }
+  .dot { width: 8px; height: 8px; border-radius: 999px; background: $accent; }
+  .scroll { margin-left: auto; display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: $muted; }
+}
+
+// The tree is fully visible by default; the animation only adds motion on top
+// (hidden state lives in the `from` keyframe, fill-mode both).
+.draw { stroke-dasharray: 1; stroke-dashoffset: 0; animation: draw 0.9s ease-out both; }
+.fade { animation: fade 0.7s ease-out both; }
+.d1 { animation-delay: 0.15s; }
+.d2 { animation-delay: 0.55s; }
+.d3 { animation-delay: 0.95s; }
+.d4 { animation-delay: 1.35s; }
+.d5 { animation-delay: 1.8s; }
+@keyframes draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+@keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) {
+  .draw, .fade { animation: none; stroke-dashoffset: 0; opacity: 1; }
+}
+
+// The floating TOC stays out of the way while the splash fills the screen.
+#quarto-margin-sidebar,
+#quarto-toc-toggle {
+  transition: opacity 0.3s ease;
+}
+body.splash-in-view #quarto-margin-sidebar,
+body.splash-in-view #quarto-toc-toggle {
+  opacity: 0;
+  pointer-events: none;
+}
+
+// ---------------------------------------------------------------- results at a glance (2026)
+
+.edition-label {
+  font-family: $font-family-monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  color: $dim;
+}
+
+.glance {
+  margin: 2rem 0 1.5rem;
+  border-top: 1px solid $rule;
+}
+
+// Pandoc wraps rank, tool, and score in one paragraph; the verdict is the next one.
+.glance-row {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid $rule;
+  > p:first-child {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin: 0 0 0.4rem;
+  }
+  > p + p {
+    margin: 0 0 0 2.5rem;
+  }
+  .rank { @include label; color: $dim; width: 1.5rem; flex: none; }
+  .tool {
+    font-family: $headings-font-family;
+    font-size: 1.9rem;
+    line-height: 1.1;
+    color: $paper;
+  }
+  .score {
+    margin-left: auto;
+    font-family: $font-family-monospace;
+    font-size: 1.6rem;
+    color: $paper;
+  }
+  &.top .rank { color: $accent; }
+}
+
+.glance-links {
+  @include label;
+  font-size: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 28px;
+}

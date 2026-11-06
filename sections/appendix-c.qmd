@@ -1,0 +1,251 @@
+# 10 Appendix C: Complete Survey Results {#appendix-c-complete-survey-results}
+
+This section includes the complete results of the survey, including color-coded charts and input from respondents who responded to requests for additional information. All responses I collected (written responses and ratings) were anonymous.
+
+::: {.callout-note collapse="true" appearance="simple" icon="false"}
+## 10.1 Results from Screen 2: Your Background {#results-from-screen-2-your-background}
+
+### Question 1 Results
+
+![](media/image3.png){fig-alt="Chart of results for survey question 1 regarding role."}
+
+In the "Other" field, I received the following responses: (1) "IS-Videodesigner," (2) "Researcher in Game Design and Development," and (3) "Multiple Trades."
+
+### Question 2 Results
+
+![](media/image32.png){fig-alt="Chart of results for survey question 2 regarding employment in the industry." width="89%"}
+:::
+
+::: {.callout-note collapse="true" appearance="simple" icon="false"}
+## 10.2 Results from Screen 3: Experience with Branching Dialogue {#results-from-screen-3-experience-with-branching-dialogue}
+
+### Question 3 Results
+
+![](media/image33.png){fig-alt="Chart of results for survey question 3 regarding experience writing branching dialogue." width="88%"}
+
+### Question 4 Results
+
+![](media/image4.png){fig-alt="Chart of results for survey question 4 regarding dialogue tool usage."}
+
+In the "Other" category, I received the following responses: (1) "Post it notes," (2) "Scenejo," (3) "Final Draft, HTML," and (4) "UMLet (<http://www.umlet.com/)>."
+:::
+
+::: {.callout-note collapse="true" appearance="simple" icon="false"}
+## 10.3 Results from Screen 4: Collaboration and Story Design {#results-from-screen-4-collaboration-and-story-design}
+
+### Question 5 Results
+
+::: {.report-note}
+**Note:** To produce weighted averages that would not result in misleading data multiplied against my subjective scores, I reversed the *definition* of the numbers in the top row so that "7" referred to "Critical" while 1 referred to "Irrelevant." See [Section 4.1.6](#significance-of-results) for a detailed explanation.
+:::
+
+| Answer Options | 7 | 6 | 5 | 4 | 3 | 2 | 1 | Response Count | Weighted Average |
+|---------------------------------------------------------------------|---|---|---|---|---|---|---|--------|--------|
+| Question text: The factors below focus on character design. On a scale of 1 to 7, rank the importance of the factors in your decision to buy or acquire a software tool for interactive storytelling. |  |  |  |  |  |  |  |  |  |
+| Ability to have web-based collaboration for multiple authors | 1 | 6 | 5 | 6 | 5 | 2 | 1 | 26 | *4.31* |
+| Ability to have version history and version control of your writing-related files | 8 | 6 | 5 | 5 | 2 | 0 | 0 | 26 | *5.50* |
+| Ability to view, create, and edit a “storyboard” view of story events | 6 | 8 | 3 | 5 | 3 | 0 | 1 | 26 | *5.19* |
+| Ability to create and edit a story outline | 12 | 7 | 3 | 2 | 0 | 1 | 1 | 26 | *5.85* |
+| Ability to associate content with a story outline and/or storyboard (e.g., group dialogue under specific parts of the outline) | 7 | 6 | 8 | 2 | 2 | 0 | 1 | 26 | *5.38* |
+| **Number of respondents who answered these questions** |  |  |  |  |  |  |  | 26 | **--** |
+| **Number of respondents who skipped these questions** |  |  |  |  |  |  |  | 7 | **--** |
+| **Average of Weighted Averages for “Collaboration and Story Design”** |  |  |  |  |  |  |  |  | **5.25** |
+
+### Question 6 Results
+
+In response to the question, "Any other collaboration and story design factors that are important to you?" I received the following seven responses:
+
+-   "Revision/reviewer marking. Import/export with HTML and MS Word and Excel."
+
+-   "preview tools - be able to see your text onscreen (for length, clarity, line spacing etc) without having to play through a mission chain, spawn NPCs and line them up, etc"
+
+-   "The ability to see changes others have made and a way to make sure you are working in the most current version of the script."
+
+-   "Very Important: Any form of track changes that allows other authors/collaborators to see what you have altered."
+
+-   "A skeleton overview that outlines how the story will progress"
+
+-   "Ease of presentation to/reading by others."
+
+-   "A dialogue tree system."
+:::
+
+::: {.callout-note collapse="true" appearance="simple" icon="false"}
+## 10.4 Results from Screen 5: Branching Dialogue {#results-from-screen-5-branching-dialogue}
+
+### Question 7 Results
+
+::: {.report-note}
+**Note:** To produce weighted averages that would not result in misleading data multiplied against my subjective scores, I reversed the *definition* of the numbers in the top row so that "7" referred to "Critical" while 1 referred to "Irrelevant." See [Section 4.1.6](#significance-of-results) for a detailed explanation.
+:::
+
+*Question text: The factors below focus on branching dialogue. On a scale of 1 to 7, rank the importance of the factors in your decision to buy or acquire a software tool for interactive storytelling.*
+
+| Answer Options | 7 | 6 | 5 | 4 | 3 | 2 | 1 | Response Count | Weighted Average |
+|-----------------------------------------------------------------------------------------------------|---|---|---|---|---|---|---|--------|--------|
+| Question text: The factors below focus on character design. On a scale of 1 to 7, rank the importance of the factors in your decision to buy or acquire a software tool for interactive storytelling. |  |  |  |  |  |  |  |  |  |
+| Ability to display your conversations in a tree-like view showing nodes and branches | 9 | 6 | 3 | 4 | 2 | 0 | 0 | 24 | *5.67* |
+| Ability to display your conversations in "process flow" view showing nodes and branches(e.g., similar to Visio flow diagrams or decision tree diagrams) | 10 | 6 | 2 | 3 | 3 | 0 | 0 | 24 | *5.71* |
+| Ability to specify and edit “preconditions” for your dialogue (e.g., a dialogue only displays if certain criteria are met, such as possession of an object or completion of a quest) | 13 | 6 | 4 | 0 | 0 | 0 | 0 | 23 | *6.39* |
+| Ability to specify "outcomes" and "variables" for your dialogue (e.g., when a conversation is finished, the player gets an item or some other event happens) | 12 | 6 | 4 | 2 | 0 | 0 | 0 | 24 | *6.17* |
+| Ability to simulate (i.e., run a mini play test on) a complex branching conversation you have created | 7 | 8 | 4 | 2 | 2 | 0 | 1 | 24 | *5.50* |
+| **Number of respondents who answered these questions** |  |  |  |  |  |  |  | 24 | **--** |
+| **Number of respondents who skipped these questions** |  |  |  |  |  |  |  | 9 | **--** |
+| **Average of Weighted Averages for “Branching Dialogue”** |  |  |  |  |  |  |  |  | **5.88** |
+
+### Question 8 Results
+
+In response to the question, "Any other branching dialogue factors that are important to you?" I received the following four responses:
+
+-   "Ability to quickly and easily enter traditional non-branching dialogue too"
+
+-   "The character\'s charisma should dictate whether or not they can rebutle or \"take back\" a poor response during dialogue."
+
+-   "No limit on number of branches Ability to handle complex loops, e.g. multiple ways to reach or return to any given branch"
+
+-   "The ability to create and edit in a script style format. The ability to define logic structure. The ability to ignore a dialogue tree structure and use a flatter structure for dialogue."
+:::
+
+::: {.callout-note collapse="true" appearance="simple" icon="false"}
+## 10.5 Results from Screen 6: Character Design {#results-from-screen-6-character-design}
+
+### Question 9 Results
+
+::: {.report-note}
+**Note:** To produce weighted averages that would not result in misleading data multiplied against my subjective scores, I reversed the *definition* of the numbers in the top row so that "7" referred to "Critical" while 1 referred to "Irrelevant." See [Section 4.1.6](#significance-of-results) for a detailed explanation.
+:::
+
+| Answer Options | 7 | 6 | 5 | 4 | 3 | 2 | 1 | Response Count | Weighted Average |
+|---------------------------------------------------------------------------------------|---|---|---|---|---|---|---|--------|--------|
+| Question text: The factors below focus on character design. On a scale of 1 to 7, rank the importance of the factors in your decision to buy or acquire a software tool for interactive storytelling. |  |  |  |  |  |  |  |  |  |
+| Ability to import character concept art (e.g., portraits, sketches, etc.) and associate them with dialogue snippets and/or character sheets | 2 | 4 | 4 | 7 | 4 | 2 | 1 | 24 | 4.29 |
+| Ability to select and fill out character sheets, and then easily display and cross reference those sheets while writing dialogue | 3 | 3 | 9 | 4 | 4 | 0 | 1 | 24 | 4.71 |
+| Ability to add custom fields to the character sheet if the default fields aren't enough | 6 | 2 | 6 | 5 | 2 | 2 | 1 | 24 | 4.79 |
+| **Number of respondents who answered these questions** |  |  |  |  |  |  |  | 24 | **--** |
+| **Number of respondents who skipped these questions** |  |  |  |  |  |  |  | 9 | **--** |
+| **Average of Weighted Averages for “Character Design”** |  |  |  |  |  |  |  |  | **4.60** |
+
+### Question 10 Results
+
+In response to the question, "Any other character design factors that are important to you?" I received the following response: "There is a fine line between character customizing genius and OCD/too detailed. For me all the stats that can be changed should have a relevent consequence."
+:::
+
+::: {.callout-note collapse="true" appearance="simple" icon="false"}
+## 10.6 Results from Screen 7: Locations, Assets, and Integration {#results-from-screen-7-locations-assets-and-integration}
+
+### Question 11 Results
+
+::: {.report-note}
+**Note:** To produce weighted averages that would not result in misleading data when multiplied against my subjective scores, I reversed the *definition* of the numbers in the top row so that "7" referred to "Critical" while 1 referred to "Irrelevant." See [Section 4.1.6](#significance-of-results) for a detailed explanation.
+:::
+
+| Answer Options | 7 | 6 | 5 | 4 | 3 | 2 | 1 | Response Count | Weighted Average |
+|----------------------------------------------------------------------------------|---|---|---|---|---|---|---|--------|--------|
+| Question text: The factors below focus on assets, locations, and integration with proprietary game engines. On a scale of 1 to 7, rank the importance of the factors in your decision to buy or acquire a software tool for interactive storytelling. |  |  |  |  |  |  |  |  |  |
+| Ability to fill out and reference “location” sheets that describe the levels and environments in your story | 0 | 6 | 6 | 5 | 1 | 0 | 1 | 19 | 4.74 |
+| Ability to import assets (e.g., concept art, maps, level layouts) so they can referenced while creating your story | 3 | 2 | 6 | 6 | 1 | 0 | 1 | 19 | 4.79 |
+| Ability to export project files to XML format | 4 | 8 | 1 | 4 | 2 | 0 | 0 | 19 | 5.42 |
+| Ability to export script to a standard document format, such as a script format for voice actors in | 8 | 5 | 3 | 3 | 0 | 0 | 0 | 19 | 5.95 |
+| Ability to integrate script seamlessly in a proprietary game engine | 6 | 8 | 1 | 4 | 0 | 0 | 0 | 19 | 5.84 |
+| Ability to display a map and indicate the locations and/or "patrol routes" of NPCs | 2 | 3 | 5 | 3 | 4 | 2 | 0 | 19 | 4.47 |
+| **Number of respondents who answered these questions** |  |  |  |  |  |  |  | 19 | **--** |
+| **Number of respondents who skipped these questions** |  |  |  |  |  |  |  | 14 | **--** |
+| **Average of Weighted Averages for “Locations, Assets, and Integration”** |  |  |  |  |  |  |  |  | **5.20** |
+
+### Question 12
+
+In response to the question, "Any other asset, location, and/or integration factors that are important to you?" I received the following response: "The ability to define interactive objects within a location would be useful."
+:::
+
+::: {.callout-note collapse="true" appearance="simple" icon="false"}
+## 10.7 Results from Screen 8: Usability and User Interface {#results-from-screen-8-usability-and-user-interface}
+
+### Question 13 Results
+
+::: {.report-note}
+**Note:** To produce weighted averages that would not result in misleading data when multiplied against my subjective scores, I reversed the *definition* of the numbers in the top row so that "7" referred to "Critical" while 1 referred to "Irrelevant." See [Section 4.1.6](#significance-of-results) for a detailed explanation.
+:::
+
+| Answer Options | 7 | 6 | 5 | 4 | 3 | 2 | 1 | Response Count | Weighted Average |
+|-----------------------------------------------------------------------------|---|---|---|---|---|---|---|--------|--------|
+| Question text: The factors below focus on usability and user interface design. On a scale of 1 to 7, rank the importance of the factors in your decision to buy or acquire a software tool for interactive storytelling. |  |  |  |  |  |  |  |  |  |
+| The tool's user interface is visually appealing | 3 | 3 | 4 | 2 | 6 | 0 | 1 | 19 | 4.53 |
+| The tool's user interface is user-friendly and intuitive | 6 | 8 | 3 | 2 | 0 | 0 | 0 | 19 | 5.95 |
+| The tool requires little to no knowledge of coding, scripting, or programming | 5 | 6 | 3 | 4 | 1 | 0 | 0 | 19 | 5.53 |
+| The tool's user interface lets me display different panels of information side-by-side for easy cross-referencing | 4 | 7 | 2 | 4 | 2 | 0 | 0 | 19 | 5.37 |
+| The user interface is highly-customizable -- e.g., I can show, hide, and/or resize panels of information very easily | 6 | 4 | 5 | 4 | 0 | 0 | 0 | 19 | 5.63 |
+| Ability to display a map and indicate the locations and/or "patrol routes" of NPCs | 2 | 3 | 5 | 3 | 4 | 2 | 0 | 19 | 4.47 |
+| **Number of respondents who answered these questions** |  |  |  |  |  |  |  | 19 | **--** |
+| **Number of respondents who skipped these questions** |  |  |  |  |  |  |  | 14 | **--** |
+| **Average of Weighted Averages for “Usability and User Interface”** |  |  |  |  |  |  |  |  | **5.40** |
+
+### Question 14 Results
+
+In response to the question, "Any other usability or user interface factors that are important to you?" I received the following response:
+
+-   "Adequate keyboard shortcuts or ability to create appropriate keyboard shortcuts"
+
+-   "its tough enough to overcome creative blocks, let alone overcoming software interface learning curves."
+
+-   "Keyboard shortcuts should make sense and tie in with existing conventional shortcuts where appropriate."
+:::
+
+::: {.callout-note collapse="true" appearance="simple" icon="false"}
+## 10.8 Results from Screen 9: Cost, Learning, and Support {#results-from-screen-9-cost-learning-and-support}
+
+### Question 15 Results
+
+::: {.report-note}
+**Note:** To produce weighted averages that would not result in misleading data when multiplied against my subjective scores, I reversed the *definition* of the numbers in the top row so that "7" referred to "Critical" while 1 referred to "Irrelevant." See [Section 4.1.6](#significance-of-results) for a detailed explanation.
+:::
+
+| Answer Options | 7 | 6 | 5 | 4 | 3 | 2 | 1 | Response Count | Weighted Average |
+|------------------------------------------------------------------------------------|---|---|---|---|---|---|---|--------|--------|
+| Question text: The factors below focus on cost, learning, and support. On a scale of 1 to 7, rank the importance of the factors in your decision to buy or acquire a software tool for interactive storytelling. |  |  |  |  |  |  |  |  |  |
+| The tool is supported by an active and responsive service desk and/or online help forum | 3 | 6 | 5 | 3 | 2 | 0 | 0 | 19 | 5.26 |
+| The tool has a detailed help system embedded in the application or accessible online | 2 | 7 | 6 | 4 | 0 | 0 | 0 | 19 | 5.37 |
+| The tool has video tutorials, Getting Started guides, and other information resources freely available | 3 | 6 | 2 | 5 | 1 | 0 | 2 | 19 | 4.84 |
+| The tool's learning curve is low | 4 | 3 | 2 | 9 | 1 | 0 | 0 | 19 | 5.00 |
+| The tool has competitive pricing options for both individual and multi-user licenses | 4 | 7 | 5 | 2 | 0 | 0 | 1 | 19 | 5.47 |
+| **Number of respondents who answered these questions** |  |  |  |  |  |  |  | 19 | **--** |
+| **Number of respondents who skipped these questions** |  |  |  |  |  |  |  | 14 | **--** |
+| **Average of Weighted Averages for “Cost, Learning, and Support”** |  |  |  |  |  |  |  |  | **5.19** |
+
+### Question 16 Results
+
+In response to the question, "Any other cost, learning, or support factors that are important to you?" I received the following response: "low cost for beginners, moderate price for intermediate to advanced users."
+
+### Question 17 Results
+
+![](media/image6.png){fig-alt="Chart of results for survey question 17 regarding affordable price range."}
+:::
+
+::: {.callout-note collapse="true" appearance="simple" icon="false"}
+## 10.9 Results from Screen 10: Anything Else? {#results-from-screen-10-anything-else}
+
+### Question 18 Results
+
+In response to the question, "Is there anything else you would like to see in a software tool for interactive storytelling that hasn\'t been covered?" I received the following 9 responses:
+
+-   "A possibility to add Video-Content"
+
+-   "Programmers should be able to define constraints to a specific project. E.g., that the lines of a dialogue must not exceed a distinct number of characters, or, which emotions can be triggered by a dialogue\..."
+
+-   "Accesible API or SDK for user-created modifications and extensions/integration within other game technologies"
+
+-   "That the bells and whistles don\'t overwhelm the actual writing element of the software. It should be as easy to use as Final Draft or Word for writing."
+
+-   "Fun"
+
+-   "Auto generate scripts for actors, animation. Built in project tracking for recording. (Schedules, line counts, sfx and mic direction (off mic, radio/phone filtered etc)"
+
+-   "simple coding actions (preprogrammed values \[i type red pants, it will pull up red pants\]"
+
+-   "The ability to incorprate voice-over recordings for cross referencing?"
+
+-   "When I create stories, high level design documents and write dialogue, I want to be able to do so without the interface getting in the way. I want to do as much as possible through the keyboard and only reach for the mouse when absolutely necessary."
+
+
+
+
+:::

@@ -1,0 +1,481 @@
+# 9 Appendix B: Detailed Analysis of Each Tool's Capabilities {#appendix-b-detailed-analysis-of-each-tools-capabilities}
+
+This section gives more detailed information on the rationale behind the subjective scores I assigned to each tool. Each subsection includes a summary of the scores for quick reference, and then describes how each tool measured up against the stated capability. For more information on the scale used for the subjective scores, see [Section 3.4.2](#scale-for-assigning-subjective-scores), "Scale for Assigning Subjective Scores."
+
+::: {.report-note}
+**Note:** Unless stated otherwise, every feature that is mentioned for Chat Mapper is free and does not require a paying license. For more information regarding the price of each tool, see the commentary under [Section 9.6](#cost-learning-and-support), "Cost, Learning, and Support."
+:::
+
+## 9.1 Collaboration and Story (Narrative) Design {#collaboration-and-story-narrative-design}
+
+For quick reference, the table below shows the subjective scores I assigned to each tool in the area of Collaboration and Story (Narrative) Design. The table is followed by detailed commentary on each tool's factor or capability.
+
+| Factor or Capability | articy:<wbr>draft | Chat Mapper | DA Toolset | Excel |
+|---------------------------------------------------------------------|-------|------|-------|-----|
+| Ability to have web-based collaboration for multiple authors | 4 | 1 | 2 | 1 |
+| Ability to have version history and version control of your writing-related files | 4 | 0 | 4 | 0 |
+| Ability to view, create, and edit a “storyboard” view of story events | 4 | 0 | 0 | 1 |
+| Ability to create and edit a story outline | 3 | 0 | 0 | 1 |
+| Ability to associate content with a story outline and/or storyboard (e.g., group dialogue under specific parts of the outline) | 3 | 0 | 0 | 1 |
+
+### Ability to have web-based collaboration for multiple authors
+
+**articy:draft:** To have web-based collaboration with articy:draft, you must buy and install articy:server, a companion software program that enables user creation, administration, and online collaboration. You must also acquire source control software such as Perforce or Subversion. The set up process for articy:server can be somewhat complicated if you do not have a technical background and if you are not familiar with Perforce or Subversion. However, the documentation that comes with articy:server is thorough, and once the server software is installed, the server software's user interface is intuitive.
+
+**Chat Mapper:** Chat Mapper has no built-in functionality for connecting to a source control repository or a web server for web-based collaboration. The best approach you can take is to export your project to one of the available export formats, and share it with others. If you are collaborating in a team of writers who use Chat Mapper, your best option is to export the project data to a CMPKG (Chat Mapper Package) file, which another member of your team can extract and open in their own version of the program. The downside is that only commercial license holders can use this feature. Exporting to XML and RTF formats are features only available to license holders.
+
+**DA Toolset:** It is possible for a team of people using the DA Toolset to share a single database repository on a web server by opening the tool's configuration options and directing the software to use a database located on another machine. The downside is that documentation for this set up, installation, and configuration activity is not readily available, and the activity itself requires a background in system administration. This capability could require considerable effort depending on your technical background and available resources.
+
+**Excel:** Excel does not have this ability out of box. However (and this point is obvious), Excel spreadsheets can easily be uploaded to a web-based platform like Microsoft SharePoint and/or Google Docs for web-based collaboration and version control.
+
+### Ability to have version history and version control of your writing-related files
+
+**articy:draft:** If you obtain a multi-user license and install articy:server, you can connect to a source control system like Subversion or Perforce. Both solutions let you automatically create and track historical versions of your project files, as well as check files in and out, and restore older versions if necessary. The obvious downside is that articy:server is required for this integration, which not only raises the cost, but requires some knowledge of server setup and system administration.
+
+**Chat Mapper:** Chat Mapper does not give you an automated way of creating and tracking historical versions of your project files. If you want to create historical versions, you will need to do so manually.
+
+**DA Toolset:** The DA Toolset lets you check files in and out of a database (see @fig-version-control), and lets you view and manage versions, add check in comments, and restore older versions if necessary.
+
+![The DA Toolset's version control capability.](media/image13.png){#fig-version-control fig-alt="Screenshot of the DA Toolset's version control capability."}
+
+**Excel:** Out of box, Excel does not give you an automated way of creating and tracking historical versions of your Excel files. If you want to create historical versions, you will need to do so manually.
+
+### Ability to view, create, and edit a "storyboard" view of story events articy:draft
+
+**articy:draft:** articy:draft comes with a "flow editor" and "flow fragments" for plotting the sequences of events in your game in a storyboard fashion. (See @fig-articy-storyboard.) You can connect the fragments using a simple drag and drop technique on a virtual zooming canvas. The result is a branching network view of events comparable to what you see in Microsoft Visio, except that you are not limited by the size of a document. You can title each fragment, write a brief summary of what it refers to, add pictures to give a visual reference, and place "inbound" and "outbound" connectors between each fragment. You can also embed fragments within each other, so that one fragment can contain lower-level fragments, allowing you to drill down multiple layers.
+
+![Storyboard or "Flow" view in articy:draft. You can drill down into each flow fragment to view and/or create "sub" flows. Each fragment’s color can be changed, and image files can be dragged and dropped into the fragments if so desired.](media/image14.png){#fig-articy-storyboard fig-alt="Screenshot of the Flow Editor in articy:draft."}
+
+**Chat Mapper:** Chat Mapper does not provide a storyboard view of story events. The tool is strictly focused on creating content for interactive conversations, and there is no way of displaying a visual diagram showing the structural or sequential relationship between each conversation, either in basic outline or storyboard mode.
+
+**DA Toolset:** The DA Toolset does not have this ability, as it is focused much more on building levels and areas, and populating those levels and areas with game content that can eventually be converted into an executable game.
+
+**Excel:** Excel allows users to add shapes to the workbook and create workflows, thus achieving a storyboard-like effect. However, this process is highly manual and time consuming, since Excel is not intended as a workflow editing program. Moreover, the process flow diagram would not have a designated space, but would sit on top of the rows and columns in the spreadsheet.
+
+### Ability to create and edit a story outline
+
+**articy:draft**: The story fragments in articy:draft are automatically stored as items in an "Explorer" view or folder structure. This folder structure can be displayed and edited as if it were an outline.
+
+**Chat Mapper:** Chat Mapper does not currently have this ability. However, in the Properties panel of a conversation, you can provide information on the Act, Chapter, Scene, and Level for that conversation. Presumably, this automatically organizes your script in an orderly fashion when you export the project to RTF format, though unfortunately I did not have a chance to test this hypothesis.
+
+**DA Toolset:** The DA Toolset does not currently have this ability. The closest to a story outline you can get in the DA Toolset is a high-level view of the collapsed nodes of the dialogue tree in a conversation.
+
+**Excel**: Users can create manual outlines in Excel in which each entry is a hyperlink. (See @fig-excel-outline.) However, the outline is difficult to maintain. For example, when a new entry is added, it does not inherit any formatting; a hyperlink must be applied to it manually. Also, if the cells that the hyperlinks point to shift when you add or delete a row, the hyperlinks are immediately broken and must be manually updated. Users can go to the Data tab and use Excel's Outline tool to create automatic outlines, but this feature is designed specifically for Excel tables filled with data and formulas, not lines of text.
+
+![Outline and hyperlinks in Excel. Keeping the links up-to-date is a highly manual process.](media/image15.png){#fig-excel-outline fig-alt="Outline of hyperlinks in Excel." width="40%"}
+
+### Ability to associate content with a story outline and/or storyboard (e.g., group dialogue under specific parts of the outline)
+
+**articy:draft:** articy:draft's Explorer tool provides this functionality. The "outline" is called the "Flow," which consists of sequential parts. Furthermore, articy:draft gives every line of a conversation a unique ID. The conversation, in turn, is automatically associated with a story fragment. Using the Explorer tool, you can easily associate a conversation with any part of the Flow via drag and drop operations.
+
+**Chat Mapper:** Chat Mapper does not have this ability.
+
+**DA Toolset:** The DA Toolset does not have this ability. The writer must create a "conversation" resource, and that resource must be associated with particular "creature" resources.
+
+**Excel:** Excel allows users to create hyperlinks between cells and thereby manually associate sections of content with an outline. However, maintaining the hyperlinks is very time consuming and cumbersome, and the outline entries cannot be updated automatically. Moreover, with Excel it is not possible to select and rearrange outline entries very easily.
+
+
+
+## 9.2 Branching Dialogue {#branching-dialogue}
+
+For quick reference, the table below shows the subjective scores I assigned to each tool in the area of Branching Dialogue. The table is followed by detailed commentary on each tool's factor or capability.
+
+| Factor or Capability | articy:<wbr>draft | Chat Mapper | DA Toolset | Excel |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|-------|------|-------|-----|
+| Ability to display your conversations in a tree-like view showing collapsible nodes and branches | 0 | 4 | 4 | 1 |
+| Ability to display your conversations in "process flow" view showing nodes and branches (e.g., similar to Visio flow diagrams or decision tree diagrams) | 4 | 4 | 0 | 0 |
+| Ability to specify and edit "conditions" for your dialogue (e.g., a dialogue displays or does not display if certain criteria are met, such as possession of an object or completion of a quest) | 3 | 4 | 4 | 2 |
+| Ability to specify "outcomes" and "variables" for your dialogue (e.g., when a conversation is finished, the player gets an item or some other event happens) | 3 | 4 | 4 | 1 |
+| Ability to simulate (i.e., run a mini play test on) a complex branching conversation you have created | 1 | 4 | 4 | 0 |
+
+### Ability to display your conversations in a tree-like view showing collapsible nodes and branches
+
+**articy:draft:** articy:draft does not currently have this ability. Dialogue is displayed in a \"process flow\" view, not a \"tree\" view.
+
+**Chat Mapper:** Chat Mapper has a tree view of branching dialogue, but not in the same way as the conversation editor in the DA Toolset. In Chat Mapper, each node of dialogue has a box shape, not a series of lines that can be shown or hidden.
+
+**DA Toolset**: The DA Toolset has a Conversation Editor that displays dialogue in nodes and branches that can be easily expanded and collapsed. Moreover, the tool allows any node to be copied and pasted as a reusable link, thus avoiding manual retyping of the same content in many places. Content can be associated with each node, such as plots, plot flags, variables, voiceovers, and triggers for scripts.
+
+![The DA Toolset's dialogue tree view in the Conversation Editor.](media/image16.png){#fig-dat-tree fig-alt="Screenshot of the DA Toolset's dialogue tree view." width="61%"}
+
+**Excel**: In Excel it is possible to manually implement a tree-like structure for your dialogue, but such a structure is not nearly as robust as in software applications that are designed for this activity. Because rows and columns need to be frequently added or deleted, it is time-consuming and difficult to maintain a branching structure in Excel as it grows in complexity.
+
+### Ability to display your conversations in \"process flow\" view showing nodes and branches (e.g., similar to Visio flow diagrams or decision tree diagrams)
+
+**articy:draft**: articy:draft lets you create and display an unlimited number of "dialogue flows" that consist of an unlimited number of interconnected "dialogue fragments" in a process flow view on a canvas. A dialogue flow can be an element within a story flow, but doesn't have to be. You can use arrows and inbound and outbound pins to connect the fragments, and insert dialogue "hubs" from which multiple branches flow, as well as "return to" hubs that signify the conversation will return to a root node (i.e., the player's menu of dialogue options). You can write the dialogue directly in the text area of the fragment, and you can drag and drop one or more images onto a given fragment to indicate who is speaking. Each dialogue fragment is resizable, you can zoom in and out using the mouse wheel, and you can easily click and drag the fragments around the canvas. However, dialogue fragments cannot be expanded or collapsed.
+
+**Chat Mapper**: Chat Mapper's default display of the branching dialogue is vertical, but you can change this in the preferences to be a horizontal display. @fig-chatmapper-tree displays the default vertical orientation.
+
+![Dialogue tree view in Chat Mapper. You can change the orientation to horizontal if you wish. In contrast with articy:draft, clicking and dragging in the window is not possible.](media/image17.png){#fig-chatmapper-tree fig-alt="Screenshot of the dialogue tree view in Chat Mapper."}
+
+In the Chat Mapper, you can define "parent," "sibling," and "child" dialogues, as well as a dialogue "group" from which multiple branches flow. You write the dialogue in a text field of a given dialogue's properties panel, and you can drag and drop one or more images onto a given fragment to visually signify who is speaking. You can add a "link" between a dialogue and a dialogue group to indicate that the conversation will return to a root node (i.e., the player's menu of dialogue options). The dialogues cannot be clicked and dragged, but they can be expanded and collapsed. And although the dialogues do not have resize handles, you can go to the Tools \> Properties menu to change the size of each dialogue.
+
+**DA Toolset**: The DA Toolset does not have this ability.
+
+**Excel**: Excel does not have this ability.
+
+### Ability to specify and edit \"conditions\" for your dialogue (e.g., a dialogue displays or does not display if certain criteria are met, such as possession of an object or completion of a quest)
+
+**articy:draft**: The dialogue fragments in articy:draft have inbound and outbound \"pins\" in which you can manually write a condition. (See @fig-articy-pins.) However, these pins do not have any programmatic value; you cannot simulate them to see how well they work. They are merely placeholders that explain under what conditions the story or dialogue fragment appears or does not appear. (According to Nevigo's roadmap, a conversation simulator is planned for implementation.)
+
+![Inbound pins in articy:draft can be used to manually specify conditions.](media/image18.png){#fig-articy-pins fig-alt="Screenshot of inbound pin in articy:draft." width="56%"}
+
+**Chat Mapper:** Chat Mapper has a Conditions editor that allows you to specify and edit conditions for any given dialogue in your conversation. Simple conditions can be added with a simple click, but other more complex ones must be written using Lua, a scripting language, which some game writers may find intimidating. Lua is a very lightweight language, however, and the designers of Chat Mapper give you guidance on how to use it, as well as some shortcuts for editing it.
+
+**DA Toolset:** The DA Toolset has a \"Plots and Scripting\" tab that allows users to set conditions for any line of dialogue. (See @fig-dat-plots.) For this feature to work, a \"Plot\" resource must be created, and each plot must have a series of \"Flags.\" Ultimately, these features allow the user to one or more lines with a particular plot, thus letting one NPC have multiple conversation options depending on which plot is true or false. Furthermore, within a given plot, users can associate a line of dialogue with a particular plot flag, which in turn determines which lines appear or do not appear.
+
+![Plots and Scripting tab in the DA Toolset. You can use this tab to make dialogue nodes display only under certain conditions.](media/image19.png){#fig-dat-plots fig-alt="Screenshot of the Plots and Scripting tab in the DA Toolset." width="65%"}
+
+**Excel**: In Excel, for each line of dialogue, you can insert a column in which to specify conditions and manually type in the conditions when required. Of course, this process is highly manual and not the best visual solution. You might have a large number of empty cells in the column, since not every line of dialogue will require a condition.
+
+### Ability to specify \"outcomes\" and \"variables\" for your dialogue (e.g., when a conversation is finished, the player gets an item or some other event happens)
+
+**articy:draft**: The dialogue fragments in articy:draft have inbound and outbound \"pins\" in which you can manually write a description of an outcome. (See @fig-articy-pins.) For example, within the pin you can indicate that completing a certain conversation will result in a new quest or boost the player's reputation score. However, these pins do not have any programmatic value; you cannot simulate them to see how well they work.
+
+**Chat Mapper:** Chat Mapper handles this ability through its Scripting Editor, in which you can add simple Lua scripts that can change variables or trigger outcomes. (See @fig-chatmapper-scripting.) Each script you add is associated with a dialogue node. For example, you can add a script to a dialogue so that when the dialogue is completed, the game system puts an item in a character's inventory. The potential downside is that writers may be intimidated by scripting. Lua is a very lightweight language, however, and the designers of Chat Mapper give you guidance on how to use it, as well as some shortcuts for editing it.
+
+![Scripting Editor in Chat Mapper. You can use this editor to write simple Lua scripts and associate them with a dialogue node.](media/image20.png){#fig-chatmapper-scripting fig-alt="Screenshot of the Scripting Editor in Chat Mapper." width="46%"}
+
+**DA Toolset:** The DA Toolset has a \"Plots and Scripting\" tab in the Conversation Editor, as well as the ability to create what are called "Plot" resources. (See above.) Through these tools, you can create variables and trigger actions or events to occur when a line of dialogue is spoken. For example, you can create a plot that has a series of "flags," such as "quest_accepted," "monsters_slain," or "quest_completed." (These are flags that one of the DA Toolset tutorials suggests.) Then, in a given conversation, you can specify that a certain line of dialogue sets one of those flags. The terminology can be confusing, but the functionality is quite robust, allowing you to create your dialogue such that it causes a variety of outcomes to occur in relation to a particular quest.
+
+**Excel**: In Excel, you can specify outcomes by creating an "Outcomes" column, and then manually type in an outcome for a specific line of dialogue. Of course, this process is highly manual and not the best visual solution. For example, you might have a large number of empty cells in the column, since not every line of dialogue will require an outcome.
+
+### Ability to simulate (i.e., run a mini play test on) a complex branching conversation you have created
+
+**articy:draft**: articy:draft does not currently have this ability. However, according to the Feature list / Roadmap on Nevigo's forum, this feature will soon be implemented as an "Interactive presentation mode" that will allow users to simulate the flow of their branching conversations.
+
+**Chat Mapper:** Chat Mapper comes with a full-fledged Conversation Simulator, which lets you see a mockup or prototype of the interactive conversation you have created. The simulator interface includes panels for you to track how variables, relationship values, and/or other elements of the conversation which you defined are executed, and whether any errors occurred.
+
+![Conversation Simulator in Chat Mapper. The surrounding panels keep track of any variables updated during the simulation.](media/image21.png){#fig-chatmapper-simulator fig-alt="Screenshot of the Conversation Simulator in Chat Mapper."}
+
+**DA Toolset:** The DA Toolset has a \"Preview Line\" tool that allows users to see how a line of dialogue will be visualized, spoken, and animated by an NPC. In addition, users can export their module, open it up via the *Dragon Age: Origins* launch screen, and play test the conversation they have created. However, there a number of requisite steps you must take first. For instance, you must create the area, the characters, the items, the gestures, and a range of other resources before the conversation can be loaded and playtested. In other words, several hours of set up work will be required before the preview line can be seen.
+
+**Excel**: Excel does not have this ability.
+
+
+
+## 9.3 Character design {#character-design}
+
+For quick reference, the table below shows the subjective scores I assigned to each tool in the area of Character Design. The table is followed by detailed commentary on each tool's factor or capability.
+
+| Factor or Capability | articy:<wbr>draft | Chat Mapper | DA Toolset | Excel |
+|-------------------------------------------------------------------------------------------------------------------------------------------|-------|------|-------|-----|
+| Ability to import character concept art (e.g., portraits, sketches, etc.) and associate them with dialogue snippets and/or character sheets | 4 | 4 | 2 | 2 |
+| Ability to select and fill out predefined character sheets, and then easily display and cross reference those sheets while writing dialogue | 4 | 4 | 2 | 2 |
+| Ability to add custom fields to the predefined character sheets if the default fields aren't enough. | 1 | 3 | 0 | 2 |
+
+### Ability to import character concept art (e.g., portraits, sketches, etc.) and associate them with dialogue snippets and/or character sheets
+
+**articy:draft**: articy:draft has an "Assets" section that, by default, contains folders for Characters, Environments, Items/Objects, and Miscellaneous. Within the Assets section, you can click an Import Assets button to retrieve graphics and other media stored on your computer. These graphics, in turn, can be fluidly dragged and dropped onto character sheets, dialogue fragments, and other objects.
+
+**Chat Mapper**: For every asset in Chat Mapper, you can select a picture using the asset's Pictures property. However, you cannot import a set of pictures all at once (you can only add pictures one at a time), and you cannot drag and drop images onto character sheets.
+
+**DA Toolset**: The DA Toolset does not allow you to show character portraits for conversant in a script, but it does allows you to create what are called "Creature resources"---3D models for major characters, minor characters, and monsters that you can place within a level. For each creature resource, you must select a 3D model to define the look of the creature, and you have access to a range of appearance properties. However, the meaning of a character's properties is not intuitive; extensive documentation is essential to understanding each field.
+
+**Excel:** Excel partially has this ability. When you insert a picture into a workbook, it does not technically get inserted into an individual cell. However, a picture will usually behave as though it sits in a cell. For example, if you insert a row above the cell where the picture is, the picture will shift down and stay in the cell you have inserted it. You will run into difficulties, though, if your character sheets are formatted as rows and you wish to filter the rows. In such cases, the pictures will overlap.
+
+### Ability to select and fill out predefined character sheets, and then easily display and cross reference those sheets while writing dialogue
+
+**articy:draft:** articy:draft has an Entity Editor for filling out character profiles. (See @fig-articy-entity.) The editor allows you to create a character sheet based on predefined templates (Major and Minor NPC templates), and fill in standard fields, such as Description, Motivation, Inner Conflict, Appearance, and more. If you update the character's name, the update will cascade to any resource where the name is referenced. You can also easily drag and drop art assets (such as character portraits) from your folders into the Entity Editor, and you can display the character sheet for easy cross referencing as you write.
+
+![Character Entity editor in articy:draft. In addition to the fields describing the character’s personality, the sheet includes fields describing every point in the story where the character is referenced.](media/image22.png){#fig-articy-entity fig-alt="Screenshot of the Character Entity editor in articy:draft."}
+
+**Chat Mapper**: Chat Mapper has an Actors panel through which you can create new "Actors" and display each actor's "sheet" or properties in a side panel for easy cross referencing. You can specify properties such as Name, Gender, Description, Class, and Rank. You can also select images, models, and sound files for the actor. If you update any of the actor's information, the update will cascade to any place where the actor is referenced.
+
+**DA Toolset:** The DA Toolset allows you to quickly find and open a character's properties from the Resource Palette. It is important to remember, however, that this is not the same thing as creating a character sheet. The focus of a DA Toolset is on creating character models and placing them in a level so they can be tested and eventually compiled as part of a game. The purpose is not to record story information about the character. So although you can open a character's properties and use the Name, Comments, and Description fields to describe what he or she is like, these fields are the only fields available for recording character background information.
+
+**Excel:** Excel does not come with predefined character sheets, but such sheets can be easily created from scratch. (See @fig-excel-character.) Free character templates in Excel format can be found online and downloaded, or you can pick up a creative writing guide and determine what categories of information to include in your sheet. (The categories will of course depend on your unique project needs as well.) In general, the drawback with character sheets in Excel is that they are not built-in, and they can be a hassle to maintain. Perhaps the best approach is to organize each character's worksheet as a row in a table with standard columns, because you can then filter the rows based on a given column. Of course, this approach will become difficult t work with if you have a long list of characters.
+
+![Custom character sheet in Excel. This is an example of how character sheets could be implemented in Excel. The column headings are based on the fields that come pre-packaged in the Character Entity editor articy:draft.](media/image23.png){#fig-excel-character fig-alt="Screenshot of custom character sheet in Excel."}
+
+### Ability to add custom fields to the predefined character sheets if default fields aren\'t enough.
+
+**articy:draft**: The beta version of articy:draft does not have this feature. However, according to the Feature list / Roadmap on Nevigo's forum, this feature will soon be implemented.
+
+**Chat Mapper**: You can add custom fields to a character sheet using Chat Mapper's Project Settings tool. (See @fig-chatmapper-settings.) With this tool, you can add "Custom Asset Fields" to any one of your assets, whether a character, item, or location. You can even specify values for the custom fields, which can be referenced in the scripts or conditions you add to your conversations.
+
+![Project Settings window in Chat Mapper. You can use this window to add Custom Asset Fields.](media/image24.png){#fig-chatmapper-settings fig-alt="Screenshot of Project Settings window in Chat Mapper." width="52%"}
+
+**DA Toolset**: To the best of my knowledge, the DA Toolset does not have this ability.
+
+**Excel:** In Excel, it is easy to add custom fields to a character sheet by adding more rows and/or columns. However, depending on how your spreadsheet is set up, adding a new row or column can cause to a lot of manual work. The critical task is to ensure you only have to add a new field once rather than many times. This is easy to do if your character sheets are rows in a table that share the same columns. A different arrangement will probably lead to more effort when you need to edit the fields.
+
+## 9.4 Assets, Locations, and Integration {#assets-locations-and-integration}
+
+For quick reference, the table below shows the subjective scores I assigned to each tool in the area of Assets, Locations, and Integration. The table is followed by detailed commentary on each tool's factor or capability.
+
+| Factor or Capability | articy:<wbr>draft | Chat Mapper | DA Toolset | Excel |
+|------------------------------------------------------------------------------------------------|-------|------|-------|-----|
+| Ability to fill out and reference “location” sheets that describe the levels and environments in your story | 4 | 3 | 0 | 2 |
+| Ability to import “location” assets (e.g., concept art, maps, level layouts) so they can be referenced while creating your story | 4 | 2 | 0 | 2 |
+| Ability to export project files to XML format | 3 | 3 | 2 | 2 |
+| Ability to export script to a standard document format, such as a script format for voice actors | 1 | 4 | 1 | 2 |
+| Ability to integrate script seamlessly in a proprietary game engine | 1 | 1 | 1 | 1 |
+| Accessible API or SDK for user-created modifications and extensions / integration within other game technologies | 4 | 0 | 1 | 1 |
+| Ability to display maps and indicate the locations or "patrol routes" of NPCs | 4 | 3 | 0 | 2 |
+
+### Ability to fill out and reference "location" sheets that describe the levels and environments in your story
+
+**articy:draft**: articy:draft has a Locations Editor that allows you to create new locations and drag and drop images on a canvas. The Locations Editor comes with drawing tools and a list of properties for each location you create, including a Description field. There is currently no ability to add custom property fields (or edit existing fields) for a location.
+
+**Chat Mapper**: In Chat Mapper you can create Location assets, each of which comes with predefined asset fields such as Description, Act, Scene, Climate, Purpose, and Mood. You can associate texture and model files with the Location asset. If necessary, you can also define custom fields for a Location.
+
+**DA Toolset**: The DA Toolset has a full-fledged Area Editor and Level Editor, both of which have extensive tools and capabilities for developing interactive environments. However, these editors were created with designers, developers, and programmers in mind, not writers. They are not intended as reference sheets containing story information about the game.
+
+**Excel:** Excel does not come with predefined location sheets, but with time and effort, such sheets can be easily created from scratch. The drawbacks are that these sheets are not built-in, are not easy to maintain, and are somewhat difficult to organize and navigate. In a Word document, it is easy to create a section and link to that section from the table of contents, but Excel has no equivalent to this.
+
+### Ability to import "location" assets (e.g., concept art, maps, level layouts) so they can be referenced while creating your story
+
+**articy:draft**: articy:draft has an Assets section through which images of maps and level layouts can be imported, stored, shown and hidden, and easily cross-referenced in a side panel as you are creating your story. You can also drag and drop the assets into other editors in a fluid and intuitive fashion.
+
+**Chat Mapper**: Chat Mapper does not have this ability.
+
+**DA Toolset**: The DA Toolset allows users to create as well as open and import location assets into the authoring environment, such as 3D models of area and level layouts. These can be opened as tabs that appear at the top of the toolset's main editing window for easy cross-referencing while you create your story, although you cannot have too many tabs open before toggling becomes unwieldy. Also, if you have custom layouts that you wish to import and display, they must be converted to an appropriate file format that the DA Toolset can recognize, and before you import them, they must be stored in the appropriate subdirectories. The tool does allow you to use pre-existing areas and levels, or create and edit new ones, but the learning curve for this is high.
+
+**Excel:** Excel allows you to insert images into a workbook, but once you insert the image, you have limited control over how you can display it in other places in the workbook. For example, you cannot store the image in a side panel, and then show and hide the panel for rapid cross referencing.
+
+### Ability to export project files to XML format
+
+**articy:draft**: articy:draft has an Export Project tool that lets you export all the data of your project to an XML file. A developer or programmer must then create an import process to load the XML data in a game engine.
+
+**Chat Mapper**: Chat Mapper has an Export Project as XML tool that is only accessible to Indie and Commercial license holders. This tool generates an XML file of all your Chat Mapper project data.
+
+**DA Toolset**: The DA Toolset partially has this ability with the Builder to Builder Create feature, wherein builders of a module can export database resources to XML files, which are then packaged into a single archive file that can be shared. However, from the available documentation it is not clear how well this feature would work if you wish to extract the XML files and integrate them into a game engine other than the DA Toolset. (Source: <http://social.bioware.com/wiki/datoolset/index.php/Builder_to_builder>.) Theoretically, the DA Toolset can also *import* XML files from another software tool such as articy:draft, Chat Mapper, Microsoft Excel, or Microsoft Word. However, this is a highly technical process that would require someone with a database and/or programming background to load the data into the game engine.
+
+**Excel:** In Excel, you can go to the Developer tab (this tab does not appear by default; you must manually display it) and use Export XML Data. However, for this to work, you must go through a relatively complex process that involves adding an XML schema to the workbook and mapping the schema's elements to individual cells. The learning curve will be high for users unfamiliar with XML.
+
+### Ability to export script to a standard document format, such as a script format for voice actors
+
+**articy:draft**: The beta version of articy:draft does not currently have this ability. However, according to the Feature list / Roadmap on Nevigo's forum ([http://www.nevigo.com/forum/](http://www.nevigo.com/forum/viewtopic.php?f=14&t=35)), this feature will soon be implemented.
+
+**Chat Mapper**: Chat Mapper has an Export Screenplay to RTF feature, which displays the contents of your script in a screenplay format that conforms to industry standards. This feature requires a \$20 Indie license.
+
+**DA Toolset**: The DA Toolset does not have any features for exporting dialogue to a standard document format. However, there is a manual workaround process for exporting lines of dialogue using SQL queries. The solutions requires you to install Microsoft SQL Server Management Studio Express and generate the queries on your own. You can then select the results of your query, save your selection as CSV file, and reopen it with Excel. The DA Toolset wiki has a tutorial for this process.
+
+**Excel:** Excel does not allow you to export your spreadsheet content to a traditional screenplay document format for voice actors. You can, however, copy and paste cell data to a Word or HTML document, and thus achieve a manual export solution. You can also easily save Excel data in CSV and HTML formats. But this may not be necessary, since it is not uncommon for video game voice actors to read spreadsheets (Stuart 2010).
+
+### Ability to integrate a script seamlessly in a proprietary game engine
+
+**articy:draft**: articy:draft partially supports this ability with its Export Project feature, which generates an XML file of your project data. However, you must still create a process for loading the XML data into a game engine's database or file directory.
+
+**Chat Mapper**: Chat Mapper partially supports this ability with its Export as XML Feature, as well as its Exporter Development API. Using the Export as XML feature, you would ultimately need to create a process for loading the XML file you generate into a game engine's database or file directory. Using the Exporter Development API (which is only available to Commercial license holders), you must use the API to create an appropriate exporter for loading your project data into a game engine's database.
+
+**DA Toolset**: From what I could understand from the available documentation on the DA Toolset's wiki, if you want to import a game writing script into the DA Toolset, it must (a) be in XML format, and (b) you must know how to load the data into the toolset's database and/or appropriate file directories.
+
+**Excel:** Excel partially supports this ability with its Export XML Data feature, which generates an XML file. However, you must still create a process for loading the XML data into a game engine's database or file directory.
+
+### Ability to display maps and indicate the locations and/or \"patrol routes\" of NPCs
+
+**articy:draft:** Using the Locations section in articy:draft, you can display maps and use the built-in drawing tools to indicate the locations and/or patrol routes of NPCs.
+
+**Chat Mapper:** Chat Mapper does not have this ability.
+
+**DA Toolset:** The DA Toolset allows you to create, edit, and display levels and areas, and to add creatures, items, and buildings to them. You can also identify patrol routes for NPCs, and create and display a map of the area through which the character moves. However, the learning curve for these features is very high, as it involves learning a wide range of features in the DA Toolset.
+
+**Excel:** Excel allows users to insert images and then annotate the images with its built-in shapes and drawing tools. However, it can become very difficult to organize and manage all of this content in one workbook. You could create separate tabs to contain the location graphics, but the more tabs you add, the harder it gets to toggle between them. Depending on the scope of your game story, it might be better to create a separate workbook devoted to containing text and graphics about locations. But then you need to toggle between separate open documents, and you would not have a truly integrated authoring environment.
+
+## 9.5 Usability and User Interface {#usability-and-user-interface}
+
+For quick reference, the table below shows the subjective scores I assigned to each tool in the area of Usability and User Interface. The table is followed by detailed commentary on each tool's factor or capability.
+
+| Factor or Capability | articy:<wbr>draft | Chat Mapper | DA Toolset | Excel |
+|-----------------------------------------------------------------------------|-------|------|-------|-----|
+| The tool's user interface is visually appealing | 4 | 2 | 2 | 3 |
+| The tool's user interface is user-friendly and intuitive | 4 | 2 | 1 | 4 |
+| The tool requires little to no knowledge of coding, scripting, or programming | 4 | 2 | 1 | 4 |
+| The tool's user interface lets me display different panels of information side-by-side for easy cross-referencing | 4 | 4 | 4 | 4 |
+| The user interface is highly-customizable -- e.g., I can show, hide, and/or resize panels of information very easily | 3 | 3 | 3 | 3 |
+| The tool has keyboard shortcuts that make navigating the user interface easy | 4 | 2 | 2 | 3 |
+
+### The tool\'s user interface is visually appealing
+
+**articy:draft**: articy:draft has a modern, sleek visual aesthetic that is akin to the simplicity and subtlety of an Apple product. The contrast between dark turquoise and bright orange not only carries Nevigo's brand, but effectively partitions the interface and clearly differentiates the shapes, panels, and menus. The story and dialogue fragments you can insert are not mere solid-colored objects; they have shadows and lighting effects to give them depth and interest. The interface invites you to engage and begin crafting stories.
+
+**Chat Mapper**: Chat Mapper has a clean but utilitarian visual aesthetic. Most of the interface consists of solid colors or conventional color schemes of white, beige, and black.
+
+**DA Toolset:** Some of the DA Toolset interface is visually appealing, such as the ability to view an area in high-definition 3D. However, most of the UI is neutral or utilitarian. The colors, icons, and menus are reminiscent of the color scheme of classic Microsoft desktop programs, such as Word or Excel 97. Furthermore, the properties panels remind one of older versions of Excel spreadsheets.
+
+**Excel:** Excel 2007 has much greater visual appeal than its earlier versions, partly due to the design of the slender Office Ribbon, the sleek set of toolbars and tabs along the top of the program. There is also a more refined combination of shadings, gradients, and lighting effects when you hover your mouse pointer over buttons, tabs, toolbars, menus, and icons. Previous versions of the tool had a more pixilated and less sophisticated interface design and color usage.
+
+### The tool\'s user interface is user friendly and intuitive
+
+**articy:draft**: The articy:draft user interface is for the most very intuitive. Adding story fragments and dialogue fragments to the canvas is simple, as is connecting them with arrows, changing their colors, and inserting conversation hubs. You can zoom in and out with your mouse, and navigate the canvas by right-clicking your mouse and dragging (similar to how you can navigate Google Maps). I think the UI could be improved, however, by providing context-sensitive help for the tools and buttons on the toolbar. And I did have trouble understanding how to use the drawing tools in the Locations editor.
+
+**Chat Mapper**: Chat Mapper's interface is not cluttered with menu items, and the property fields for most of the assets have well-written, understandable tooltips. Also, there are many familiar icons and UI metaphors that users of personal computers will recognize. At the same time, Chat Mapper may cause significant confusion. Key features of the program---such as the Script and Conditions Editors, the Project Settings, the Simulator, and even the main workspace---are not easy to grasp immediately, especially if you do not have a background in programming. Perhaps most significantly of all, when you create a new interactive conversation, you are presented with a properties box with ambiguous data fields. You will probably need to watch a tutorial or consult the help system before you understand even the basics of how the conversation flow tool works.
+
+**DA Toolset**: The DA Toolset user interface is not intuitive. There is a dizzying array of buttons, menu items, and data fields, and it is very difficult to understand what each one means. Reference material and documentation are absolutely necessary. The interface may be somewhat intuitive to users of previous BioWare toolsets (such as the Aurora Toolset), but it is complex if you are a beginner.
+
+![Area editor in the DA Toolset. Many panels and views contain cryptic labels that can be confusing to beginners.](media/image25.png){#fig-dat-area fig-alt="Screenshot of the Area editor in the DA Toolset."}
+
+**Excel:** The Excel 2007 and 2010 UI is more intuitive than its predecessors. Every tool or button in the Ribbon has a sleek, context-sensitive tooltip that explains its purpose. Navigating and understanding the menu items and commands is the same as in Word 2007, and there is plenty of context-sensitive help and in-application help to guide you along the way. If you are new to Excel, sometimes it is difficult to understand how rows and cells can be edited (e.g., adding hard returns in a cell is not immediately clear, and the shortcuts for resizing and formatting a cells are not very intuitive). But if you are familiar with Microsoft Word 2007 (and the average writer usually is), the learning curve will not be high.
+
+### The tool requires little to no knowledge of coding, scripting, or programming
+
+**articy:draft**: articy:draft does not require any knowledge of coding, scripting, or programming. The only feature that will require some programming knowledge is the Export Project feature, which generates an XML file of your project data. Also, if you get a multi-user license and wish to use articy:server for web-based collaboration, you will need to learn about the basics of network administration and source control repositories (for example, you will need to know what a server port number is, and database concepts such as branching and merging). While such knowledge does not involve programming or coding, it may easily be daunting if you do not have experience in those areas.
+
+**Chat Mapper**: Chat Mapper requires a small amount of programming knowledge if you want to implement conditions. You will have a head start if you already know the basic concepts behind variables, methods, and Boolean logic. Indeed, the most satisfying part of the tool---being able to simulate your branching dialogue---is not satisfying at all unless you can create sophisticated conversations in the first place. Such conversations are impossible in Chat Mapper unless you add scripts and variables using the tool's built-in coding editor. Most of the programming tasks are basic, however, and there are video tutorials to follow.
+
+**DA Toolset**: For basic writing tasks (such as developing branches and nodes, or setting conditions, scripts, and plots), the DA Toolset does not require programming knowledge. However, knowledge of coding and scripting will be necessary for more sophisticated writing tasks. For example, you may want to set a condition in your dialogue so that a line displays only if a group of monsters is destroyed. (See @fig-dat-script.) In programming terms, you will need to create an "event" using a programmatic script, and you will not be able to test whether the condition works until the script is implemented successfully.
+
+![Script editor in the DA Toolset. Using the code editor is essential in order for variables and conditions to work in interactive conversations.](media/image26.png){#fig-dat-script fig-alt="Screenshot of the Script editor in the DA Toolset."}
+
+**Excel:** Excel does not require any knowledge of programming to perform basic to complex writing tasks. If anything, you may need to understand some rudimentary database concepts (such as how to create standard lists of values), but you can do a lot in Excel without such knowledge. However, if you want to export your spreadsheet to XML so it can be loaded into a proprietary game engine, you may need to get some technical knowledge about what XML is and how it works.
+
+### The tool\'s user interface lets me display different panels of information side-by-side for easy cross-referencing
+
+**articy:draft**: articy:draft has a wide range of flexible viewing options for opening, resizing, and closing panels for easy cross-referencing. For example, you can hover your mouse over any one of the four edges of the screen to display "handles" that allow you to click and drag a panel or a window into view. It is very easy to arrange and resize the interface to suit your personal viewing preferences.
+
+![Split-screen view of articy:draft. Four different panels of information can be overwhelming, but in articy:draft, it is easy to show and hide such panels for rapid cross referencing.](media/image27.png){#fig-articy-split fig-alt="Screenshot of a split-screen view of articy:draft."}
+
+**Chat Mapper**: Chat Mapper has a variety of predefined panels for easy cross-referencing, from the Asset browser to the Conditions editor to the main workspace to the Overview panel.
+
+**DA Toolset**: The DA Toolset gives you numerous options for displaying and resizing relevant panels side by side (or one on top of the other). However, there is a limitation with one of the most important windows in the toolset: the Resource Palette, the main interface for finding and opening designer resources to be edited. In this palette, there are multiple "views" of resources (such as Conversations, Items, Maps, Plots, etc.), but it is not possible to have more than one view open at the same time. I found this a very time-consuming limitation.
+
+**Excel:** Excel has a range of viewing options for displaying panels of information. However, unlike all the other tools in my evaluation, Excel was not specifically designed for game writing or design, and so its panels are not designed to display game-related resources such as character sheets, assets, or locations. Consequently, not many of Excel's panels will be useful to game writers who want to cross reference pictures, location sheets, or story information. Probably the next best option is to store such information in Excel's worksheets, which are tabbed along the bottom of the screen, but this method can become unwieldy if you have a large amount of information.
+
+### The user interface is highly customizable---e.g., I can show, hide, and/or resize panels of information very easily
+
+**articy:draft**: With articy:draft it's easy to open and resize various panels, editors, and windows for rapid cross referencing. All panels, including the main window, can be opened from the top, bottom, left, or right, and you can adapt the display to your viewing style. One possible drawback is that none of the panels can be undocked, but I did not find this to be a hindrance. Another possible drawback is that the labels and tooltips for the UI elements are not always as clear as they could be, and consequently, you may not know what the effect of your customizing action will be. Other customizable features of the UI include: (a) changing the images in your story and dialogue fragments; (b) changing the positioning and stacking order of the story flows and conversation branches on the canvas; and (c) changing the background colors of each story or dialogue fragment. All of these tasks are incredibly easy and intuitive in articy:draft, giving it the feel of a flexible and accommodating program.
+
+**Chat Mapper**: Chat Mapper lets you configure and drag around each tabbed window element of the interface to create a layout that supports easy cross referencing. (See @fig-chatmapper-layout.) When you drag a tab or a panel, a preview is displayed of where the window will be docked. You can also easily resize, hide, or display each window.
+
+![Screen customization in Chat Mapper. Note the silhouetted handles that appear when you click a panel to drag it to a different location within the interface.](media/image28.png){#fig-chatmapper-layout fig-alt="Screenshot of Chat Mapper's screen customization capabilities." width="66%"}
+
+**DA Toolset**: The DA Toolset allows users to click, drag, and resize the borders of most (if not all) palettes, editors, and windows. You can also add and remove buttons to the toolbars, dock and undock panels and palettes, and rearrange them to suit your viewing preferences. The difficulty, of course, is knowing what each button, toolbar, and palette *means* before you decide where and how to move or customize it. The labels and tooltips in the DA Toolset's UI elements are not intuitive to beginner-level users.
+
+**Excel:** The labels and tooltips that Excel uses for its UI are generally clear and well written, and there are plenty of intuitive options for opening, closing, docking, undocking, and resizing panels and windows for rapid cross-referencing. However, none of the panels are designed to display game-related content such as character sheets, maps, location sheets, or art assets, and so they are of limited use to game writers. Perhaps the most important customizable features of Excel are the cells. These are very easy to resize, reorder, and format according to your game writing needs.
+
+## 9.6 Cost, Learning, and Support {#cost-learning-and-support}
+
+For quick reference, the table below shows the subjective scores I assigned to each tool in the area of Cost, Learning, and Support. The table is followed by detailed commentary on each tool's factor or capability.
+
+| Factor or Capability | articy:<wbr>draft | Chat Mapper | DA Toolset | Excel |
+|------------------------------------------------------------------------------------|-------|------|-------|-----|
+| The tool is supported by an active and responsive service desk and/or online help forum | 4 | 2 | 3 | 4 |
+| The tool has a detailed help system embedded in the application or accessible online | 0 | 2 | 3 | 4 |
+| The tool has video tutorials, Getting Started guides, and other information resources freely available | 4 | 4 | 4 | 4 |
+| The tool's learning curve is low | 4 | 2 | 0 | 4 |
+| The tool has competitive pricing options for both individual and multi-user licenses | TBD | 4 | 2 | 3 |
+
+### The tool is supported by an active and responsive service desk and/or online help forum
+
+**articy:draft**: articy:draft has an active service desk which you can e-mail at <support@nevigo.com>. Also, Nevigo recently established an articy:draft forum online at <http://www.nevigo.com/forum/index.php>. Since the forum is so new, it is difficult to tell how responsive it is (as of this report's writing, there were not enough forum discussions to gauge the overall responsiveness). Speaking from experience, however, the Nevigo team replied immediately to my questions on the forum, and their support group has been very responsive to my e-mail requests for help.
+
+**Chat Mapper**: Urban Brain Studios (the developer of Chat Mapper) does have a Help Desk at [support.urbanbrainstudios.com/home](http://support.urbanbrainstudios.com/home) where you can submit and track tickets. There is also a tab for "Solutions" and FAQs, but the information is scant, and there are no dates indicating how up-to-date the information is. The online forum is currently closed.
+
+**DA Toolset**: The DA Toolset does not have an official help desk, but there is an active online forum (<http://social.bioware.com/forum/1/subindex/70>) where you can get answers to questions from other users of the toolset, as well as links to useful articles and tutorials. There are thousands of posts, though, so it can be frustrating trying to find a topic material that you suspect has been written. Still, the community is active, and I found valuable resources and answers to my questions.
+
+**Excel:** To get support for Microsoft products such as Excel 2007, you can go to Microsoft's support Web site at <http://support.microsoft.com>, where you can find contact information for the service desk appropriate to your product. If you have Excel 2010, support will be free, but if you have Excel 2007 it may not be free, depending on which support option you select. If you do not wish to use the service desk, you can go straight to the Excel online help forum at <http://answers.microsoft.com/en-us/office/forum/excel>. As is to be expected, you will not be able to create a forum topic without signing in. (The same goes for the articy:draft and DA Toolset forums.) The forum is quite active, though, and you should be able to get an answer to your question quickly.
+
+### The tool has a detailed help system embedded in the application or accessible online
+
+**articy:draft**: articy:draft does not have an in-application help system like Microsoft Excel does, and this is frustrating when you need a quick answer or guidance on a small but important task. As of this report's writing, the only available help content is in PDF Getting Started guides. There are also some video tutorials, but they explain basic tasks and do not teach advanced techniques on how to use the tool. It is encouraging, however, that one of the main topics currently on the Nevigo forum is how the Nevigo team should deliver help content to its customers.
+
+**Chat Mapper**: Chat Mapper has an in-application help system that covers the basics of the program's tools and interface. You can also access context-sensitive help in certain panels of the interface. (See @fig-chatmapper-help.) The content is consistent and clear, and includes clarifying screenshots and definitions of terms used in the interface. However, the help is far from exhaustive. There are no numbered instructions, and the documentation on conditions, scripts, and variables is minimal and describes what the features are and not how to use them.
+
+![Context-sensitive help in Chat Mapper.](media/image29.png){#fig-chatmapper-help fig-alt="Screenshot of context-sensitive help in Chat Mapper." width="72%"}
+
+**DA Toolset**: The DA Toolset has a detailed wiki containing walkthroughs, reference information, screenshots, and links to video tutorials. However, the topics are not written and organized consistently, and the structure of the wiki is confusing. Even though there is a "home page," there is no comprehensive outline or index of topics. Consequently, it is easy to completely miss wiki articles that exist but that don't appear on the home page. The search engine is helpful, but only if you know what terms to use. The tutorials that do exist are written in paragraph form and seldom contain numbered steps. As a result, on numerous occasions I missed critical information buried in the middle of a paragraph, and I wasted valuable time trying to troubleshoot problems I encountered. There is also a severe lack of consistency in the terms that different contributors use in the tutorials, leading to a great deal of confusion if you are a new to the software. Many of the articles are also outdated, and so are the screenshots.
+
+**Excel:** Excel has an extensive in-application help system (see @fig-excel-help), context-sensitive help topics, and useful tooltips for most of the buttons, tools, and menus in the user interface. The help system does not require Internet access, and it contains everything from quick references to video demos. The topics are well written and organized. The only drawback is the large volume of content, which can sometimes be difficult to search and browse.
+
+### The tool has video tutorials, Getting Started guides, and other information resources freely available
+
+**articy:draft**: As of this report's writing, articy:draft has seven video tutorials, Getting Started guides for single- and multi-user licenses, and a quick reference guide on setting up articy:server. All in all, this documentation covers the basics, but leaves much to be desired. For instance, in terms of quickly finding the right information, there is a high-level outline in the Getting Started guides, but there is no search engine and no exhaustive list of links to help topics, or subcategories to help you browse the information. Moreover, sometimes there is just a general lack of detail. For example, the tooltips for the various buttons and menus could be expanded upon, and there is no explanation on how to use the project XML file you can export. So while beginners should have enough information to get started, there is not documentation on how to become an advanced user, nor is there a way to give feedback on how helpful the documentation is.
+
+**Chat Mapper**: Chat Mapper does not have any Getting Started guides, but it does come with helpful online video tutorials (in addition to its in-application help). The tutorials provide much-needed guidance for tasks like developing your first conversation and creating conditions, scripts, custom asset fields, and variables. However, there are only four tutorials in total, which is far too few if you want to become an intermediate or expert user of the software. Also, the authors still use technical jargon at significant points in the video tutorials, assuming their audience will know basic programming concepts.
+
+**DA Toolset**: The DA Toolset has a range of video tutorials created by fans of the game, and there are wiki articles for downloading and installing the software, as well as doing a wide range of common tasks. (See @fig-dat-wiki.) However, the quality of the tutorials and wiki articles varies widely. None of the video tutorials are made by professionals employed by BioWare, and as such, they are disjointed and many times the authors skim over important steps or assume too much prior knowledge. Moreover, much of the content on the DA Toolset wiki is not well written or well organized.
+
+![Wiki tutorial page for the DA Toolset.](media/image30.png){#fig-dat-wiki fig-alt="Screenshot of a wiki tutorial page for the DA Toolset." width="58%"}
+
+**Excel:** As mentioned above under "The tool has a detailed help system embedded in the application or accessible online," Excel has useful an extensive help system with quick reference help topics and video demos. In addition, you can access a wide range of free high-quality trainings and video tutorials online at <http://office.microsoft.com/en-us/excel-help/CH010369467.aspx>. The content is high quality and is made and maintained by experts in creating user assistance materials.
+
+### The tool\'s learning curve is low
+
+**articy:draft**: Even though I think articy:draft's documentation lacking in detail, I found the overall learning curve of articy:draft is low. You do not need any programming knowledge, and the two most important parts of the software---creating complex story flows and branching conversations---are very easy to do, and even a little fun. Probably the most difficult task is setting up articy:server, a process with a high learning curve if you do not have a background in server software and/or systems administration.
+
+**Chat Mapper**: The learning curve for Chat Mapping is intermediate, primarily because of the effort required to understand how conditions, variables, scripts, and custom affects fields work. In addition, the behavior of the dialogue tree is not simple to grasp at first, and it is absolutely necessary to watch all of the video tutorials in their entirety to understand how advanced features of Chat Mapper work, such as the conversation simulator, scripts, variables, and conditions.
+
+**DA Toolset**: The learning curve for the DA Toolset is very high. The UI is not intuitive, and when you create or insert resources into a new module, many of the file names and data fields are esoteric. A good amount of reading, searching online, and guesswork will be involved for beginners. To create as well as test a sophisticated module, you will need to use some scripting, which will entail a high learning curve if you are a game writer who has no background in programming. Moreover, the video tutorials and wiki documentation are disjointed and vary widely in terms of quality. Although there is an online forum for the toolset, there is no guarantee you will get high quality answers to your questions, and it can take time to search forum topics to see if an answer already exists.
+
+**Excel:** Excel has a low learning curve, especially if you use other Microsoft Office tools that have similar buttons and menus. Excel is a mature tool with an intuitive interface, extensive help content (see @fig-excel-help), and an active support community. Even if you are new to the software, you can become proficient in it relatively quickly in order to perform complex game writing tasks.
+
+![Example of the help content in Excel. The content is consistent, well-written, and complete.](media/image31.png){#fig-excel-help fig-alt="Screenshot of Excel's help content." width="66%"}
+
+### The tool has competitive pricing options for both individual and multi-user licenses
+
+For a comparison of each tool's price, see [Section 5.2](#cost-comparison), "Cost Comparison." At the time of writing this report, articy:draft had not been released to the public, so it was not possible for me to score this factor. After the evaluation was complete, however, I gained initial information about the potential price of articy:draft. The DA Toolset does not require individual or multi-user licenses per se. A copy of the toolset can be downloaded online so long as you have a software key for Dragon Age: Origins. In short, the cost of the DA Toolset will be whatever you paid for a copy of DA:O. Excel 2007 or 2010 is usually installed as part of the Microsoft Office Suite on most standard PCs with a Windows operating system.
+
+## 9.7 Other Factors Suggested by Survey Respondents {#other-factors-suggested-by-survey-respondents}
+
+For quick reference, the table below shows the subjective scores I assigned to each tool in the area of Other Factors. The table is followed by detailed commentary on each tool's factor or capability.
+
+| Factor or Capability | articy:<wbr>draft | Chat Mapper | DA Toolset | Excel |
+|----------------------------------------------------------------------------|-------|------|-------|-----|
+| Ability for reviewers to track changes and display revisions | 2 | 0 | 2 | 3 |
+| Ability to quickly and easily switch between a "tree" view and a "process flow" view of the dialogue | 0 | 2 | 0 | 0 |
+| Ability to create and edit in a traditional screenplay / script style format | 2 | 4 | 1 | 1 |
+| Ability to add voice-over recordings | 2 | 4 | 3 | 0 |
+| Accessible API or SDK for user-created modifications and extensions/integration within other game technologies | 0 | 4 | 0 | 4 |
+| The tool has keyboard shortcuts that make navigating the user interface easy | 4 | 3 | 4 | 4 |
+
+### Ability for reviewers to track changes and display revisions
+
+**articy:draft**: articy:draft partially has this capability with its commenting feature. Also, if the project files are stored in a source control repository, you should have the ability to compare versions and deduce changes to the text. However, as of now articy:draft provides no functionality that is equivalent to Microsoft Word's track changes feature.
+
+**Chat Mapper:** Chat Mapper does not have any built-in functionality for performing reviews and leaving comments, notes, or tracked changes. You will need to capture and manage this information manually. Your best option would probably be to export your content to RTF format (which only license holders can do), distribute the RTF version to your peers, and manually implement revisions.
+
+**DA Toolset:** In the DA Toolset's Conversation Editor, there is a field for adding reviewer's comments. Also, when you check in a file to the database, you can use a feature called \"Diff to Last Checkin\" to compare the current version of a file to the most recent version of that file, and thus deduce changes to the content. Beyond that, the toolset currently has no options for adding mark up in a tracked manner so that you can easily revert to the original text if you need to.
+
+**Excel:** Excel allows you to turn on the Track Changes feature to highlight cells that have been marked up. However, only the most recent author's changes are shown. In other words, the most recent author's changes overwrite the previous author's changes. Excel will not maintain a record if there were previous authors who edited the same cell.
+
+### Ability to quickly and easily switch between a \"tree\" view and a \"process flow\" view of the dialogue
+
+**articy:draft**: articy:draft does not have this ability.
+
+**Chat Mapper:** Chat Mapper allows you to change the orientation of the conversation flow from vertical to horizontal (and vice versa), but that is not the same as the intended meaning behind this factor, which is the ability to toggle between a graphical flow view and a tree view that has no graphs and simply shows expandable and collapsible nodes of text.
+
+**DA Toolset:** The DA Toolset does not have this ability.
+
+**Excel:** Excel does not have this ability.
+
+### Ability to view dialogue in a traditional screenplay / script style format
+
+**articy:draft**: articy:draft does not currently have this ability. However, according to the Feature list / Roadmap on Nevigo's forum, this feature will soon be implemented as a "Document view" that allows you to display your branching conversation in a format similar to a conventional screenplay.
+
+**Chat Mapper**: Chat Mapper has an Export to RTF feature that lets you generate a script in a screenplay format. Before you generate the script, you can configure the export to show or highlight the lines for particular characters. You must have an Indie or Commercial license to use this feature.
+
+**DA Toolset:** The DA Toolset does not have this ability.
+
+**Excel**: Excel does not have this ability.
+
+### Ability to have voice-over recordings
+
+**articy:draft**: articy:draft does not currently have this ability. However, according to the Feature list / Roadmap on Nevigo's forum, this feature will soon be implemented as an "Audio - Dialog playback" feature, which will let you associate an audio file with a line of dialogue and play back the audio.
+
+**Chat Mapper**: Chat Mapper allows you to attach audio files to a node of dialogue and preview how it will sound using the Conversation Simulator.
+
+**DA Toolset:** The DA Toolset allows users to associate an audio file with a specific line of dialogue. The toolset also has a Generate VO (Voiceover) tool that automatically generates temporary voiceover placeholders for all lines of dialogue using a basic speech synthesis program. These voiceovers are meant to be temporary measures until the official voiceover files are finished. The toolset does not come with an in-game recorder, so you must acquire a third-party recorder and recording software (the DA Toolset wiki recommends a free software tool called Audacity) to create the audio file and save it in the audio file and bit format which the DA Toolset accepts.
+
+**Excel**: Excel does not currently allow you to insert audio files directly into a workbook. There are workarounds to this, but they require the use of macros.
+
+### Accessible API or SDK for user-created modifications and extensions and/or integration within other game technologies
+
+**articy:draft**: articy:draft does not currently provide an SDK or set of APIs for public use.
+
+**Chat Mapper**: Chat Mapper provides an Exporter Development API with its \$99.95 Commercial License. This is a full software development kit (SDK) that enables you to access to all project data in Chat Mapper and create your own exporter for smoother integration with other game engines.
+
+**DA Toolset**: The DA Toolset does not currently provide an SDK or set of APIs for developers.
+
+**Excel:** Microsoft provides the Excel 2010 SDK, which includes C and C++ APIs. This can be downloaded on the Microsoft Developer Network ([msdn.microsoft.com](http://msdn.microsoft.com/)).
+
+### The tool has keyboard shortcuts that make navigating the user interface easy
+
+**articy:draft**: articy:draft has a list of keyboard shortcuts for navigating the interface and executing certain actions. The list is not as extensive as Excel's, but it is still useful. As of this report's writing, the list is available at (<http://www.nevigo.com/download/articy%20draft%20-%20keyboard%20shortcuts.pdf>).
+
+**Chat Mapper**: Chat Mapper has a wide variety of shortcuts for its buttons and menu items, and even without the help system, it is easy to discover what they are. As with a program like Excel, the shortcuts can be found by hovering your mouse pointer over a button on the toolbar, right-clicking a dialogue, or opening a menu.
+
+**DA Toolset**: The DA Toolset has a list of keyboard shortcuts for navigating the interface and executing certain actions. The list is not as extensive as Excel's, but it is still useful. As of this report's writing, the list is available at <http://social.bioware.com/wiki/datoolset/index.php/Shortcuts>.
+
+**Excel:** Excel has a long list of shortcuts, longer than any of the other tools in the evaluation. The list can be easily found in Excel's help system.

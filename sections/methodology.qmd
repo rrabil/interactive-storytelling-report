@@ -1,0 +1,137 @@
+# 3 Methodology {#methodology}
+
+## 3.1 Tool Selection {#tool-selection}
+
+To narrow the scope of the evaluation and choose tools that would be relevant to game writers and designers, I first developed a list of prominent tools that can be, have been, or currently are used for interactive storytelling in video games. Tools were grouped under three major categories:
+
+1.  Tools designed specifically for the needs of an interactive medium.
+2.  Proprietary game engines or toolsets that include "dialogue editors" or "conversation editors."
+3.  Tools designed for traditional, linear storytelling or for more generic content authoring purposes.
+
+Once I created the list, I applied three criteria to narrow it down:
+
+1.  The relative degree of each tool's applicability to the unique demands of nonlinear storytelling.
+2.  The relative degree of each tool's prominence among game writers.
+3.  The cost of each tool, as well as whether it could be fairly and accurately evaluated in the given period of time.
+
+Of these criteria, I considered the first one to be the most important, since the findings of my literature review underscored the limitations of conventional authoring software and suggested the need to evaluate tools for non-linear storytelling. Ultimately, I selected articy:draft (beta), Chat Mapper, the DA Toolset, and Microsoft Excel (2007) from the list. The main reason for this selection was that these tools are representative of three of the most common categories of tools that narrative writers and designers are likely to encounter. Other factors were involved in my decision, however. For more information on other tools I considered for evaluation, as well as a more detailed explanation of my rationale, see [Section 8](#appendix-a-rationale-for-tool-selection), "Appendix A: Rationale for Tool Selection."
+
+## 3.2 Literature Review {#literature-review}
+
+To deepen my understanding of the needs of game writers and designers, gather evidence for which criteria to include in my evaluation, and inform the development of the online survey, I reviewed a range of secondary sources, including academic articles, books, and articles from the industry Web site Gamasutra ([www.gamasutra.com](https://www.gamasutra.com)). What soon became clear is that the interactive nature of video games presents unique challenges to writers and designers, and these challenges in turn underscore the limitations of conventional authoring software tools. By understanding these limitations, I was able to develop more realistic questions in my survey and carry out a more informed evaluation.
+
+First, because the direction of interactive conversation in a game is meant to be steered by the player, writers cannot fully predict which conversation path the player is going to choose. As McIntosh et al. ask, "How would you write for dialogue that could end in multiple ways which would lead to another dialogue that would also then lead to a number of new choices?" Questions like these led McIntosh et al. to argue that tools like Microsoft Word and Excel are inadequate because of their linear way of organizing and linking information. A similar point is made by Owen et al. (2008) in their report on their interactive conversation editor, SimDialog. "Even if the NPC has only one path in the conversation," write the authors, "the player must have options from which to choose, so that the game creates the illusion of influencing story progression. *Hence, the dialog must be described in a more complex format than a script*" (4, emphasis mine).
+
+Second, game writers and narrative designers must constantly deal with the classic tension between agency and authorial control (Dinehart, 2011). If one of the major goals of interactive storytelling is to present the player with choices that affect the outcomes of the story, writers must create alternative plots and conversations, which greatly increases the amount of text to be written and thus the number of production resources required (Dille and Platten, 47-48). Thus, software tools for interactive storytelling should make it as easy as possible to manage and maintain story content, and to integrate seamlessly with the game production pipeline---a point which game writer Darby McDevitt (2010) emphasized in his 2010 Gamasutra article "A Practical Guide to Game Writing."
+
+A third challenge in game writing is the use of conditions and variables, which are essential to developing branching dialogue for non-linear stories, but are not available in conventional authoring tools. McIntosh et al. describe the problem well:
+
+> Nonlinear stories are often linked by conditions. For example, it may be that certain plot points are revealed after a player completes a required action. Or, a certain action by the player may exclude an entire portion of the story. This is very difficult to express using traditional storytelling tools. For example, when we write stories in English, we write them from the top of the page down, tying events together by time. As such, most word processing or storytelling software is designed the same way. The expectation is very linear; there is a first, second and a third part, all tied together by time.
+
+Fourth, no matter how well written the dialogue or story content is, it must ultimately be loaded into whichever game engine the game developers are using. As one game writer pointed out in a discussion on the Game Writer's LinkedIn forum (Jack 2011), a game studio's production pipeline may dictate which tool the game writer and/or narrative is allowed to use. The ideal game writing tool should therefore make the script export and loading process as seamless as possible, or at least as technically feasible as possible.
+
+## 3.3 Online Survey {#online-survey}
+
+The purpose of the online survey was to collect primary data from game writers, developers, and designers regarding the weight they would assign to particular evaluation factors or capabilities if they were to choose a software tool for their own needs. I later used the weightings in my scoring process to avoid a purely subjective analysis. I designed and delivered the survey using Survey Monkey™, and the complete results can be found in [Section 10](#appendix-c-complete-survey-results), "Appendix C: Complete Survey Results." The survey was open from October 29^th^ through November 21^st^. A link to the survey, along with an announcement and a description of the survey's purpose, was provided on the web sites listed below.
+
+-   International Game Developers Association, Writing Special Interest Group (<https://www.igda.org/forum/what-do-you-look-game-writing-tool>)
+
+-   International Game Developers Association, Tools Special Interest Group ([http://thetoolsmiths.org](http://thetoolsmiths.org/))
+
+-   Game Writers Group on LinkedIn ([http://www.linkedin.com](http://www.linkedin.com/))
+
+-   Dialogue Junkie ([www.dialoguejunkie.com](http://www.dialoguejunkie.com)), my hobby site about video game dialogue
+
+The survey, which was completely anonymous, asked participants about their experience in game writing and design, as well as which tools each they have used to write branching dialogue. The bulk of the survey asked participants to rank a list of software evaluation factors or capabilities on a scale of 1 through 7, where a rank of 1 indicated a factor that was "Critical," while a rank of 7 indicated a factor that was "Irrelevant." (I later reversed this scheme so that "7" referred to "Critical" while 1 referred to "Irrelevant." See [Section 3.4.1](#procedure-for-calculating-weightings) for a detailed explanation of this change.)
+
+For the sake of order and simplicity, each factor that participants were asked to rank was grouped under one of the following categories:
+
+-   Collaboration and Story Design
+-   Branching Dialogue
+-   Character Design
+-   Locations
+-   Export and Integration Pipeline
+-   Usability and User Interface
+-   Cost, Learning and Support
+
+I derived these groupings from four sources of information: (1) past research I have conducted on video game theory and rhetoric, (2) information from my literature review, (3) my knowledge of and experience with writing branching dialogue, and (4) my experience with the functionalities of each game writing tool I had selected for evaluation. In [Section 6](#conclusion), "Conclusion," I discuss how future research should refine or extend the list to not only be as comprehensive as possible, but as representative as possible of the real interests and constraints of game writers, narrative designers, and software and database engineers who must ensure the story content gets loaded successfully into a game engine. My analysis of the results of the survey is presented in [Section 4.1](#results-from-survey), "Results from Survey."
+
+## 3.4 Scoring Process {#scoring-process}
+
+To give scores to the four tools in this project, I used a conventional method for calculating a weighting for each individual capability, and subsequently for each *grouping* of capabilities. I also assigned a subjective score to each tool's features, and multiplied the subjective scores by each group's average weighting to produce a final score. The following sections describe my scoring process in more detail.
+
+### 3.4.1 Procedure for Calculating Weightings {#procedure-for-calculating-weightings}
+
+As described in [Section 3.3](#online-survey), "Online Survey," survey participants ranked each desired factor or capability on a scale of 1 through 7. Participants were told that a rank of 1 indicated a factor that was "Critical," while a rank of 7 indicated a factor that was "Irrelevant." I exported all the data I collected from the respondents to an Excel spreadsheet, where I calculated the weighted average for each capability, and rounded each value to two decimal places. As an example, the table below depicts the responses I received for all the capabilities grouped under the category "Collaboration." The table also shows that I calculated the *average of the weighted averages* to return a value for each *grouping* of desired capabilities. For example, the table below shows that the Collaboration grouping *as a whole* received an average weighting of 5.75.
+
+::: {.report-note}
+**Note:** As I explain below in [Section 4.1.6](#significance-of-results), "Significance of Results," I later reversed the *meaning* of the numbers in my scale so that "7" referred to "Critical" while 1 referred to "Irrelevant." I had to make this reversal because the numbering scheme I used to assign subjective scores to each factor was resulting in scores that were misleading. The reversal did not change the data I received from participants, and it allowed my calculations to produce more accurate and sensible results.
+:::
+
+**Collaboration**
+
+*(7 = “Critical” and 1 = “Irrelevant”)*
+
+| Answer Options | 7 | 6 | 5 | 4 | 3 | 2 | 1 | Response Count | Weighted Average |
+|------------------------------------------------------------|---|---|---|---|---|---|---|--------|--------|
+| Ability to have web-based collaboration for multiple authors | 1 | 6 | 5 | 6 | 5 | 2 | 1 | 26 | *4.31* |
+| Ability to have version history and version control of your writing-related files | 8 | 6 | 5 | 5 | 2 | 0 | 0 | 26 | *5.50* |
+| Ability to view, create, and edit a “storyboard” view of story events | 6 | 8 | 3 | 5 | 3 | 0 | 1 | 26 | *5.19* |
+| Ability to create and edit a story outline | 12 | 7 | 3 | 2 | 0 | 1 | 1 | 26 | *5.85* |
+| Ability to associate content with a story outline and/or storyboard (e.g., group dialogue under specific parts of the outline) | 7 | 6 | 8 | 2 | 2 | 0 | 1 | 26 | *5.38* |
+| **Number of respondents who answered these questions** |  |  |  |  |  |  |  | 26 | **--** |
+| **Number of respondents who skipped these questions** |  |  |  |  |  |  |  | 7 | **--** |
+| **Average of Weighted Averages for “Collaboration”** |  |  |  |  |  |  |  |  | **5.25** |
+
+It is important to recognize that the weighted averages for each category were skewed, because not every category had the same number of factors or capabilities to be scored. For example, the Collaboration category had five factors/capabilities, whereas the Character Design category only had three. For this reason, the Collaboration category probably received a higher score. As I explain in [Section 6](#conclusion), "Conclusion," it would be appropriate in future research efforts to ensure that every category has the same number of factors / capabilities. This way, each category would have the same chances at getting as high a score as possible.
+
+### 3.4.2 Scale for Assigning Subjective Scores {#scale-for-assigning-subjective-scores}
+
+My subjective scoring approach was focused on two facets: (a) whether or not each tool has a feature that meets the factors listed in my survey; (b) the relative quality of the feature, such as whether it saves time, is easy to use, produces reliable output, or minimizes long-term maintenance. With these criteria in mind, I scored each factor using a scale of 0 to 4.
+
+::: {.report-note}
+**Note:** If a tool did not have a capability, but there was documentation to prove that it was under development or planned for future implementation, I gave it an automatic score of 1.
+:::
+
+|   |   |
+|---|-----------------------------------------------------------------------------------------------|
+| 4 | Capability exists, works well, and requires little to no effort to use on the part of the user. |
+| 3 | Capability exists, but requires some workaround or has some limitations. For example, the capability might not be very intuitive, or it requires input from the user that could be streamlined or automated. |
+| 2 | Capability exists, but requires significant amount of effort to use or understand. |
+| 1 | Capability exists, but it requires a very significant amount of effort to use. For example, the capability requires a time-consuming workaround or third-party software in order to achieve the same effect. ***Or***, the capability does not currently exist, but it is being developed or is planned for development. |
+| 0 | No, the capability does not exist. |
+
+My assumption with this scale was that it is not enough for a tool to simply possess a feature or function. A software evaluation must also consider how well the capability works, how easy it is to use, how high the learning curve is, whether or not using the capability calls for a special type of knowledge (such as knowledge of a programming language), and whether there are any drawbacks in how the capability is implemented.
+
+### 3.4.3 Procedure for Calculating Final Scores {#procedure-for-calculating-final-scores}
+
+Once I had both the weightings and the subjective scoring system defined, I was able to calculate a final score for each tool. I used the following procedure to calculate the final score.
+
+1.  Record each capability's individual weighted average, as per the survey data. For example, according to the survey data, the weighted average for "Ability to specify and edit 'preconditions' for your dialogue" was 6.39.
+
+2.  Calculate the *average* of weighted averages for each *category* of capabilities. For example, the *average* weighted average for "Branching Dialogue" was 5.88.
+
+3.  Assign a subjective score (0 through 4) to each tool's individual capability. For example, with respect to articy:draft, I gave a subjective score of 3 to "Ability to specify and edit 'preconditions' for your dialogue."
+
+4.  Add up the total subjective scores for each tool's category of capabilities. For example, for articy:draft, the total subjective score for all the capabilities under "Branching Dialogue" was 11.
+
+5.  Multiply each tool's total subjective score by the average weighting from the appropriate category. For example, for articy:draft, the score for the category of "Branching Dialogue" was 11 x 5.88 = 64.68.
+
+6.  Add up the scores from each tool's category of capabilities to generate a final score.
+
+Example
+
+::: {.score-sum}
+
+1.  Collaboration Score: [94.5]{.pts}
+2.  Branching Dialogue Score: [64.68]{.pts}
+3.  Character Design Score: [41.4]{.pts}
+4.  Assets, Locations, and Integration Score: [88.4]{.pts}
+5.  Usability and User Interface Score: [102.6]{.pts}
+6.  Cost Learning and Support Score: [62.28]{.pts}
+7.  Other Factors Suggested by Survey Respondents Score: [10]{.pts}
+
+[Total:]{.total-label} [463.86]{.pts}
+:::
+
+[Section 4.3](#results-from-weightings-and-subjective-scoring-process), "Results from Weightings and Subjective Scoring Process " presents the results of this scoring procedure for all the tools in my evaluation.
