@@ -144,7 +144,7 @@
     "href": "index.html#under-the-hood",
     "title": "An Evaluation of Software Tools for Interactive Storytelling",
     "section": "Under the hood",
-    "text": "Under the hood\n\nQuarto: The site is built with Quarto, a publishing system made for technical and scientific reports. Numbered sections, figure cross-references, footnotes, and the table of contents come standard rather than bolted on.\nMarkdown in GitHub: Each section of the report is its own Markdown file in a public GitHub repository, assembled into this single page.\nA custom conversion script: The standard Word-to-Markdown converter dropped the figure numbers, cross-references, and some table formatting. A Python script read the Word file’s internal XML to recover them, then compared the result against the original, word by word, to confirm nothing was lost.\nLychee for link checking: Lychee checks every link on the page. All the in-page links work. Of the outside links, 18 from 2012 no longer resolve and stay as historical citations. The check also caught one link the conversion had broken.\nGitHub Pages: The site is hosted on GitHub Pages, under my own domain."
+    "text": "Under the hood\n\nQuarto: The site is built with Quarto, a publishing system made for standard technical and scientific report elements such as sections, figure cross-references, footnotes, and a table of contents.\nMarkdown in GitHub: Each section of the report is its own Markdown file in a public GitHub repository, assembled into a single page.\nA custom conversion script: The standard Word-to-Markdown converter dropped the figure numbers, cross-references, and some table formatting. A Python script read the Word file’s internal XML to recover them.\nLychee for link checking: Lychee checks every link on the page.\nGitHub Pages: The site is hosted on GitHub Pages, under my own domain."
   },
   {
     "objectID": "index.html#changes-2026",
@@ -158,6 +158,6 @@
     "href": "index.html#about",
     "title": "An Evaluation of Software Tools for Interactive Storytelling",
     "section": "About the Author",
-    "text": "About the Author\nI am a principal technical writer and content engineer with 20+ years of experience documenting SaaS and enterprise software in startup and corporate environments.\nFind me on LinkedIn · Portfolio"
+    "text": "About the Author\nI’m a principal technical writer and content engineer with 20+ years of experience documenting SaaS and enterprise software.\nFind me on LinkedIn · Portfolio"
   }
 ]

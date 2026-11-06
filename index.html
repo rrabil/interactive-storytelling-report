@@ -3820,21 +3820,19 @@ Figure&nbsp;27. Example of the help content in Excel. The content is consistent,
 <section id="making-of" class="level1">
 <h1>Making Of</h1>
 <p><em>New in the 2026 web edition.</em></p>
-<p>I turned this report into a website as an experiment in AI. How hard would it be, I wondered, to have Claude Code transform a complex technical document I had produced more than 10 years ago to a dynamic interactive online experience?</p>
-<p>The data in the report would be outdated, of course. The tools it discusses have long been superseded or have evolved substantially. (Or so I assume. I have not dabbled in gaming industry discourse in years.) But the subject in question—branching narratives for video game stories—has always appealed to my writerly interests, and the structure of the document was well suited for the web medium.</p>
-<p>I soon started picturing the process and had a vision of a hero splash page, a modern typography and color scheme, and a vertically scrolling experience. All this I described to Claude Cowork in detail, providing examples and guidelines, and directing the creation of a spec which I then passed to Claude Code as a sort of spec-driven development approach.</p>
-<p>The design, it turns out, was fairly easy to realize since I already had a solid foundation to expand upon. The first major decision was to select Quarto as the static site generator, since it was developed with data-driven reports in mind. I already had a GitHub repo, the source content and graphics, and so Claude Code built me a basic web preview so I could approve the shell. I then reviewed a few mock designs for the hero.</p>
+<p>I turned this report into a website as an experiment in AI. I wondered: How hard would it be to have Claude Code transform a complex technical document I had produced more than 10 years ago into an interactive online experience?</p>
+<p>The data in the report would be outdated, of course. The tools it discusses have long been superseded or have evolved substantially. But the subject in question—branching narratives for video game stories—has always appealed to my writerly interests, and the structure of the document was well suited for the web.</p>
+<p>I soon envisioned a hero splash page, a modern typography and color scheme, and a vertical scrolling experience. All this I described to Claude Cowork in detail, providing examples and guidelines, and directing the creation of a spec which I then passed to Claude Code for implementation.</p>
+<p>The design was fairly easy to realize since I had a solid foundation to expand upon. The first major decision was to select Quarto as the static site generator, since it was developed with technical reports in mind. I already had a GitHub repo, the source content, and graphics, and so Claude Code built me a basic web preview so I could approve the shell. I then reviewed a few mock designs for the hero and other UI elements.</p>
 <p>And yet my work was not done so quickly as all that. As I read through the report, I realized it needed some other editorial and design adjustments to flow better as an online experience. It needed a tighter summary above the fold, a more useful breakdown of results, more links and lists rather than dense blocks of text.</p>
-<p>Even so it was a satisfying process. It has always been frustrating for me as a writer to have a vision and a particular taste but not the technical or design resources to implement it. But for this effort I got all of that, and after multiple iterations I’m pleased with how it came out.</p>
-<p>One thing became clear to me. AI can hand you rapid prototypes, and that is truly miraculous. But as with the pre-AI world of tech, it takes discipline, and patience, to slow down and really look at the prototypes and put yourself in the shoes of the user. With AI, you can build something in no time. But is that something truly impressive or does it disappoint the more you squint at it?</p>
-<p>In some ways I’m thrilled at the possibilities that AI will afford. In other ways I’m more convinced than ever that old-fashioned principles of writing and design are as relevant as before, and that putting in the hard work to achieve quality is as important as it has always been.</p>
+<p>The whole process was highly satisfying. It has always been frustrating for me as a writer to have a vision and a particular taste but not the technical or design resources to implement it. But for this effort I got all of that, and after multiple iterations I’m pleased with how it came out.</p>
 <section id="under-the-hood" class="level2">
 <h2 class="anchored" data-anchor-id="under-the-hood">Under the hood</h2>
 <ul>
-<li><strong>Quarto:</strong> The site is built with <a href="https://quarto.org/">Quarto</a>, a publishing system made for technical and scientific reports. Numbered sections, figure cross-references, footnotes, and the table of contents come standard rather than bolted on.</li>
-<li><strong>Markdown in GitHub:</strong> Each section of the report is its own Markdown file in a public <a href="https://github.com/rrabil/interactive-storytelling-report">GitHub repository</a>, assembled into this single page.</li>
-<li><strong>A custom conversion script:</strong> The standard Word-to-Markdown converter dropped the figure numbers, cross-references, and some table formatting. A Python script read the Word file’s internal XML to recover them, then compared the result against the original, word by word, to confirm nothing was lost.</li>
-<li><strong>Lychee for link checking:</strong> <a href="https://lychee.cli.rs/">Lychee</a> checks every link on the page. All the in-page links work. Of the outside links, 18 from 2012 no longer resolve and stay as historical citations. The check also caught one link the conversion had broken.</li>
+<li><strong>Quarto:</strong> The site is built with <a href="https://quarto.org/">Quarto</a>, a publishing system made for standard technical and scientific report elements such as sections, figure cross-references, footnotes, and a table of contents.</li>
+<li><strong>Markdown in GitHub:</strong> Each section of the report is its own Markdown file in a public <a href="https://github.com/rrabil/interactive-storytelling-report">GitHub repository</a>, assembled into a single page.</li>
+<li><strong>A custom conversion script:</strong> The standard Word-to-Markdown converter dropped the figure numbers, cross-references, and some table formatting. A Python script read the Word file’s internal XML to recover them.</li>
+<li><strong>Lychee for link checking:</strong> <a href="https://lychee.cli.rs/">Lychee</a> checks every link on the page.</li>
 <li><strong>GitHub Pages:</strong> The site is hosted on GitHub Pages, under my own domain.</li>
 </ul>
 </section>
@@ -3850,7 +3848,7 @@ Figure&nbsp;27. Example of the help content in Excel. The content is consistent,
 </section>
 <section id="about" class="level2">
 <h2 class="anchored" data-anchor-id="about">About the Author</h2>
-<p>I am a principal technical writer and content engineer with 20+ years of experience documenting SaaS and enterprise software in startup and corporate environments.</p>
+<p>I’m a principal technical writer and content engineer with 20+ years of experience documenting SaaS and enterprise software.</p>
 <p><a href="https://www.linkedin.com/in/rrabil/">Find me on LinkedIn</a> · <a href="https://portfolio.richardrabil.com/">Portfolio</a></p>
 
 
