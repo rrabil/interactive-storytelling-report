@@ -2,7 +2,8 @@
 
 Pipeline:
   1. pandoc Rabil-Final-Report-v11_1.docx -t markdown --wrap=none --extract-media=. -o _source/raw.md
-  2. python _source/convert.py            (this script; writes sections/*.qmd)
+  2. python _source/convert.py            (this script; writes sections/*.qmd and
+                                            renames media/imageN to the names in MEDIA)
 
 Rules (from the spec): the original text stays as it was. Only mechanical fixes are
 made here: broken figure/table/section references, table rebuilding, icon-to-text
@@ -224,6 +225,73 @@ FIGURES = [
     (27, "image31.png", "fig-excel-help", "Excel has a low learning curve, especially if you use other Microsoft Office"),
 ]
 FIG_ID = {n: fid for n, _, fid, _ in FIGURES}
+
+# Readable file names and alt text for every image Pandoc extracts as media/imageN.
+# The number stays as a prefix so the mapping back to the Word file is obvious.
+# Alt text describes what is in the image (the caption sits beside it), and charts
+# carry their numbers. It replaces the Word file's own alt text, which was thin and,
+# for image12, just a leftover file name. No double quotes: it lands in fig-alt="...".
+MEDIA = {
+    "image2.jpeg": ("02-skyrim-dialogue-choices.jpeg",
+        "Scene from Skyrim. Jarl Balgruuf sits on a wooden throne in a stone hall beside a standing advisor. A menu next to him lists the player's two dialogue choices, one about having a great view of the execution, one about the dragon destroying Helgen."),
+    "image3.png": ("03-survey-q1-roles.png",
+        "Bar chart of survey participants' roles. Game developer or designer: 11. Game writer or editor: 9. Narrative designer: 3. Aspiring game writer: 3. Other: 3. Content writer: 2. Game writing student: 2. Copywriter and game writing hobbyist: 0."),
+    "image4.png": ("04-survey-q4-dialogue-tools.png",
+        "Bar chart of tools participants have used to write branching dialogue. Have not written branching dialogue: 12. Microsoft Word or other word processor: 10. Excel or other spreadsheet: 9. articy:draft beta: 4. Chat Mapper: 4. A proprietary toolset: 4. Aurora Toolset: 1. Scrivener: 1. Celtx, ChoiceScript, MediaWiki and Wide Ruled: 0."),
+    "image5.png": ("05-survey-collaboration-rankings.png",
+        "Grouped bar chart of how participants ranked five collaboration and story-design features, from 1 (critical) to 7 (irrelevant). Creating and editing a story outline drew the most critical votes, 12. Version history drew 8, linking content to an outline 7, a storyboard view 6, and web-based collaboration 1, with most of its votes spread across ranks 2 to 5."),
+    "image6.png": ("06-survey-q17-price-range.png",
+        "Bar chart of what participants consider an affordable single-user license. $0 to $50: 4. $50 to $200: 7. $200 to $400: 3. $400 to $600: 2. $600 to $800: 0. $800 to $1,000: 1."),
+    "image10.png": ("10-articy-flow-and-dialog-editors.png",
+        "articy:draft window split into two panels. The top panel shows the story flow as a row of colored boxes joined by arrows. The bottom panel shows the Prison Talk conversation nested in one of those boxes, as branching dialogue nodes for Brynn Harrowmage and Cush ap Rogar. A project tree runs down the left."),
+    "image11.png": ("11-chatmapper-conversation-simulator.png",
+        "Two overlapping Chat Mapper simulator windows with callout arrows. In one, the author picks from a list of dialogue options under a portrait of Brynn Harrowmage. In the other, Cush ap Rogar's portrait appears with his reply as on-screen text. Callouts say authors can simulate the dialogue options they wrote, and preview how their dialogue looks and sounds when delivered by an NPC."),
+    "image12.png": ("12-dat-area-editor-overview.png",
+        "Dragon Age Toolset Area editor. A 3D view of a swamp village at dusk, with placeholder character figures, a flag and a camera marker, sits between a tree of area objects on the left and a palette of resource folders on the right."),
+    "image13.png": ("13-dat-version-control.png",
+        "Dragon Age Toolset with the Resource History panel open. It lists two check-ins of the same file with date and user, and a red circle highlights a right-click menu with View Resource, Restore Resource and Restore to New Resource."),
+    "image14.png": ("14-articy-storyboard-flow-view.png",
+        "articy:draft Flow view. About a dozen colored story boxes, each holding a short text summary, are connected left to right by arrows that branch and rejoin. A project tree on the left lists the flow fragments."),
+    "image15.png": ("15-excel-story-outline-hyperlinks.png",
+        "Excel worksheet titled Story Outline listing the game's parts in column A. Parts 1 and 2 and their sub-steps are blue hyperlinks; Parts 3 to 7 are plain text."),
+    "image16.png": ("16-dat-dialogue-tree.png",
+        "Dragon Age Toolset Conversation Editor. A nested tree of dialogue lines, with the quest giver's lines in red and the player's replies in blue, sits above a Plots and Scripting tab. A palette of resource folders is on the right."),
+    "image17.png": ("17-chatmapper-dialogue-tree.png",
+        "Chat Mapper Prison Chatter conversation laid out as a top-down tree of dialogue cards, each with a portrait, speaker names and the line of dialogue. A minimap is at top right and a Properties panel for the selected line below it."),
+    "image18.png": ("18-articy-inbound-pin-condition.png",
+        "Close-up of an articy:draft dialogue node for Brynn Harrowmage asking: The Creeps? Who, or what, are the Creeps? An inbound pin on its left edge holds the condition IfAskedAboutPrison."),
+    "image19.png": ("19-dat-plots-and-scripting-tab.png",
+        "Close-up of the Dragon Age Toolset Plots and Scripting tab. The Condition section is set to plot clear_the_hut, is true, flag QUEST_ACCEPTED, so the line shows only after the quest is accepted."),
+    "image20.png": ("20-chatmapper-scripting-editor.png",
+        "Close-up of Chat Mapper with a dialogue card for Cush ap Rogar above the Script Editor, which holds one Lua line that sets the Creep actor's status to LearnedAbout."),
+    "image21.png": ("21-chatmapper-simulator-tracking.png",
+        "Chat Mapper Conversation Simulator. Brynn Harrowmage's portrait and four dialogue options are in the center. Empty variable, status and relationship tracker panels run down the left, and a list of possible dialogue choices with their conditions is on the right."),
+    "image22.png": ("22-articy-character-entity.png",
+        "articy:draft entity sheet for Brynn Harrowmage with portrait, a paragraph of backstory, and fields for type, age, sex, species, profession, birthplace, personality and inner conflict. The project tree on the left lists NPCs and locations."),
+    "image23.png": ("23-excel-character-sheet.png",
+        "Excel worksheet used as a character sheet. Each row is an NPC, here Tamrius Sextus and Ji Ling, with columns for name, NPC type, a picture, race, class, alignment, background, age, internal conflict and motivation."),
+    "image24.png": ("24-chatmapper-custom-asset-fields.png",
+        "Chat Mapper Project Settings, Custom Asset Fields tab for Actors. A table of required fields (Name, Pictures, Description, IsPlayer) sits above a table of custom fields such as Age, Gender, Faction, Class and Hometown, each with a type, default value, hint, and Show and Export checkboxes."),
+    "image25.png": ("25-dat-area-editor-panels.png",
+        "Dragon Age Toolset Area editor with five panels: an object tree, a 3D swamp scene with placeholder figures, a resource palette, an Object Inspector of properties such as Variable 2da and NameRequiresReTranslation, and a log window."),
+    "image26.png": ("26-dat-script-editor.png",
+        "Dragon Age Toolset script editor showing a short C-style script that sets a plot flag when a team of monsters is destroyed, with a long alphabetical list of script functions beside it and a resource palette on the right."),
+    "image27.png": ("27-articy-split-screen.png",
+        "articy:draft in a four-panel layout: the Prison Talk dialogue flow at top left, Brynn Harrowmage's character entity at top right, a floor plan of Prison Darkhenge with labeled cells and rooms at bottom left, and an assets tree at bottom right."),
+    "image28.png": ("28-chatmapper-panel-docking.png",
+        "Chat Mapper window mid-rearrangement. A panel is being dragged and a translucent blue highlight with docking handles shows where it will land, over a conversation tree flanked by asset lists and a Properties panel."),
+    "image29.png": ("29-chatmapper-context-help.png",
+        "Chat Mapper with three small blue question-mark help buttons circled in red: on the Dialogue Text toolbar, the Script Editor and the Conditions panel."),
+    "image30.png": ("30-dat-wiki-plots-tutorial.png",
+        "Firefox showing the Dragon Age Toolset wiki page Keeping track of quests via plots. Explanatory text, a yellow tip box and a list of three flags (QUEST_ACCEPTED, MONSTERS_SLAIN, REWARD_RECEIVED) sit above an embedded screenshot of the plot editor."),
+    "image31.png": ("31-excel-help-export-xml.png",
+        "An Excel dialogue script with actor names and lines in two columns, partly covered by an Excel Help window on exporting XML data from mapped cells, with numbered steps and a picture of the XML ribbon group."),
+    "image32.png": ("32-survey-q2-industry-experience.png",
+        "Pie chart: asked whether they work or have worked in the video game industry creating or editing story content, 21 participants said yes and 12 said no."),
+    "image33.png": ("33-survey-q3-branching-dialogue.png",
+        "Pie chart: asked whether they have written conversation trees or branching dialogue, 20 participants said yes and 11 said no."),
+}
+assert all('"' not in alt for _, alt in MEDIA.values())
 
 IMG_RE = re.compile(r'!\[([^\]]*)\]\(\./media/(image\d+\.\w+)\)\{width="([\d.]+)in" height="[\d.]+in"\}')
 TEXT_WIDTH_IN = 7.0
@@ -501,6 +569,30 @@ def fix_grid_tables(src):
 
 
 text = fix_grid_tables(text)
+
+# Readable image names and alt text (MEDIA, above). Every image reference must be in
+# the table, and every table entry must be used, so a new or dropped figure fails here.
+seen = set()
+
+
+def rename_image(m):
+    old, attrs_ = m.group(1), m.group(2)
+    new, alt = MEDIA[old]
+    seen.add(old)
+    attrs_, n = re.subn(r'fig-alt="[^"]*"', f'fig-alt="{alt}"', attrs_)
+    assert n == 1, old
+    return f"](media/{new}){{{attrs_}}}"
+
+
+text = re.sub(r"\]\(media/(image\d+\.\w+)\)\{([^}]*)\}", rename_image, text)
+assert seen == set(MEDIA), set(MEDIA) ^ seen
+
+# Pandoc extracts media/imageN; rename to match. Skips files already renamed.
+MEDIA_DIR = ROOT / "media"
+for old, (new, _) in MEDIA.items():
+    if (MEDIA_DIR / old).exists():
+        (MEDIA_DIR / old).replace(MEDIA_DIR / new)
+    assert (MEDIA_DIR / new).exists(), new
 
 # "Note:" paragraphs get their own styled block (.report-note in editorial.scss).
 # The original mixes "**Note**:" and "**Note:**"; both become "**Note:**".

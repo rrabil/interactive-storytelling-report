@@ -36,7 +36,7 @@ For quick reference, the table below shows the subjective scores I assigned to e
 
 **DA Toolset:** The DA Toolset lets you check files in and out of a database (see @fig-version-control), and lets you view and manage versions, add check in comments, and restore older versions if necessary.
 
-![The DA Toolset's version control capability.](media/image13.png){#fig-version-control fig-alt="Screenshot of the DA Toolset's version control capability."}
+![The DA Toolset's version control capability.](media/13-dat-version-control.png){#fig-version-control fig-alt="Dragon Age Toolset with the Resource History panel open. It lists two check-ins of the same file with date and user, and a red circle highlights a right-click menu with View Resource, Restore Resource and Restore to New Resource."}
 
 **Excel:** Out of box, Excel does not give you an automated way of creating and tracking historical versions of your Excel files. If you want to create historical versions, you will need to do so manually.
 
@@ -44,7 +44,7 @@ For quick reference, the table below shows the subjective scores I assigned to e
 
 **articy:draft:** articy:draft comes with a "flow editor" and "flow fragments" for plotting the sequences of events in your game in a storyboard fashion. (See @fig-articy-storyboard.) You can connect the fragments using a simple drag and drop technique on a virtual zooming canvas. The result is a branching network view of events comparable to what you see in Microsoft Visio, except that you are not limited by the size of a document. You can title each fragment, write a brief summary of what it refers to, add pictures to give a visual reference, and place "inbound" and "outbound" connectors between each fragment. You can also embed fragments within each other, so that one fragment can contain lower-level fragments, allowing you to drill down multiple layers.
 
-![Storyboard or "Flow" view in articy:draft. You can drill down into each flow fragment to view and/or create "sub" flows. Each fragment’s color can be changed, and image files can be dragged and dropped into the fragments if so desired.](media/image14.png){#fig-articy-storyboard fig-alt="Screenshot of the Flow Editor in articy:draft."}
+![Storyboard or "Flow" view in articy:draft. You can drill down into each flow fragment to view and/or create "sub" flows. Each fragment’s color can be changed, and image files can be dragged and dropped into the fragments if so desired.](media/14-articy-storyboard-flow-view.png){#fig-articy-storyboard fig-alt="articy:draft Flow view. About a dozen colored story boxes, each holding a short text summary, are connected left to right by arrows that branch and rejoin. A project tree on the left lists the flow fragments."}
 
 **Chat Mapper:** Chat Mapper does not provide a storyboard view of story events. The tool is strictly focused on creating content for interactive conversations, and there is no way of displaying a visual diagram showing the structural or sequential relationship between each conversation, either in basic outline or storyboard mode.
 
@@ -62,7 +62,7 @@ For quick reference, the table below shows the subjective scores I assigned to e
 
 **Excel**: Users can create manual outlines in Excel in which each entry is a hyperlink. (See @fig-excel-outline.) However, the outline is difficult to maintain. For example, when a new entry is added, it does not inherit any formatting; a hyperlink must be applied to it manually. Also, if the cells that the hyperlinks point to shift when you add or delete a row, the hyperlinks are immediately broken and must be manually updated. Users can go to the Data tab and use Excel's Outline tool to create automatic outlines, but this feature is designed specifically for Excel tables filled with data and formulas, not lines of text.
 
-![Outline and hyperlinks in Excel. Keeping the links up-to-date is a highly manual process.](media/image15.png){#fig-excel-outline fig-alt="Outline of hyperlinks in Excel." width="40%"}
+![Outline and hyperlinks in Excel. Keeping the links up-to-date is a highly manual process.](media/15-excel-story-outline-hyperlinks.png){#fig-excel-outline fig-alt="Excel worksheet titled Story Outline listing the game's parts in column A. Parts 1 and 2 and their sub-steps are blue hyperlinks; Parts 3 to 7 are plain text." width="40%"}
 
 ### Ability to associate content with a story outline and/or storyboard (e.g., group dialogue under specific parts of the outline)
 
@@ -96,7 +96,7 @@ For quick reference, the table below shows the subjective scores I assigned to e
 
 **DA Toolset**: The DA Toolset has a Conversation Editor that displays dialogue in nodes and branches that can be easily expanded and collapsed. Moreover, the tool allows any node to be copied and pasted as a reusable link, thus avoiding manual retyping of the same content in many places. Content can be associated with each node, such as plots, plot flags, variables, voiceovers, and triggers for scripts.
 
-![The DA Toolset's dialogue tree view in the Conversation Editor.](media/image16.png){#fig-dat-tree fig-alt="Screenshot of the DA Toolset's dialogue tree view." width="61%"}
+![The DA Toolset's dialogue tree view in the Conversation Editor.](media/16-dat-dialogue-tree.png){#fig-dat-tree fig-alt="Dragon Age Toolset Conversation Editor. A nested tree of dialogue lines, with the quest giver's lines in red and the player's replies in blue, sits above a Plots and Scripting tab. A palette of resource folders is on the right." width="61%"}
 
 **Excel**: In Excel it is possible to manually implement a tree-like structure for your dialogue, but such a structure is not nearly as robust as in software applications that are designed for this activity. Because rows and columns need to be frequently added or deleted, it is time-consuming and difficult to maintain a branching structure in Excel as it grows in complexity.
 
@@ -106,7 +106,7 @@ For quick reference, the table below shows the subjective scores I assigned to e
 
 **Chat Mapper**: Chat Mapper's default display of the branching dialogue is vertical, but you can change this in the preferences to be a horizontal display. @fig-chatmapper-tree displays the default vertical orientation.
 
-![Dialogue tree view in Chat Mapper. You can change the orientation to horizontal if you wish. In contrast with articy:draft, clicking and dragging in the window is not possible.](media/image17.png){#fig-chatmapper-tree fig-alt="Screenshot of the dialogue tree view in Chat Mapper."}
+![Dialogue tree view in Chat Mapper. You can change the orientation to horizontal if you wish. In contrast with articy:draft, clicking and dragging in the window is not possible.](media/17-chatmapper-dialogue-tree.png){#fig-chatmapper-tree fig-alt="Chat Mapper Prison Chatter conversation laid out as a top-down tree of dialogue cards, each with a portrait, speaker names and the line of dialogue. A minimap is at top right and a Properties panel for the selected line below it."}
 
 In the Chat Mapper, you can define "parent," "sibling," and "child" dialogues, as well as a dialogue "group" from which multiple branches flow. You write the dialogue in a text field of a given dialogue's properties panel, and you can drag and drop one or more images onto a given fragment to visually signify who is speaking. You can add a "link" between a dialogue and a dialogue group to indicate that the conversation will return to a root node (i.e., the player's menu of dialogue options). The dialogues cannot be clicked and dragged, but they can be expanded and collapsed. And although the dialogues do not have resize handles, you can go to the Tools \> Properties menu to change the size of each dialogue.
 
@@ -118,13 +118,13 @@ In the Chat Mapper, you can define "parent," "sibling," and "child" dialogues, a
 
 **articy:draft**: The dialogue fragments in articy:draft have inbound and outbound \"pins\" in which you can manually write a condition. (See @fig-articy-pins.) However, these pins do not have any programmatic value; you cannot simulate them to see how well they work. They are merely placeholders that explain under what conditions the story or dialogue fragment appears or does not appear. (According to Nevigo's roadmap, a conversation simulator is planned for implementation.)
 
-![Inbound pins in articy:draft can be used to manually specify conditions.](media/image18.png){#fig-articy-pins fig-alt="Screenshot of inbound pin in articy:draft." width="56%"}
+![Inbound pins in articy:draft can be used to manually specify conditions.](media/18-articy-inbound-pin-condition.png){#fig-articy-pins fig-alt="Close-up of an articy:draft dialogue node for Brynn Harrowmage asking: The Creeps? Who, or what, are the Creeps? An inbound pin on its left edge holds the condition IfAskedAboutPrison." width="56%"}
 
 **Chat Mapper:** Chat Mapper has a Conditions editor that allows you to specify and edit conditions for any given dialogue in your conversation. Simple conditions can be added with a simple click, but other more complex ones must be written using Lua, a scripting language, which some game writers may find intimidating. Lua is a very lightweight language, however, and the designers of Chat Mapper give you guidance on how to use it, as well as some shortcuts for editing it.
 
 **DA Toolset:** The DA Toolset has a \"Plots and Scripting\" tab that allows users to set conditions for any line of dialogue. (See @fig-dat-plots.) For this feature to work, a \"Plot\" resource must be created, and each plot must have a series of \"Flags.\" Ultimately, these features allow the user to one or more lines with a particular plot, thus letting one NPC have multiple conversation options depending on which plot is true or false. Furthermore, within a given plot, users can associate a line of dialogue with a particular plot flag, which in turn determines which lines appear or do not appear.
 
-![Plots and Scripting tab in the DA Toolset. You can use this tab to make dialogue nodes display only under certain conditions.](media/image19.png){#fig-dat-plots fig-alt="Screenshot of the Plots and Scripting tab in the DA Toolset." width="65%"}
+![Plots and Scripting tab in the DA Toolset. You can use this tab to make dialogue nodes display only under certain conditions.](media/19-dat-plots-and-scripting-tab.png){#fig-dat-plots fig-alt="Close-up of the Dragon Age Toolset Plots and Scripting tab. The Condition section is set to plot clear_the_hut, is true, flag QUEST_ACCEPTED, so the line shows only after the quest is accepted." width="65%"}
 
 **Excel**: In Excel, for each line of dialogue, you can insert a column in which to specify conditions and manually type in the conditions when required. Of course, this process is highly manual and not the best visual solution. You might have a large number of empty cells in the column, since not every line of dialogue will require a condition.
 
@@ -134,7 +134,7 @@ In the Chat Mapper, you can define "parent," "sibling," and "child" dialogues, a
 
 **Chat Mapper:** Chat Mapper handles this ability through its Scripting Editor, in which you can add simple Lua scripts that can change variables or trigger outcomes. (See @fig-chatmapper-scripting.) Each script you add is associated with a dialogue node. For example, you can add a script to a dialogue so that when the dialogue is completed, the game system puts an item in a character's inventory. The potential downside is that writers may be intimidated by scripting. Lua is a very lightweight language, however, and the designers of Chat Mapper give you guidance on how to use it, as well as some shortcuts for editing it.
 
-![Scripting Editor in Chat Mapper. You can use this editor to write simple Lua scripts and associate them with a dialogue node.](media/image20.png){#fig-chatmapper-scripting fig-alt="Screenshot of the Scripting Editor in Chat Mapper." width="46%"}
+![Scripting Editor in Chat Mapper. You can use this editor to write simple Lua scripts and associate them with a dialogue node.](media/20-chatmapper-scripting-editor.png){#fig-chatmapper-scripting fig-alt="Close-up of Chat Mapper with a dialogue card for Cush ap Rogar above the Script Editor, which holds one Lua line that sets the Creep actor's status to LearnedAbout." width="46%"}
 
 **DA Toolset:** The DA Toolset has a \"Plots and Scripting\" tab in the Conversation Editor, as well as the ability to create what are called "Plot" resources. (See above.) Through these tools, you can create variables and trigger actions or events to occur when a line of dialogue is spoken. For example, you can create a plot that has a series of "flags," such as "quest_accepted," "monsters_slain," or "quest_completed." (These are flags that one of the DA Toolset tutorials suggests.) Then, in a given conversation, you can specify that a certain line of dialogue sets one of those flags. The terminology can be confusing, but the functionality is quite robust, allowing you to create your dialogue such that it causes a variety of outcomes to occur in relation to a particular quest.
 
@@ -146,7 +146,7 @@ In the Chat Mapper, you can define "parent," "sibling," and "child" dialogues, a
 
 **Chat Mapper:** Chat Mapper comes with a full-fledged Conversation Simulator, which lets you see a mockup or prototype of the interactive conversation you have created. The simulator interface includes panels for you to track how variables, relationship values, and/or other elements of the conversation which you defined are executed, and whether any errors occurred.
 
-![Conversation Simulator in Chat Mapper. The surrounding panels keep track of any variables updated during the simulation.](media/image21.png){#fig-chatmapper-simulator fig-alt="Screenshot of the Conversation Simulator in Chat Mapper."}
+![Conversation Simulator in Chat Mapper. The surrounding panels keep track of any variables updated during the simulation.](media/21-chatmapper-simulator-tracking.png){#fig-chatmapper-simulator fig-alt="Chat Mapper Conversation Simulator. Brynn Harrowmage's portrait and four dialogue options are in the center. Empty variable, status and relationship tracker panels run down the left, and a list of possible dialogue choices with their conditions is on the right."}
 
 **DA Toolset:** The DA Toolset has a \"Preview Line\" tool that allows users to see how a line of dialogue will be visualized, spoken, and animated by an NPC. In addition, users can export their module, open it up via the *Dragon Age: Origins* launch screen, and play test the conversation they have created. However, there a number of requisite steps you must take first. For instance, you must create the area, the characters, the items, the gestures, and a range of other resources before the conversation can be loaded and playtested. In other words, several hours of set up work will be required before the preview line can be seen.
 
@@ -178,7 +178,7 @@ For quick reference, the table below shows the subjective scores I assigned to e
 
 **articy:draft:** articy:draft has an Entity Editor for filling out character profiles. (See @fig-articy-entity.) The editor allows you to create a character sheet based on predefined templates (Major and Minor NPC templates), and fill in standard fields, such as Description, Motivation, Inner Conflict, Appearance, and more. If you update the character's name, the update will cascade to any resource where the name is referenced. You can also easily drag and drop art assets (such as character portraits) from your folders into the Entity Editor, and you can display the character sheet for easy cross referencing as you write.
 
-![Character Entity editor in articy:draft. In addition to the fields describing the character’s personality, the sheet includes fields describing every point in the story where the character is referenced.](media/image22.png){#fig-articy-entity fig-alt="Screenshot of the Character Entity editor in articy:draft."}
+![Character Entity editor in articy:draft. In addition to the fields describing the character’s personality, the sheet includes fields describing every point in the story where the character is referenced.](media/22-articy-character-entity.png){#fig-articy-entity fig-alt="articy:draft entity sheet for Brynn Harrowmage with portrait, a paragraph of backstory, and fields for type, age, sex, species, profession, birthplace, personality and inner conflict. The project tree on the left lists NPCs and locations."}
 
 **Chat Mapper**: Chat Mapper has an Actors panel through which you can create new "Actors" and display each actor's "sheet" or properties in a side panel for easy cross referencing. You can specify properties such as Name, Gender, Description, Class, and Rank. You can also select images, models, and sound files for the actor. If you update any of the actor's information, the update will cascade to any place where the actor is referenced.
 
@@ -186,7 +186,7 @@ For quick reference, the table below shows the subjective scores I assigned to e
 
 **Excel:** Excel does not come with predefined character sheets, but such sheets can be easily created from scratch. (See @fig-excel-character.) Free character templates in Excel format can be found online and downloaded, or you can pick up a creative writing guide and determine what categories of information to include in your sheet. (The categories will of course depend on your unique project needs as well.) In general, the drawback with character sheets in Excel is that they are not built-in, and they can be a hassle to maintain. Perhaps the best approach is to organize each character's worksheet as a row in a table with standard columns, because you can then filter the rows based on a given column. Of course, this approach will become difficult t work with if you have a long list of characters.
 
-![Custom character sheet in Excel. This is an example of how character sheets could be implemented in Excel. The column headings are based on the fields that come pre-packaged in the Character Entity editor articy:draft.](media/image23.png){#fig-excel-character fig-alt="Screenshot of custom character sheet in Excel."}
+![Custom character sheet in Excel. This is an example of how character sheets could be implemented in Excel. The column headings are based on the fields that come pre-packaged in the Character Entity editor articy:draft.](media/23-excel-character-sheet.png){#fig-excel-character fig-alt="Excel worksheet used as a character sheet. Each row is an NPC, here Tamrius Sextus and Ji Ling, with columns for name, NPC type, a picture, race, class, alignment, background, age, internal conflict and motivation."}
 
 ### Ability to add custom fields to the predefined character sheets if default fields aren\'t enough.
 
@@ -194,7 +194,7 @@ For quick reference, the table below shows the subjective scores I assigned to e
 
 **Chat Mapper**: You can add custom fields to a character sheet using Chat Mapper's Project Settings tool. (See @fig-chatmapper-settings.) With this tool, you can add "Custom Asset Fields" to any one of your assets, whether a character, item, or location. You can even specify values for the custom fields, which can be referenced in the scripts or conditions you add to your conversations.
 
-![Project Settings window in Chat Mapper. You can use this window to add Custom Asset Fields.](media/image24.png){#fig-chatmapper-settings fig-alt="Screenshot of Project Settings window in Chat Mapper." width="52%"}
+![Project Settings window in Chat Mapper. You can use this window to add Custom Asset Fields.](media/24-chatmapper-custom-asset-fields.png){#fig-chatmapper-settings fig-alt="Chat Mapper Project Settings, Custom Asset Fields tab for Actors. A table of required fields (Name, Pictures, Description, IsPlayer) sits above a table of custom fields such as Age, Gender, Faction, Class and Hometown, each with a type, default value, hint, and Show and Export checkboxes." width="52%"}
 
 **DA Toolset**: To the best of my knowledge, the DA Toolset does not have this ability.
 
@@ -305,7 +305,7 @@ For quick reference, the table below shows the subjective scores I assigned to e
 
 **DA Toolset**: The DA Toolset user interface is not intuitive. There is a dizzying array of buttons, menu items, and data fields, and it is very difficult to understand what each one means. Reference material and documentation are absolutely necessary. The interface may be somewhat intuitive to users of previous BioWare toolsets (such as the Aurora Toolset), but it is complex if you are a beginner.
 
-![Area editor in the DA Toolset. Many panels and views contain cryptic labels that can be confusing to beginners.](media/image25.png){#fig-dat-area fig-alt="Screenshot of the Area editor in the DA Toolset."}
+![Area editor in the DA Toolset. Many panels and views contain cryptic labels that can be confusing to beginners.](media/25-dat-area-editor-panels.png){#fig-dat-area fig-alt="Dragon Age Toolset Area editor with five panels: an object tree, a 3D swamp scene with placeholder figures, a resource palette, an Object Inspector of properties such as Variable 2da and NameRequiresReTranslation, and a log window."}
 
 **Excel:** The Excel 2007 and 2010 UI is more intuitive than its predecessors. Every tool or button in the Ribbon has a sleek, context-sensitive tooltip that explains its purpose. Navigating and understanding the menu items and commands is the same as in Word 2007, and there is plenty of context-sensitive help and in-application help to guide you along the way. If you are new to Excel, sometimes it is difficult to understand how rows and cells can be edited (e.g., adding hard returns in a cell is not immediately clear, and the shortcuts for resizing and formatting a cells are not very intuitive). But if you are familiar with Microsoft Word 2007 (and the average writer usually is), the learning curve will not be high.
 
@@ -317,7 +317,7 @@ For quick reference, the table below shows the subjective scores I assigned to e
 
 **DA Toolset**: For basic writing tasks (such as developing branches and nodes, or setting conditions, scripts, and plots), the DA Toolset does not require programming knowledge. However, knowledge of coding and scripting will be necessary for more sophisticated writing tasks. For example, you may want to set a condition in your dialogue so that a line displays only if a group of monsters is destroyed. (See @fig-dat-script.) In programming terms, you will need to create an "event" using a programmatic script, and you will not be able to test whether the condition works until the script is implemented successfully.
 
-![Script editor in the DA Toolset. Using the code editor is essential in order for variables and conditions to work in interactive conversations.](media/image26.png){#fig-dat-script fig-alt="Screenshot of the Script editor in the DA Toolset."}
+![Script editor in the DA Toolset. Using the code editor is essential in order for variables and conditions to work in interactive conversations.](media/26-dat-script-editor.png){#fig-dat-script fig-alt="Dragon Age Toolset script editor showing a short C-style script that sets a plot flag when a team of monsters is destroyed, with a long alphabetical list of script functions beside it and a resource palette on the right."}
 
 **Excel:** Excel does not require any knowledge of programming to perform basic to complex writing tasks. If anything, you may need to understand some rudimentary database concepts (such as how to create standard lists of values), but you can do a lot in Excel without such knowledge. However, if you want to export your spreadsheet to XML so it can be loaded into a proprietary game engine, you may need to get some technical knowledge about what XML is and how it works.
 
@@ -325,7 +325,7 @@ For quick reference, the table below shows the subjective scores I assigned to e
 
 **articy:draft**: articy:draft has a wide range of flexible viewing options for opening, resizing, and closing panels for easy cross-referencing. For example, you can hover your mouse over any one of the four edges of the screen to display "handles" that allow you to click and drag a panel or a window into view. It is very easy to arrange and resize the interface to suit your personal viewing preferences.
 
-![Split-screen view of articy:draft. Four different panels of information can be overwhelming, but in articy:draft, it is easy to show and hide such panels for rapid cross referencing.](media/image27.png){#fig-articy-split fig-alt="Screenshot of a split-screen view of articy:draft."}
+![Split-screen view of articy:draft. Four different panels of information can be overwhelming, but in articy:draft, it is easy to show and hide such panels for rapid cross referencing.](media/27-articy-split-screen.png){#fig-articy-split fig-alt="articy:draft in a four-panel layout: the Prison Talk dialogue flow at top left, Brynn Harrowmage's character entity at top right, a floor plan of Prison Darkhenge with labeled cells and rooms at bottom left, and an assets tree at bottom right."}
 
 **Chat Mapper**: Chat Mapper has a variety of predefined panels for easy cross-referencing, from the Asset browser to the Conditions editor to the main workspace to the Overview panel.
 
@@ -339,7 +339,7 @@ For quick reference, the table below shows the subjective scores I assigned to e
 
 **Chat Mapper**: Chat Mapper lets you configure and drag around each tabbed window element of the interface to create a layout that supports easy cross referencing. (See @fig-chatmapper-layout.) When you drag a tab or a panel, a preview is displayed of where the window will be docked. You can also easily resize, hide, or display each window.
 
-![Screen customization in Chat Mapper. Note the silhouetted handles that appear when you click a panel to drag it to a different location within the interface.](media/image28.png){#fig-chatmapper-layout fig-alt="Screenshot of Chat Mapper's screen customization capabilities." width="66%"}
+![Screen customization in Chat Mapper. Note the silhouetted handles that appear when you click a panel to drag it to a different location within the interface.](media/28-chatmapper-panel-docking.png){#fig-chatmapper-layout fig-alt="Chat Mapper window mid-rearrangement. A panel is being dragged and a translucent blue highlight with docking handles shows where it will land, over a conversation tree flanked by asset lists and a Properties panel." width="66%"}
 
 **DA Toolset**: The DA Toolset allows users to click, drag, and resize the borders of most (if not all) palettes, editors, and windows. You can also add and remove buttons to the toolbars, dock and undock panels and palettes, and rearrange them to suit your viewing preferences. The difficulty, of course, is knowing what each button, toolbar, and palette *means* before you decide where and how to move or customize it. The labels and tooltips in the DA Toolset's UI elements are not intuitive to beginner-level users.
 
@@ -373,7 +373,7 @@ For quick reference, the table below shows the subjective scores I assigned to e
 
 **Chat Mapper**: Chat Mapper has an in-application help system that covers the basics of the program's tools and interface. You can also access context-sensitive help in certain panels of the interface. (See @fig-chatmapper-help.) The content is consistent and clear, and includes clarifying screenshots and definitions of terms used in the interface. However, the help is far from exhaustive. There are no numbered instructions, and the documentation on conditions, scripts, and variables is minimal and describes what the features are and not how to use them.
 
-![Context-sensitive help in Chat Mapper.](media/image29.png){#fig-chatmapper-help fig-alt="Screenshot of context-sensitive help in Chat Mapper." width="72%"}
+![Context-sensitive help in Chat Mapper.](media/29-chatmapper-context-help.png){#fig-chatmapper-help fig-alt="Chat Mapper with three small blue question-mark help buttons circled in red: on the Dialogue Text toolbar, the Script Editor and the Conditions panel." width="72%"}
 
 **DA Toolset**: The DA Toolset has a detailed wiki containing walkthroughs, reference information, screenshots, and links to video tutorials. However, the topics are not written and organized consistently, and the structure of the wiki is confusing. Even though there is a "home page," there is no comprehensive outline or index of topics. Consequently, it is easy to completely miss wiki articles that exist but that don't appear on the home page. The search engine is helpful, but only if you know what terms to use. The tutorials that do exist are written in paragraph form and seldom contain numbered steps. As a result, on numerous occasions I missed critical information buried in the middle of a paragraph, and I wasted valuable time trying to troubleshoot problems I encountered. There is also a severe lack of consistency in the terms that different contributors use in the tutorials, leading to a great deal of confusion if you are a new to the software. Many of the articles are also outdated, and so are the screenshots.
 
@@ -387,7 +387,7 @@ For quick reference, the table below shows the subjective scores I assigned to e
 
 **DA Toolset**: The DA Toolset has a range of video tutorials created by fans of the game, and there are wiki articles for downloading and installing the software, as well as doing a wide range of common tasks. (See @fig-dat-wiki.) However, the quality of the tutorials and wiki articles varies widely. None of the video tutorials are made by professionals employed by BioWare, and as such, they are disjointed and many times the authors skim over important steps or assume too much prior knowledge. Moreover, much of the content on the DA Toolset wiki is not well written or well organized.
 
-![Wiki tutorial page for the DA Toolset.](media/image30.png){#fig-dat-wiki fig-alt="Screenshot of a wiki tutorial page for the DA Toolset." width="58%"}
+![Wiki tutorial page for the DA Toolset.](media/30-dat-wiki-plots-tutorial.png){#fig-dat-wiki fig-alt="Firefox showing the Dragon Age Toolset wiki page Keeping track of quests via plots. Explanatory text, a yellow tip box and a list of three flags (QUEST_ACCEPTED, MONSTERS_SLAIN, REWARD_RECEIVED) sit above an embedded screenshot of the plot editor." width="58%"}
 
 **Excel:** As mentioned above under "The tool has a detailed help system embedded in the application or accessible online," Excel has useful an extensive help system with quick reference help topics and video demos. In addition, you can access a wide range of free high-quality trainings and video tutorials online at <http://office.microsoft.com/en-us/excel-help/CH010369467.aspx>. The content is high quality and is made and maintained by experts in creating user assistance materials.
 
@@ -401,7 +401,7 @@ For quick reference, the table below shows the subjective scores I assigned to e
 
 **Excel:** Excel has a low learning curve, especially if you use other Microsoft Office tools that have similar buttons and menus. Excel is a mature tool with an intuitive interface, extensive help content (see @fig-excel-help), and an active support community. Even if you are new to the software, you can become proficient in it relatively quickly in order to perform complex game writing tasks.
 
-![Example of the help content in Excel. The content is consistent, well-written, and complete.](media/image31.png){#fig-excel-help fig-alt="Screenshot of Excel's help content." width="66%"}
+![Example of the help content in Excel. The content is consistent, well-written, and complete.](media/31-excel-help-export-xml.png){#fig-excel-help fig-alt="An Excel dialogue script with actor names and lines in two columns, partly covered by an Excel Help window on exporting XML data from mapped cells, with numbered steps and a picture of the XML ribbon group." width="66%"}
 
 ### The tool has competitive pricing options for both individual and multi-user licenses
 

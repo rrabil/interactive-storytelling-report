@@ -7,13 +7,13 @@ This section includes the complete results of the survey, including color-coded 
 
 ### Question 1 Results
 
-![](media/image3.png){fig-alt="Chart of results for survey question 1 regarding role."}
+![](media/03-survey-q1-roles.png){fig-alt="Bar chart of survey participants' roles. Game developer or designer: 11. Game writer or editor: 9. Narrative designer: 3. Aspiring game writer: 3. Other: 3. Content writer: 2. Game writing student: 2. Copywriter and game writing hobbyist: 0."}
 
 In the "Other" field, I received the following responses: (1) "IS-Videodesigner," (2) "Researcher in Game Design and Development," and (3) "Multiple Trades."
 
 ### Question 2 Results
 
-![](media/image32.png){fig-alt="Chart of results for survey question 2 regarding employment in the industry." width="89%"}
+![](media/32-survey-q2-industry-experience.png){fig-alt="Pie chart: asked whether they work or have worked in the video game industry creating or editing story content, 21 participants said yes and 12 said no." width="89%"}
 :::
 
 ::: {.callout-note collapse="true" appearance="simple" icon="false"}
@@ -21,11 +21,11 @@ In the "Other" field, I received the following responses: (1) "IS-Videodesigner,
 
 ### Question 3 Results
 
-![](media/image33.png){fig-alt="Chart of results for survey question 3 regarding experience writing branching dialogue." width="88%"}
+![](media/33-survey-q3-branching-dialogue.png){fig-alt="Pie chart: asked whether they have written conversation trees or branching dialogue, 20 participants said yes and 11 said no." width="88%"}
 
 ### Question 4 Results
 
-![](media/image4.png){fig-alt="Chart of results for survey question 4 regarding dialogue tool usage."}
+![](media/04-survey-q4-dialogue-tools.png){fig-alt="Bar chart of tools participants have used to write branching dialogue. Have not written branching dialogue: 12. Microsoft Word or other word processor: 10. Excel or other spreadsheet: 9. articy:draft beta: 4. Chat Mapper: 4. A proprietary toolset: 4. Aurora Toolset: 1. Scrivener: 1. Celtx, ChoiceScript, MediaWiki and Wide Ruled: 0."}
 
 In the "Other" category, I received the following responses: (1) "Post it notes," (2) "Scenejo," (3) "Final Draft, HTML," and (4) "UMLet (<http://www.umlet.com/>)."
 :::
@@ -217,7 +217,7 @@ In response to the question, "Any other cost, learning, or support factors that 
 
 ### Question 17 Results
 
-![](media/image6.png){fig-alt="Chart of results for survey question 17 regarding affordable price range."}
+![](media/06-survey-q17-price-range.png){fig-alt="Bar chart of what participants consider an affordable single-user license. $0 to $50: 4. $50 to $200: 7. $200 to $400: 3. $400 to $600: 2. $600 to $800: 0. $800 to $1,000: 1."}
 :::
 
 ::: {.callout-note collapse="true" appearance="simple" icon="false"}
