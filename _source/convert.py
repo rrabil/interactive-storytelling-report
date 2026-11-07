@@ -445,6 +445,12 @@ sub_once(" + ".join(f"{name} ({n})" for name, n in SCORES) + " = **463.86**",
          "::: {.score-sum}" + numbered([f"{name}: [{n}]{{.pts}}" for name, n in SCORES])
          + "[Total:]{.total-label} [463.86]{.pts}\n:::")
 
+# Conclusion: the opening paragraph (a restatement of the problem) is cut, so the
+# section starts with the findings (Richard, 2026-11-06).
+text, n = re.subn(r"\nThe interactive, non-linear characteristics of stories in video games pose[^\n]*\n\n"
+                  r"To fill this gap, this report presented", "\nThis report presented", text)
+assert n == 1, n
+
 # Pandoc swallowed the closing parenthesis into the UMLet link (found by Lychee).
 sub_all("<http://www.umlet.com/)>", "<http://www.umlet.com/>)", 2)
 

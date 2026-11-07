@@ -75,6 +75,15 @@
     }, { threshold: [0, 0.25, 1] }).observe(splash);
   })();
 
+  // Desktop Contents sidebar: add a Home link back to the splash above the sections.
+  document.addEventListener("DOMContentLoaded", function () {
+    var toc = document.querySelector("#TOC > ul");
+    if (!toc) return;
+    var item = document.createElement("li");
+    item.innerHTML = '<a href="#home" class="nav-link" data-scroll-target="#home">Home</a>';
+    toc.insertBefore(item, toc.firstChild);
+  });
+
   // On phones the menu covers the page; close it once a section link is tapped.
   document.addEventListener("DOMContentLoaded", function () {
     var menu = document.getElementById("navbarCollapse");
