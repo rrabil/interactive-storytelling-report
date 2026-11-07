@@ -48,7 +48,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-6608d60a181376c0557306e88c8aff93.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-b9df3a8e9243e5fb1367fc67861fc568.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-6c3eb61659cd81e8887ffa13407641ae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -112,12 +112,48 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
+    <a class="nav-link" href="./index.html#home"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./index.html#results-at-a-glance"> 
 <span class="menu-text">Results</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./index.html#results-at-a-glance"> 
+<span class="menu-text">Results at a glance</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./index.html#abstract"> 
 <span class="menu-text">Report</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html#abstract"> 
+<span class="menu-text">Abstract</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html#introduction"> 
+<span class="menu-text">1 Introduction</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html#background"> 
+<span class="menu-text">2 Background</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html#methodology"> 
+<span class="menu-text">3 Methodology</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html#results"> 
+<span class="menu-text">4 Results</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html#discussion"> 
+<span class="menu-text">5 Discussion</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html#conclusion"> 
+<span class="menu-text">6 Conclusion</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./index.html#appendix-a-rationale-for-tool-selection"> 
@@ -231,7 +267,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="column-screen splash">
+<div id="home" class="column-screen splash">
 <section class="splash-main" aria-label="Introduction">
   <div class="splash-text">
     <span class="splash-tag"><span>2026 web edition</span><span class="sep" aria-hidden="true">/</span><span class="provenance">First published January 2012</span></span>
@@ -239,9 +275,7 @@ ul.task-list li input[type="checkbox"] {
     <p class="splash-abstract">Four tools for game writing selected (articy:draft, Chat Mapper, the Dragon Age Toolset, and Excel), tested hands-on for 40+ hours, and scored against priorities from a 33-person industry survey.</p>
     <div class="splash-actions">
       <a class="pill primary" href="#results-at-a-glance">See the results<svg width="16" height="16" viewbox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3v10M3.5 8.5 8 13l4.5-4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
-      <a class="pill ghost" href="#making-of">How it was made</a>
     </div>
-    <p class="splash-pdf"><a href="https://portfolio.richardrabil.com/files/Rabil-Technical-Report-Software-Interactive-Storytelling.pdf">Original PDF (2012)</a></p>
   </div>
 
   <div class="splash-graphic">
@@ -307,6 +341,17 @@ ul.task-list li input[type="checkbox"] {
       document.body.classList.toggle("splash-in-view", entries[0].intersectionRatio > 0.25);
     }, { threshold: [0, 0.25, 1] }).observe(splash);
   })();
+
+  // On phones the menu covers the page; close it once a section link is tapped.
+  document.addEventListener("DOMContentLoaded", function () {
+    var menu = document.getElementById("navbarCollapse");
+    if (!menu || !window.bootstrap) return;
+    menu.querySelectorAll(".nav-link").forEach(function (link) {
+      link.addEventListener("click", function () {
+        if (menu.classList.contains("show")) bootstrap.Collapse.getOrCreateInstance(menu).hide();
+      });
+    });
+  });
 </script>
 </div>
 <section id="results-at-a-glance" class="level1">
@@ -331,7 +376,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="glance-links">
-<p><a href="#methodology">How the tools were scored: Methodology</a> <a href="#results-from-weightings-and-subjective-scoring-process">Full score table</a></p>
+<p><a href="#methodology">How the tools were scored: Methodology</a> <a href="#results-from-weightings-and-subjective-scoring-process">Full score table</a> <a href="https://portfolio.richardrabil.com/files/Rabil-Technical-Report-Software-Interactive-Storytelling.pdf">Original PDF (2012)</a></p>
 </div>
 </section>
 <section id="abstract" class="level1">
@@ -817,13 +862,15 @@ Figure&nbsp;5. Participants’ responses regarding affordable price ranges.
 <p><strong>Note:</strong> This table should <em>not</em> be analyzed in isolation from the table in <a href="#results-from-weightings-and-subjective-scoring-process">Section 4.3</a>, “Results from Weightings and Subjective Scoring Process,” nor should it be read apart from the detailed commentary I provide in <a href="#appendix-b-detailed-analysis-of-each-tools-capabilities">Section 9</a>, “Appendix B: Detailed Analysis of Each Tool’s Capabilities.” For one thing, the table below does <em>not</em> account for the weighting of each capability. In other words, a tool might possess a wide variety of capabilities, but that does not mean those capabilities are a high priority to game writers and narrative designers. Additionally, while the icons below provide a visual summary of my evaluation, the results of my scoring process present my evaluation results on a deeper level of granularity.</p>
 </div>
 <p><strong>Legend</strong>: ✓ Yes = Exists; ◐ Partial = Exists with a workaround or is somehow “less than ideal”; ✗ No = Does not exist</p>
+<section id="capabilities-collaboration-and-story-design" class="level3">
+<h3 class="anchored" data-anchor-id="capabilities-collaboration-and-story-design">Collaboration and Story Design</h3>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 71%">
+<col style="width: 73%">
 <col style="width: 6%">
 <col style="width: 6%">
 <col style="width: 6%">
-<col style="width: 8%">
+<col style="width: 7%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -836,173 +883,230 @@ Figure&nbsp;5. Participants’ responses regarding affordable price ranges.
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Collaboration and Story Design</strong></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
 <td>Ability to have web-based collaboration for multiple authors</td>
 <td>✓ Yes</td>
 <td>◐ Partial</td>
 <td>◐ Partial</td>
 <td>◐ Partial</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Ability to have version history and version control of your writing-related files</td>
 <td>✓ Yes</td>
 <td>✗ No</td>
 <td>✓ Yes</td>
 <td>✗ No</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Ability to view, create, and edit a “storyboard” view of story events</td>
 <td>✓ Yes</td>
 <td>✗ No</td>
 <td>✗ No</td>
 <td>◐ Partial</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Ability to create and edit a story outline</td>
 <td>✓ Yes</td>
 <td>✗ No</td>
 <td>✗ No</td>
 <td>◐ Partial</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Ability to associate content with a story outline and/or storyboard</td>
 <td>✓ Yes</td>
 <td>✗ No</td>
 <td>✗ No</td>
 <td>◐ Partial</td>
 </tr>
-<tr class="odd">
-<td><strong>Branching Dialogue</strong></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+</tbody>
+</table>
+</section>
+<section id="capabilities-branching-dialogue" class="level3">
+<h3 class="anchored" data-anchor-id="capabilities-branching-dialogue">Branching Dialogue</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 73%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 7%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Capability</th>
+<th>articy:<wbr>draft</th>
+<th>Chat Mapper</th>
+<th>DA Toolset</th>
+<th>Excel</th>
 </tr>
-<tr class="even">
+</thead>
+<tbody>
+<tr class="odd">
 <td>Ability to display your conversations in a tree-like view showing collapsible nodes and branches</td>
 <td>✗ No</td>
 <td>✓ Yes</td>
 <td>✓ Yes</td>
 <td>◐ Partial</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Ability to display your conversations in “process flow” view showing nodes and branches (e.g., similar to Visio flow diagrams or decision tree diagrams)</td>
 <td>✓ Yes</td>
 <td>✓ Yes</td>
 <td>✗ No</td>
 <td>✗ No</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Ability to specify and edit “conditions” for your dialogue (e.g., a dialogue displays or does not display if certain criteria are met, such as possession of an object or completion of a quest)</td>
 <td>✓ Yes</td>
 <td>✓ Yes</td>
 <td>✓ Yes</td>
 <td>◐ Partial</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Ability to specify “outcomes” and “variables” for your dialogue (e.g., when a conversation is finished, the player gets an item or some other event happens)</td>
 <td>✓ Yes</td>
 <td>✓ Yes</td>
 <td>✓ Yes</td>
 <td>◐ Partial</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Ability to simulate (i.e., run a mini play test on) a complex branching conversation you have created</td>
 <td>✗ No</td>
 <td>✓ Yes</td>
 <td>✓ Yes</td>
 <td>✗ No</td>
 </tr>
-<tr class="odd">
-<td><strong>Character Design</strong></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+</tbody>
+</table>
+</section>
+<section id="capabilities-character-design" class="level3">
+<h3 class="anchored" data-anchor-id="capabilities-character-design">Character Design</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 73%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 7%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Capability</th>
+<th>articy:<wbr>draft</th>
+<th>Chat Mapper</th>
+<th>DA Toolset</th>
+<th>Excel</th>
 </tr>
-<tr class="even">
+</thead>
+<tbody>
+<tr class="odd">
 <td>Ability to import character concept art (e.g., portraits, sketches, etc.) and associate them with dialogue snippets and/or character sheets</td>
 <td>✓ Yes</td>
 <td>✓ Yes</td>
 <td>◐ Partial</td>
 <td>◐ Partial</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Ability to select and fill out predefined character sheets, and then easily display and cross reference those sheets while writing dialogue</td>
 <td>✓ Yes</td>
 <td>✓ Yes</td>
 <td>◐ Partial</td>
 <td>◐ Partial</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Ability to add custom fields to the predefined character sheets if the default fields aren’t enough.</td>
 <td>✗ No</td>
 <td>✓ Yes</td>
 <td>✗ No</td>
 <td>◐ Partial</td>
 </tr>
-<tr class="odd">
-<td><strong>Assets, Locations, and Integration</strong></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+</tbody>
+</table>
+</section>
+<section id="capabilities-assets-locations-and-integration" class="level3">
+<h3 class="anchored" data-anchor-id="capabilities-assets-locations-and-integration">Assets, Locations, and Integration</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 73%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 7%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Capability</th>
+<th>articy:<wbr>draft</th>
+<th>Chat Mapper</th>
+<th>DA Toolset</th>
+<th>Excel</th>
 </tr>
-<tr class="even">
+</thead>
+<tbody>
+<tr class="odd">
 <td>Ability to fill out and reference “location” sheets that describe the levels and environments in your story</td>
 <td>✓ Yes</td>
 <td>✓ Yes</td>
 <td>✗ No</td>
 <td>◐ Partial</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Ability to import assets (e.g., concept art, level layouts) so they can be referenced while creating your story</td>
 <td>✓ Yes</td>
 <td>◐ Partial</td>
 <td>◐ Partial</td>
 <td>◐ Partial</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Ability to export project files to XML format</td>
 <td>✓ Yes</td>
 <td>✓ Yes</td>
 <td>◐ Partial</td>
 <td>◐ Partial</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Ability to export script to a standard document format, such as a script format for voice actors</td>
 <td>✗ No</td>
 <td>✓ Yes</td>
 <td>◐ Partial</td>
 <td>◐ Partial</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Ability to integrate script seamlessly in a proprietary game engine</td>
 <td>◐ Partial</td>
 <td>◐ Partial</td>
 <td>◐ Partial</td>
 <td>◐ Partial</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Ability to display a map and indicate the locations and/or “patrol routes” of NPCs</td>
 <td>✓ Yes</td>
 <td>✗ No</td>
 <td>◐ Partial</td>
 <td>◐ Partial</td>
 </tr>
-<tr class="even">
-<td><strong>Usability and User Interface</strong></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+</tbody>
+</table>
+</section>
+<section id="capabilities-usability-and-user-interface" class="level3">
+<h3 class="anchored" data-anchor-id="capabilities-usability-and-user-interface">Usability and User Interface</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 73%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 7%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Capability</th>
+<th>articy:<wbr>draft</th>
+<th>Chat Mapper</th>
+<th>DA Toolset</th>
+<th>Excel</th>
 </tr>
+</thead>
+<tbody>
 <tr class="odd">
 <td>The tool’s user interface is visually appealing</td>
 <td>✓ Yes</td>
@@ -1038,13 +1142,29 @@ Figure&nbsp;5. Participants’ responses regarding affordable price ranges.
 <td>✓ Yes</td>
 <td>✓ Yes</td>
 </tr>
-<tr class="even">
-<td><strong>Cost, Learning, and Support</strong></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+</tbody>
+</table>
+</section>
+<section id="capabilities-cost-learning-and-support" class="level3">
+<h3 class="anchored" data-anchor-id="capabilities-cost-learning-and-support">Cost, Learning, and Support</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 73%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 7%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Capability</th>
+<th>articy:<wbr>draft</th>
+<th>Chat Mapper</th>
+<th>DA Toolset</th>
+<th>Excel</th>
 </tr>
+</thead>
+<tbody>
 <tr class="odd">
 <td>The tool is supported by an active and responsive service desk and/or online help forum</td>
 <td>✓ Yes</td>
@@ -1080,13 +1200,29 @@ Figure&nbsp;5. Participants’ responses regarding affordable price ranges.
 <td>◐ Partial</td>
 <td>✓ Yes</td>
 </tr>
-<tr class="even">
-<td><strong>Other Factors Suggested by Survey Respondents</strong></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+</tbody>
+</table>
+</section>
+<section id="capabilities-other-factors-suggested-by-survey-respondents" class="level3">
+<h3 class="anchored" data-anchor-id="capabilities-other-factors-suggested-by-survey-respondents">Other Factors Suggested by Survey Respondents</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 73%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 7%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Capability</th>
+<th>articy:<wbr>draft</th>
+<th>Chat Mapper</th>
+<th>DA Toolset</th>
+<th>Excel</th>
 </tr>
+</thead>
+<tbody>
 <tr class="odd">
 <td>Ability for reviewers to use “tracked changes” or display revisions</td>
 <td>✗ No</td>
@@ -1138,6 +1274,7 @@ Figure&nbsp;5. Participants’ responses regarding affordable price ranges.
 </tr>
 </tbody>
 </table>
+</section>
 </section>
 <section id="results-from-weightings-and-subjective-scoring-process" class="level2">
 <h2 class="anchored" data-anchor-id="results-from-weightings-and-subjective-scoring-process">4.3 Results from Weightings and Subjective Scoring Process</h2>
