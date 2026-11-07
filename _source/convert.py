@@ -100,7 +100,7 @@ def unbold(s):
     return s[2:-2] if s.startswith("**") and s.endswith("**") else s
 
 
-def pipe_table(rows, header=None, skip=0, bold_short_rows=False):
+def pipe_table(rows, header=None, skip=0, bold_short_rows=False, widths=None):
     """Build a pipe table. header=None uses the first remaining row; header=[] makes
     an empty (hidden) header. Rows shorter than the header keep their first cell
     in column 1 and push the remaining cells to the right-hand columns."""
@@ -119,7 +119,7 @@ def pipe_table(rows, header=None, skip=0, bold_short_rows=False):
     # Tool-name headers may break after the colon (ARTICY: / DRAFT) so narrow columns stay narrow.
     hdr = [c.replace("articy:draft", "articy:<wbr>draft") for c in header] if header else [" "] * n
     out = ["| " + " | ".join(hdr) + " |",
-           "|" + "|".join("-" * w for w in col_widths(header, body, n)) + "|"]
+           "|" + "|".join("-" * w for w in (widths or col_widths(header, body, n))) + "|"]
     out += ["| " + " | ".join(r) + " |" for r in body]
     return "\n".join(out)
 
@@ -143,6 +143,12 @@ assert len(TABLES) == 21, len(TABLES)
 T = [table_rows(t) for t in TABLES]
 
 
+def slug(s):
+    s = re.sub(r"[^\w\s.-]", "", s.lower())
+    s = re.sub(r"\s+", "-", s.strip())
+    return re.sub(r"^[^a-z]+", "", s)
+
+
 def build_table(i):
     rows = T[i]
     if i == 0:  # survey weightings example, Collaboration
@@ -150,9 +156,20 @@ def build_table(i):
         return title + pipe_table(rows, skip=1)
     if i in (1, 3):  # scale for subjective scores; icon legend (no header row in original)
         return pipe_table(rows, header=[])
-    if i == 4:  # capability matrix
+    if i == 4:  # capability matrix, one table per capability category (stage 2 review)
         hdr = ["Capability", "articy:draft", "Chat Mapper", "DA Toolset", "Excel"]
-        return pipe_table(rows, header=hdr, skip=2, bold_short_rows=True)
+        groups = []
+        for r in rows[2:]:
+            if len(r) < len(hdr):  # category row
+                groups.append((unbold(r[0]), []))
+            else:
+                groups[-1][1].append(r)
+        # Shared column widths so the seven tables line up as the reader scrolls.
+        widths = col_widths(hdr, [r for _, body in groups for r in body], len(hdr))
+        # Explicit ids: Appendix B has headings with the same names.
+        return "\n\n".join(
+            f"### {name} {{#capabilities-{slug(name)}}}\n\n" + pipe_table(body, header=hdr, widths=widths)
+            for name, body in groups)
     if i == 5:  # final scores
         legend = rows[0][0].removeprefix("Capabilities").strip()
         hdr = ["Capabilities", "articy:draft", "Chat Mapper", "DA Toolset", "Excel", "Avrg Wgt"]
@@ -343,12 +360,6 @@ sub_once("(See Figure 5 below.)", "(See Figure 8 below.)<!--NOTE:fig8-->")
 text = re.sub(r"(?<![!\[])\bFigure (\d+)\b(?![^\[]*\]\(media/)", lambda m: "@" + FIG_ID[int(m.group(1))], text)
 
 # ---------------------------------------------------------------- headings
-
-def slug(s):
-    s = re.sub(r"[^\w\s.-]", "", s.lower())
-    s = re.sub(r"\s+", "-", s.strip())
-    return re.sub(r"^[^a-z]+", "", s)
-
 
 def heading(m):
     level, title = m.group(1), m.group(2).strip()

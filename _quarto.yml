@@ -23,12 +23,33 @@ website:
   twitter-card:
     title: "An Evaluation of Software Tools for Interactive Storytelling"
     card-style: summary_large_image
+  # One list serves both layouts: editorial.scss hides the phone-only items
+  # (positions 1, 3, 5-11) on desktop and the desktop-only items (2, 4) in the
+  # phone menu, so the order here matters.
   navbar:
     left:
+      - text: Home
+        href: index.qmd#home
       - text: Results
+        href: index.qmd#results-at-a-glance
+      - text: Results at a glance
         href: index.qmd#results-at-a-glance
       - text: Report
         href: index.qmd#abstract
+      - text: Abstract
+        href: index.qmd#abstract
+      - text: 1 Introduction
+        href: index.qmd#introduction
+      - text: 2 Background
+        href: index.qmd#background
+      - text: 3 Methodology
+        href: index.qmd#methodology
+      - text: 4 Results
+        href: index.qmd#results
+      - text: 5 Discussion
+        href: index.qmd#discussion
+      - text: 6 Conclusion
+        href: index.qmd#conclusion
       - text: Appendices
         href: index.qmd#appendix-a-rationale-for-tool-selection
       - text: Making Of

@@ -102,6 +102,17 @@ a {
   }
 }
 
+// Navbar items (order set in _quarto.yml): the phone menu lists every section,
+// while the desktop bar keeps five. Quarto collapses the navbar below 992px.
+#navbarCollapse .navbar-nav > li {
+  @media (min-width: 992px) {
+    &:nth-child(1), &:nth-child(3), &:nth-child(n+5):nth-child(-n+11) { display: none; }
+  }
+  @media (max-width: 991.98px) {
+    &:nth-child(2), &:nth-child(4) { display: none; }
+  }
+}
+
 // Report headings
 main h1, main .h1 {
   font-size: clamp(2.4rem, 4vw, 3.2rem);
@@ -340,14 +351,6 @@ figcaption,
   }
 }
 
-.splash-pdf {
-  margin: 28px 0 0;
-  font-family: $font-family-monospace;
-  font-size: 13px;
-  letter-spacing: 0.06em;
-  a { color: $muted; }
-}
-
 .splash-graphic {
   flex: 1 1 420px;
   min-width: 0;
@@ -441,10 +444,11 @@ body.splash-in-view #quarto-toc-toggle {
   &.top .rank { color: $accent; }
 }
 
-.glance-links {
+// Pandoc wraps the links in a <p>, so the flex row goes on that paragraph.
+.glance-links > p {
   @include label;
   font-size: 12px;
   display: flex;
   flex-wrap: wrap;
-  gap: 8px 28px;
+  gap: 10px 28px;
 }

@@ -31,5 +31,5 @@ Cheap, familiar, and flexible, but every cross-reference, condition, and name ch
 :::
 
 ::: {.glance-links}
-[How the tools were scored: Methodology](#methodology) [Full score table](#results-from-weightings-and-subjective-scoring-process)
+[How the tools were scored: Methodology](#methodology) [Full score table](#results-from-weightings-and-subjective-scoring-process) [Original PDF (2012)](https://portfolio.richardrabil.com/files/Rabil-Technical-Report-Software-Interactive-Storytelling.pdf)
 :::

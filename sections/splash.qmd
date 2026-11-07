@@ -1,4 +1,4 @@
-::: {.column-screen .splash}
+::: {#home .column-screen .splash}
 
 ```{=html}
 <section class="splash-main" aria-label="Introduction">
@@ -8,9 +8,7 @@
     <p class="splash-abstract">Four tools for game writing selected (articy:draft, Chat Mapper, the Dragon Age Toolset, and Excel), tested hands-on for 40+ hours, and scored against priorities from a 33-person industry survey.</p>
     <div class="splash-actions">
       <a class="pill primary" href="#results-at-a-glance">See the results<svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3v10M3.5 8.5 8 13l4.5-4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-      <a class="pill ghost" href="#making-of">How it was made</a>
     </div>
-    <p class="splash-pdf"><a href="https://portfolio.richardrabil.com/files/Rabil-Technical-Report-Software-Interactive-Storytelling.pdf">Original PDF (2012)</a></p>
   </div>
 
   <div class="splash-graphic">
@@ -76,6 +74,17 @@
       document.body.classList.toggle("splash-in-view", entries[0].intersectionRatio > 0.25);
     }, { threshold: [0, 0.25, 1] }).observe(splash);
   })();
+
+  // On phones the menu covers the page; close it once a section link is tapped.
+  document.addEventListener("DOMContentLoaded", function () {
+    var menu = document.getElementById("navbarCollapse");
+    if (!menu || !window.bootstrap) return;
+    menu.querySelectorAll(".nav-link").forEach(function (link) {
+      link.addEventListener("click", function () {
+        if (menu.classList.contains("show")) bootstrap.Collapse.getOrCreateInstance(menu).hide();
+      });
+    });
+  });
 </script>
 ```
 

@@ -98,44 +98,69 @@ I based this scheme on my subjective experience using and testing each tool. The
 
 **Legend**: ✓ Yes = Exists; ◐ Partial = Exists with a workaround or is somehow "less than ideal"; ✗ No = Does not exist
 
+### Collaboration and Story Design {#capabilities-collaboration-and-story-design}
+
 | Capability | articy:<wbr>draft | Chat Mapper | DA Toolset | Excel |
-|-----------------------------------------------------------------------------|-------|-------|-------|---------|
-| **Collaboration and Story Design** |  |  |  |  |
+|------------------------------------------------------------------------------------|-------|-------|-------|---------|
 | Ability to have web-based collaboration for multiple authors | ✓ Yes | ◐ Partial | ◐ Partial | ◐ Partial |
 | Ability to have version history and version control of your writing-related files | ✓ Yes | ✗ No | ✓ Yes | ✗ No |
 | Ability to view, create, and edit a “storyboard” view of story events | ✓ Yes | ✗ No | ✗ No | ◐ Partial |
 | Ability to create and edit a story outline | ✓ Yes | ✗ No | ✗ No | ◐ Partial |
 | Ability to associate content with a story outline and/or storyboard | ✓ Yes | ✗ No | ✗ No | ◐ Partial |
-| **Branching Dialogue** |  |  |  |  |
+
+### Branching Dialogue {#capabilities-branching-dialogue}
+
+| Capability | articy:<wbr>draft | Chat Mapper | DA Toolset | Excel |
+|------------------------------------------------------------------------------------|-------|-------|-------|---------|
 | Ability to display your conversations in a tree-like view showing collapsible nodes and branches | ✗ No | ✓ Yes | ✓ Yes | ◐ Partial |
 | Ability to display your conversations in "process flow" view showing nodes and branches (e.g., similar to Visio flow diagrams or decision tree diagrams) | ✓ Yes | ✓ Yes | ✗ No | ✗ No |
 | Ability to specify and edit "conditions" for your dialogue (e.g., a dialogue displays or does not display if certain criteria are met, such as possession of an object or completion of a quest) | ✓ Yes | ✓ Yes | ✓ Yes | ◐ Partial |
 | Ability to specify "outcomes" and "variables" for your dialogue (e.g., when a conversation is finished, the player gets an item or some other event happens) | ✓ Yes | ✓ Yes | ✓ Yes | ◐ Partial |
 | Ability to simulate (i.e., run a mini play test on) a complex branching conversation you have created | ✗ No | ✓ Yes | ✓ Yes | ✗ No |
-| **Character Design** |  |  |  |  |
+
+### Character Design {#capabilities-character-design}
+
+| Capability | articy:<wbr>draft | Chat Mapper | DA Toolset | Excel |
+|------------------------------------------------------------------------------------|-------|-------|-------|---------|
 | Ability to import character concept art (e.g., portraits, sketches, etc.) and associate them with dialogue snippets and/or character sheets | ✓ Yes | ✓ Yes | ◐ Partial | ◐ Partial |
 | Ability to select and fill out predefined character sheets, and then easily display and cross reference those sheets while writing dialogue | ✓ Yes | ✓ Yes | ◐ Partial | ◐ Partial |
 | Ability to add custom fields to the predefined character sheets if the default fields aren't enough. | ✗ No | ✓ Yes | ✗ No | ◐ Partial |
-| **Assets, Locations, and Integration** |  |  |  |  |
+
+### Assets, Locations, and Integration {#capabilities-assets-locations-and-integration}
+
+| Capability | articy:<wbr>draft | Chat Mapper | DA Toolset | Excel |
+|------------------------------------------------------------------------------------|-------|-------|-------|---------|
 | Ability to fill out and reference “location” sheets that describe the levels and environments in your story | ✓ Yes | ✓ Yes | ✗ No | ◐ Partial |
 | Ability to import assets (e.g., concept art, level layouts) so they can be referenced while creating your story | ✓ Yes | ◐ Partial | ◐ Partial | ◐ Partial |
 | Ability to export project files to XML format | ✓ Yes | ✓ Yes | ◐ Partial | ◐ Partial |
 | Ability to export script to a standard document format, such as a script format for voice actors | ✗ No | ✓ Yes | ◐ Partial | ◐ Partial |
 | Ability to integrate script seamlessly in a proprietary game engine | ◐ Partial | ◐ Partial | ◐ Partial | ◐ Partial |
 | Ability to display a map and indicate the locations and/or "patrol routes" of NPCs | ✓ Yes | ✗ No | ◐ Partial | ◐ Partial |
-| **Usability and User Interface** |  |  |  |  |
+
+### Usability and User Interface {#capabilities-usability-and-user-interface}
+
+| Capability | articy:<wbr>draft | Chat Mapper | DA Toolset | Excel |
+|------------------------------------------------------------------------------------|-------|-------|-------|---------|
 | The tool's user interface is visually appealing | ✓ Yes | ◐ Partial | ◐ Partial | ✓ Yes |
 | The tool's user interface is user-friendly and intuitive | ✓ Yes | ◐ Partial | ◐ Partial | ✓ Yes |
 | The tool requires little to no knowledge of coding, scripting, or programming | ✓ Yes | ◐ Partial | ◐ Partial | ✓ Yes |
 | The tool's user interface lets me display different panels of information for easy cross-referencing | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes |
 | The user interface is highly-customizable (e.g., I can show, hide, and resize panels of information very easily) | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes |
-| **Cost, Learning, and Support** |  |  |  |  |
+
+### Cost, Learning, and Support {#capabilities-cost-learning-and-support}
+
+| Capability | articy:<wbr>draft | Chat Mapper | DA Toolset | Excel |
+|------------------------------------------------------------------------------------|-------|-------|-------|---------|
 | The tool is supported by an active and responsive service desk and/or online help forum | ✓ Yes | ◐ Partial | ◐ Partial | ✓ Yes |
 | The tool has a detailed help system embedded in the application or accessible online | ✗ No | ◐ Partial | ◐ Partial | ✓ Yes |
 | The tool has video tutorials, Getting Started guides, and other information resources freely available | ✓ Yes | ✓ Yes | ✓ Yes | ✓ Yes |
 | The tool's learning curve is low | ✓ Yes | ◐ Partial | ✗ No | ✓ Yes |
 | The tool has competitive pricing options for both individual and multi-user licenses | TBD | ✓ Yes | ◐ Partial | ✓ Yes |
-| **Other Factors Suggested by Survey Respondents** |  |  |  |  |
+
+### Other Factors Suggested by Survey Respondents {#capabilities-other-factors-suggested-by-survey-respondents}
+
+| Capability | articy:<wbr>draft | Chat Mapper | DA Toolset | Excel |
+|------------------------------------------------------------------------------------|-------|-------|-------|---------|
 | Ability for reviewers to use "tracked changes" or display revisions | ✗ No | ◐ Partial | ✗ No | ◐ Partial |
 | Ability for reviewers to add comments | ✓ Yes | ◐ Partial | ✓ Yes | ✓ Yes |
 | Ability to quickly and easily switch between a "tree" view and a "process flow" view of the dialogue | ✗ No | ◐ Partial | ✗ No | ✗ No |
