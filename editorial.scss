@@ -12,6 +12,8 @@ $faint: #5c5c5c;
 $rule: #262626;
 $surface: #151515;
 $accent: #c00000;
+// Accent as text on $ink: #c00000 is 3.04:1, below WCAG AA's 4.5:1; this is 4.78:1.
+$accent-text: #e83a3a;
 
 $body-bg: $ink;
 $body-color: $muted;
@@ -298,7 +300,7 @@ figcaption,
   border: 1px solid $paper;
   border-radius: 999px;
   padding: 8px 18px;
-  .sep { color: $faint; }
+  .sep { color: #7a7a7a; } // $faint is 2.94:1 on $ink; this is 4.59:1 (WCAG AA)
   .provenance { color: $dim; }
 }
 
@@ -441,7 +443,7 @@ body.splash-in-view #quarto-toc-toggle {
     font-size: 1.6rem;
     color: $paper;
   }
-  &.top .rank { color: $accent; }
+  &.top .rank { color: $accent-text; }
 }
 
 // Pandoc wraps the links in a <p>, so the flex row goes on that paragraph.

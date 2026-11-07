@@ -65,6 +65,8 @@ format:
     toc-depth: 2
     toc-location: right
     toc-title: Contents
+    # Strips ids from Quarto's drop-down copy of the Contents panel (duplicate ids).
+    include-after-body: toc-menu-ids.html
     # Footnotes print at the end of the section that cites them (Section 2),
     # not after About the Author at the bottom of the page.
     reference-location: section

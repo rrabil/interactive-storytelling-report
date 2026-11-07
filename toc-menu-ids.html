@@ -1,0 +1,16 @@
+<script>
+// When the Contents panel would overlap the page, Quarto turns it into a
+// drop-down menu filled with a copy of the panel, ids and all. Duplicate ids
+// fail WCAG 4.1.1 (Pa11y flagged 37), so strip them from the copy. The
+// original panel keeps its ids, so anchors and scroll tracking are unaffected.
+(function () {
+  function stripIds(root) {
+    root.querySelectorAll(".quarto-sidebar-toggle-contents [id]").forEach(function (el) {
+      el.removeAttribute("id");
+    });
+  }
+  stripIds(document);
+  new MutationObserver(function () { stripIds(document); })
+    .observe(document.body, { childList: true, subtree: true });
+})();
+</script>
