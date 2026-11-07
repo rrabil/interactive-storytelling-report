@@ -1,4 +1,4 @@
-# Bibliography {#bibliography}
+# 7 Bibliography {#bibliography}
 
 Bateman, C. (2007). Dialogue Engine. In C. Bateman (Ed.), *Game Writing: Narrative Skills for Videogames*. Boston: Charles River Media.
 

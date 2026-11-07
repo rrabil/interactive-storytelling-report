@@ -439,9 +439,8 @@ def heading(m):
 
 
 text = re.sub(r"^(#{1,5}) (.+)$", heading, text, flags=re.M)
-# The spec moves the bibliography after the appendices, so its original number (7)
-# would sit out of order; it goes unnumbered there instead.
-sub_once("# 7 Bibliography {#bibliography}", "# Bibliography {#bibliography}")
+# The Bibliography keeps its original number (7) and place, after the Conclusion
+# (index.qmd includes it there), so the appendices' numbers 8 to 10 follow on.
 
 # "Section N" references link to their headings.
 NUM_TO_ID = {v: k for k, v in TOC.items()}
@@ -614,9 +613,9 @@ files = {
     "methodology.qmd": section("# 3 Methodology", "# 4 Results"),
     "results.qmd": section("# 4 Results", "# 5 Discussion"),
     "discussion.qmd": section("# 5 Discussion", "# 6 Conclusion"),
-    "conclusion.qmd": section("# 6 Conclusion", "# Bibliography"),
+    "conclusion.qmd": section("# 6 Conclusion", "# 7 Bibliography"),
     # Request for Feedback, which followed the Bibliography, is dropped (stage 2 review, round 4).
-    "references.qmd": section("# Bibliography", "# Request for Feedback"),
+    "references.qmd": section("# 7 Bibliography", "# Request for Feedback"),
     "appendix-a.qmd": section("# 8 Appendix A", "# 9 Appendix B"),
     "appendix-b.qmd": section("# 9 Appendix B", "# 10 Appendix C"),
     "appendix-c.qmd": section("# 10 Appendix C"),

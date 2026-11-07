@@ -24,12 +24,12 @@ image-alt: "Title card: An Evaluation of Software Tools for Interactive Storytel
 
 {{< include sections/conclusion.qmd >}}
 
+{{< include sections/references.qmd >}}
+
 {{< include sections/appendix-a.qmd >}}
 
 {{< include sections/appendix-b.qmd >}}
 
 {{< include sections/appendix-c.qmd >}}
-
-{{< include sections/references.qmd >}}
 
 {{< include sections/making-of.qmd >}}
